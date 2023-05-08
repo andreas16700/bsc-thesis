@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{java.net.MalformedURLException}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{java.net.URL}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{picocli.CommandLine}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{picocli.CommandLine.Command}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{picocli.CommandLine.Option}\PYG{p}{;}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{picocli.CommandLine.Parameters}\PYG{p}{;}
+
+\PYG{n+nd}{@Command}\PYG{p}{(}\PYG{n}{name}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}ExampleApp\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{description}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Example command\PYGZhy{}line application\PYGZdq{}}\PYG{p}{)}
+\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{ExampleApp}\PYG{+w}{ }\PYG{k+kd}{implements}\PYG{+w}{ }\PYG{n}{Runnable}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nd}{@Parameters}\PYG{p}{(}\PYG{n}{index}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{description}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Your name\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{n}{String}\PYG{+w}{ }\PYG{n}{name}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{n+nd}{@Option}\PYG{p}{(}\PYG{n}{names}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{l+s}{\PYGZdq{}\PYGZhy{}a\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}\PYGZhy{}\PYGZhy{}age\PYGZdq{}}\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{n}{description}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Your age\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{age}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{n+nd}{@Parameters}\PYG{p}{(}\PYG{n}{index}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{description}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}URL of the PS (powersoft) Server\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{converter}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{UrlConverter}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k+kd}{private}\PYG{+w}{ }\PYG{n}{URL}\PYG{+w}{ }\PYG{n}{psURL}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]}\PYG{+w}{ }\PYG{n}{args}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{exitCode}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{CommandLine}\PYG{p}{(}\PYG{k}{new}\PYG{+w}{ }\PYG{n}{ExampleApp}\PYG{p}{()).}\PYG{n+na}{execute}\PYG{p}{(}\PYG{n}{args}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{exit}\PYG{p}{(}\PYG{n}{exitCode}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{n+nd}{@Override}
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{run}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Hello, \PYGZpc{}s! You are \PYGZpc{}d years old.\PYGZpc{}n\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{age}\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}PS Server URL: \PYGZpc{}s\PYGZpc{}n\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{psURL}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kd}{static}\PYG{+w}{ }\PYG{k+kd}{class} \PYG{n+nc}{UrlConverter}\PYG{+w}{ }\PYG{k+kd}{implements}\PYG{+w}{ }\PYG{n}{CommandLine}\PYG{p}{.}\PYG{n+na}{ITypeConverter}\PYG{o}{\PYGZlt{}}\PYG{n}{URL}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nd}{@Override}
+\PYG{+w}{        }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{n}{URL}\PYG{+w}{ }\PYG{n+nf}{convert}\PYG{p}{(}\PYG{n}{String}\PYG{+w}{ }\PYG{n}{value}\PYG{p}{)}\PYG{+w}{ }\PYG{k+kd}{throws}\PYG{+w}{ }\PYG{n}{MalformedURLException}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{URL}\PYG{+w}{ }\PYG{n}{url}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{URL}\PYG{p}{(}\PYG{n}{value}\PYG{p}{);}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{url}\PYG{p}{.}\PYG{n+na}{getProtocol}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{k+kc}{null}\PYG{+w}{ }\PYG{o}{||}\PYG{+w}{ }\PYG{n}{url}\PYG{p}{.}\PYG{n+na}{getHost}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{k+kc}{null}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{k}{throw}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{n}{MalformedURLException}\PYG{p}{(}\PYG{n}{value}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{} is not a valid URL!\PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{url}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

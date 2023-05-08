@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{String}\PYG{+w}{ }\PYG{n}{message}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}Hello, world!\PYGZdq{}}\PYG{p}{;}
+\end{Verbatim}

@@ -1,0 +1,482 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  8 MAY 2023 22:49
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**thesis.tex
+(./thesis.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2022/07/02 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen141
+\l@unhyphenated=\language87
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count195
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks19
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box51
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
+\ttl@plus=\dimen152
+\ttl@minus=\dimen153
+\ttl@toksa=\toks20
+\titlewidth=\dimen154
+\titlewidthlast=\dimen155
+\titlewidthfirst=\dimen156
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count199
+\l__pdf_internal_box=\box52
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count266
+\l__lipsum_a_int=\count267
+\l__lipsum_b_int=\count268
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2022/12/12 v2.7 Yet another Pygments shim for LaTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2022/11/30 v1.5 fvextra - extensions and patches for fancyvrb
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count269
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
+\FV@CodeLineNo=\count270
+\FV@InFile=\read3
+\FV@TabBox=\box53
+\c@FancyVerbLine=\count271
+\FV@StepNumber=\count272
+\FV@OutFile=\write3
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/01/19 line numbers on paragraphs v5.1
+\linenopenalty=\count273
+\output=\toks21
+\linenoprevgraf=\count274
+\linenumbersep=\dimen157
+\linenumberwidth=\dimen158
+\c@linenumber=\count275
+\c@pagewiselinenumber=\count276
+\c@LN@truepage=\count277
+\c@internallinenumber=\count278
+\c@internallinenumbers=\count279
+\quotelinenumbersep=\dimen159
+\bframerule=\dimen160
+\bframesep=\dimen161
+\bframebox=\box54
+LaTeX Info: Redefining \\ on input line 3131.
+)
+\c@FV@TrueTabGroupLevel=\count280
+\c@FV@TrueTabCounter=\count281
+\FV@TabBox@Group=\box55
+\FV@TmpLength=\skip61
+\c@FV@HighlightLinesStart=\count282
+\c@FV@HighlightLinesStop=\count283
+\FV@LoopCount=\count284
+\FV@NCharsBox=\box56
+\FV@BreakIndent=\dimen162
+\FV@BreakIndentNChars=\count285
+\FV@BreakSymbolSepLeft=\dimen163
+\FV@BreakSymbolSepLeftNChars=\count286
+\FV@BreakSymbolSepRight=\dimen164
+\FV@BreakSymbolSepRightNChars=\count287
+\FV@BreakSymbolIndentLeft=\dimen165
+\FV@BreakSymbolIndentLeftNChars=\count288
+\FV@BreakSymbolIndentRight=\dimen166
+\FV@BreakSymbolIndentRightNChars=\count289
+\c@FancyVerbLineBreakLast=\count290
+\FV@LineBox=\box57
+\FV@LineIndentBox=\box58
+\c@FV@BreakBufferDepth=\count291
+\FV@LineWidth=\dimen167
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count292
+\calc@Bcount=\count293
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count294
+\calc@Cskip=\skip64
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "thesis.w18")...executed.
+
+ (./thesis.w18)
+runsystem(rm -- "thesis.w18")...executed.
+
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count295
+\decimalpart=\count296
+)
+Package: xstring 2023/01/14 v1.85 String manipulations (CT)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip65
+\fb@frw=\dimen170
+\fb@frh=\dimen171
+\FrameRule=\dimen172
+\FrameSep=\dimen173
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count297
+\float@exts=\toks22
+\float@box=\box59
+\@float@everytoks=\toks23
+\@floatcapt=\box60
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box61
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count298
+\c@minted@pygmentizecounter=\count299
+\@float@every@listing=\toks24
+\c@listing=\count300
+)
+runsystem(mkdir -p _minted-thesis)...executed.
+
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+runsystem(which pygmentize && touch thesis.aex)...executed.
+
+runsystem(rm thesis.aex)...executed.
+
+ (./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen174
+\scratchbox=\box62
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen175
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=688.5567pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+[1
+
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [1
+
+] [2
+
+] [3] [4
+
+] (./thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+)
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ (./introduction.tex [1] [2
+
+]
+Chapter 1.
+) (./literature_review.tex) (./research_methodology.tex) (./performance_comparison.tex) (./cold_start.tex) (./ease_of_dev.tex [3] [4
+
+]
+Chapter 2.
+\openout3 = `thesis.pyg'.
+
+(./_minted-thesis/default.pygstyle) (./_minted-thesis/34AEC85BB13732AFF4C5B2134F3E7BEADD95E99AA7B4976517879FA5762B39A7.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/B0DD47BC2CB14E68A8CB777BCFD8A357B6F646E3DFE3820A178305059A4BB3A3.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/A89E11536544A5984EDCE2EEA90BDBEC98AC6650688363CDFA3DF2E4C7E54189.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/179E21B7ABC0B7E92F1E022E4C17E47ADD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/FCB1900AE058C9DB60B2E72A0F7D7A1E98AC6650688363CDFA3DF2E4C7E54189.pygtex [5])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/CEB449AACF55F795D0A3DF2959B14BF0DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/88FDEDDEF3FD874635EBAB5A039078D6B6F646E3DFE3820A178305059A4BB3A3.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/3F50800911A56EAABC893FCE6E8AB6E4DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/5DFFD7421B5401CBA09D3A3CBB7D4C0598AC6650688363CDFA3DF2E4C7E54189.pygtex [6])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/B1D22EC9336D12D865D4909D97E9B3A6DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/7918940DCA5163295F179A659A0110F598AC6650688363CDFA3DF2E4C7E54189.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/97665612CAD83A31A7A2A4EB6950B244DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/17DE9129E1A4E1340AFB3377FC8E027798AC6650688363CDFA3DF2E4C7E54189.pygtex) [7]
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/85463F08AD1F9EF4E069188A6F0263E6DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/CCF9229D1AA232924A0655886A43381E98AC6650688363CDFA3DF2E4C7E54189.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/496EE2B2A17704869B19A3279F197BD4DD95E99AA7B4976517879FA5762B39A7.pygtex [8])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/67D41C66AA4AC7E665FF13C8CBBBD7EC98AC6650688363CDFA3DF2E4C7E54189.pygtex)
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/1B1D2479DDF8281AE23786725F09F48CDD95E99AA7B4976517879FA5762B39A7.pygtex [9])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/25C032417B67B6462D5DDAA5021BA736B6F646E3DFE3820A178305059A4BB3A3.pygtex [10])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/3154310D6E8CA3FC43B3438E67074E9498AC6650688363CDFA3DF2E4C7E54189.pygtex [11])
+Underfull \vbox (badness 1521) has occurred while \output is active []
+
+ [12] [13{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (26.51025pt too wide) in paragraph at lines 319--320
+[]\T1/cmr/bx/n/12 Database In-te-gra-tion\T1/cmr/m/n/12 : Many web ap-pli-ca-tions re-quire in-te-gra-tion with databases.
+ []
+
+) (./resource_util.tex) (./cost_anal.tex) (./conclusions.tex) [14] (./thesis.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [15
+
+] [16
+
+]
+Appendix A.
+[17] (./thesis.aux)
+runsystem(rm thesis.pyg)...executed.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8784 strings out of 476025
+ 170554 string characters out of 5790018
+ 1858388 words of memory out of 5000000
+ 28998 multiletter control sequences out of 15000+600000
+ 522166 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 77i,11n,81p,571b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (22 pages, 201478 bytes).
+PDF statistics:
+ 120 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

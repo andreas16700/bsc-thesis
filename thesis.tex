@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt,openright,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage[a4paper,inner=3.5cm,outer=2.5cm,top=2.5cm,bottom=3.0cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lipsum}  % For sample text
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{minted}
+\usepackage{xcolor}
+
+\titleformat{\chapter}{\normalfont\Large\bfseries}{Chapter \thechapter .}{1em}{}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
+
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+\setcounter{tocdepth}{1}
+\onehalfspacing
+
+\begin{document}
+
+% Cover page
+\begin{titlepage}
+    \centering
+    \vspace*{1in}
+    \large University of Cyprus \\
+    Department of Computer Science \\
+    \vspace*{2in}
+    \LARGE \textbf{Exploring Swift as a Serverless Language on OpenWhisk} \\
+    \vspace*{1in}
+    \large Andreas Loizides \\
+    \vspace*{0.5in}
+    \large Mentor: Dr Haris Volos \\
+    \vfill
+    \large May 2023 \\
+\end{titlepage}
+
+% Acknowledgements
+\pagenumbering{roman}
+\newpage
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\lipsum[1] % Replace with your acknowledgements text
+
+% Abstract
+\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\lipsum[1] % Replace with your abstract
+
+% Table of Contents
+\newpage
+\tableofcontents
+
+% Chapters
+\pagenumbering{arabic}
+
+\input{introduction.tex}
+\input{literature_review.tex}
+\input{research_methodology.tex}
+\input{performance_comparison.tex}
+\input{cold_start.tex}
+\input{ease_of_dev.tex}
+\input{resource_util.tex}
+\input{cost_anal.tex}
+\input{conclusions.tex}
+
+% Bibliography
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{references} % Replace with your bibtex bibliography file, e.g. 'references.bib'
+
+% Appendices
+\newpage
+\appendix
+\chapter{Appendix A}
+\lipsum[1-2] % Replace with your appendix content
+
+\end{document}

@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{argparse}
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+\PYG{k+kn}{from} \PYG{n+nn}{urllib.parse} \PYG{k+kn}{import} \PYG{n}{urlparse}
+
+\PYG{k}{def} \PYG{n+nf}{url\PYGZus{}transformer}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{):}
+    \PYG{n}{url} \PYG{o}{=} \PYG{n}{urlparse}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{)}
+    \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{url}\PYG{o}{.}\PYG{n}{scheme} \PYG{o+ow}{or} \PYG{o+ow}{not} \PYG{n}{url}\PYG{o}{.}\PYG{n}{netloc}\PYG{p}{:}
+        \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+si}{\PYGZob{}}\PYG{n+nb}{str}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ is not a valid URL!\PYGZdq{}}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{url}
+
+\PYG{n}{parser} \PYG{o}{=} \PYG{n}{argparse}\PYG{o}{.}\PYG{n}{ArgumentParser}\PYG{p}{(}\PYG{n}{description}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Example command\PYGZhy{}line application\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}argument}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{,} \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Your name\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}argument}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}age\PYGZdq{}}\PYG{p}{,} \PYG{n+nb}{type}\PYG{o}{=}\PYG{n+nb}{int}\PYG{p}{,} \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Your age\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{parser}\PYG{o}{.}\PYG{n}{add\PYGZus{}argument}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}psURL\PYGZdq{}}\PYG{p}{,} \PYG{n+nb}{type}\PYG{o}{=}\PYG{n}{url\PYGZus{}transformer}\PYG{p}{,} \PYG{n}{help}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}URL of the PS (powersoft) Server\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{args} \PYG{o}{=} \PYG{n}{parser}\PYG{o}{.}\PYG{n}{parse\PYGZus{}args}\PYG{p}{()}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Hello, }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{args}\PYG{o}{.}\PYG{n}{name}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{! You are }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{args}\PYG{o}{.}\PYG{n}{age}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ years old.\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}PS Server URL: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{args}\PYG{o}{.}\PYG{n}{psURL}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

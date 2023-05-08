@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{process\PYGZus{}input}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{:} \PYG{n}{Optional}\PYG{p}{[}\PYG{n+nb}{str}\PYG{p}{]):}
+    \PYG{k}{if} \PYG{n+nb}{input} \PYG{o+ow}{is} \PYG{k+kc}{None}\PYG{p}{:}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Invalid input\PYGZdq{}}\PYG{p}{)}
+        \PYG{k}{return}
+
+    \PYG{c+c1}{\PYGZsh{} Continue processing with input}
+\end{Verbatim}

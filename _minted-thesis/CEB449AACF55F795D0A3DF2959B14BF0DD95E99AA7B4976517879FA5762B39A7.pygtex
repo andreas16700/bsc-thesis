@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{func} \PYG{n+nf}{processInput}\PYG{p}{(}\PYG{k+kc}{\PYGZus{}} \PYG{n}{input}\PYG{p}{:} \PYG{n+nb}{String}\PYG{p}{?)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{guard} \PYG{k+kd}{let} \PYG{n+nv}{unwrappedInput} \PYG{p}{=} \PYG{n}{input} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+        \PYG{n+nb+bp}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Invalid input\PYGZdq{}}\PYG{p}{)}
+        \PYG{k}{return}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{c+c1}{// Continue processing with unwrappedInput}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

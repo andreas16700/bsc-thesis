@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{extension} \PYG{n+nc}{Int} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{var} \PYG{n+nv}{isEven}\PYG{p}{:} \PYG{n+nb}{Bool} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{k+kc}{self} \PYG{o}{\PYGZpc{}} \PYG{l+m+mi}{2} \PYG{p}{==} \PYG{l+m+mi}{0}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{let} \PYG{n+nv}{number} \PYG{p}{=} \PYG{l+m+mi}{42}
+\PYG{n+nb+bp}{print}\PYG{p}{(}\PYG{n}{number}\PYG{p}{.}\PYG{n}{isEven}\PYG{p}{)} \PYG{c+c1}{// Output: true}
+\end{Verbatim}

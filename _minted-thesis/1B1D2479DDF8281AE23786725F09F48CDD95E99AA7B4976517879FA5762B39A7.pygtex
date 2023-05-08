@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{import} \PYG{n+nc}{ArgumentParser}
+
+\PYG{k+kd}{struct} \PYG{n+nc}{ExampleApp}\PYG{p}{:} \PYG{n}{ParsableCommand} \PYG{p}{\PYGZob{}}
+    \PYG{p}{@}\PYG{n}{Argument}\PYG{p}{(}\PYG{n}{help}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}Your name\PYGZdq{}}\PYG{p}{)}
+    \PYG{k+kd}{var} \PYG{n+nv}{name}\PYG{p}{:} \PYG{n+nb}{String}
+
+    \PYG{p}{@}\PYG{n}{Option}\PYG{p}{(}\PYG{n}{help}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}Your age\PYGZdq{}}\PYG{p}{)}
+    \PYG{k+kd}{var} \PYG{n+nv}{age}\PYG{p}{:} \PYG{n+nb}{Int}
+
+    \PYG{p}{@}\PYG{n}{Argument}\PYG{p}{(}\PYG{n}{help}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}URL of the PS (powersoft) Server\PYGZdq{}}\PYG{p}{,} \PYG{n}{transform}\PYG{p}{:} \PYG{n}{urlTransformer}\PYG{p}{)}
+    \PYG{k+kd}{var} \PYG{n+nv}{psURL}\PYG{p}{:} \PYG{n}{URL}
+
+    \PYG{k+kd}{func} \PYG{n+nf}{run}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n+nb+bp}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Hello, }\PYG{l+s+si}{\PYGZbs{}(}\PYG{n}{name}\PYG{l+s+si}{)}\PYG{l+s}{! You are }\PYG{l+s+si}{\PYGZbs{}(}\PYG{n}{age}\PYG{l+s+si}{)}\PYG{l+s}{ years old.\PYGZdq{}}\PYG{p}{)}
+        \PYG{n+nb+bp}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}PS Server URL: }\PYG{l+s+si}{\PYGZbs{}(}\PYG{n}{psURL}\PYG{l+s+si}{)}\PYG{l+s}{\PYGZdq{}}\PYG{p}{)}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{let} \PYG{n+nv}{urlTransformer}\PYG{p}{:} \PYG{p}{(}\PYG{n+nb}{String}\PYG{p}{)} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{URL} \PYG{p}{=} \PYG{p}{\PYGZob{}} \PYG{n}{str} \PYG{k}{in}
+    \PYG{k}{guard} \PYG{k+kd}{let} \PYG{n+nv}{url} \PYG{p}{=} \PYG{n}{URL}\PYG{p}{(}\PYG{n}{string}\PYG{p}{:} \PYG{n}{str}\PYG{p}{)} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+        \PYG{n+nb+bp}{fatalError}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s+si}{\PYGZbs{}(}\PYG{n}{str}\PYG{l+s+si}{)}\PYG{l+s}{ is not a valid URL!\PYGZdq{}}\PYG{p}{)}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{url}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{n}{ExampleApp}\PYG{p}{.}\PYG{n}{main}\PYG{p}{()}
+\end{Verbatim}

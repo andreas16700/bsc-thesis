@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nv}{optionalValue}\PYG{p}{:} \PYG{n+nb}{Int}\PYG{p}{?} \PYG{p}{=} \PYG{l+m+mi}{42}
+\PYG{k+kd}{let} \PYG{n+nv}{unwrappedValue}\PYG{p}{:} \PYG{n+nb}{Int} \PYG{p}{=} \PYG{n}{optionalValue}\PYG{p}{!}
+\end{Verbatim}

@@ -1,0 +1,30 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Acknowledgements}{i}{}%
+\contentsline {chapter}{Abstract}{iii}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {1.1}Background}{3}{}%
+\contentsline {section}{\numberline {1.2}Research Questions}{3}{}%
+\contentsline {subsection}{\numberline {1.2.1}Performance Comparison}{3}{}%
+\contentsline {subsection}{\numberline {1.2.2}Cold Start Analysis}{3}{}%
+\contentsline {subsection}{\numberline {1.2.3}Ease of Development}{3}{}%
+\contentsline {subsection}{\numberline {1.2.4}Resource Utilization}{3}{}%
+\contentsline {subsection}{\numberline {1.2.5}Cost Analysis}{3}{}%
+\contentsline {chapter}{\numberline {2}Ease of Development}{5}{}%
+\contentsline {section}{\numberline {2.1}Language Simplicity and Syntax}{5}{}%
+\contentsline {subsubsection}{Simplicity in Swift}{5}{}%
+\contentsline {subsubsection}{Safety Features}{6}{}%
+\contentsline {subsubsection}{Readability}{6}{}%
+\contentsline {subsubsection}{Copy-on-Write (CoW)}{7}{}%
+\contentsline {subsubsection}{Extensions}{8}{}%
+\contentsline {subsubsection}{Custom Operators}{8}{}%
+\contentsline {subsubsection}{Property Wrappers}{9}{}%
+\contentsline {section}{\numberline {2.2}Available Libraries and Frameworks}{12}{}%
+\contentsline {subsection}{\numberline {2.2.1}Web Development}{12}{}%
+\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{13}{}%
+\contentsline {paragraph}{Python}{13}{}%
+\contentsline {paragraph}{Node.js}{13}{}%
+\contentsline {paragraph}{Java}{13}{}%
+\contentsline {subsubsection}{Example Use Cases}{13}{}%
+\contentsline {subsubsection}{Vapor and Swift Package Manager}{14}{}%
+\contentsline {chapter}{Bibliography}{15}{}%
+\contentsline {chapter}{\numberline {A}Appendix A}{17}{}%

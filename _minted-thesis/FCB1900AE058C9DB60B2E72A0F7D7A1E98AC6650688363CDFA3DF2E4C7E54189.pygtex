@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Optional}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{optionalValue}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Optional}\PYG{p}{.}\PYG{n+na}{of}\PYG{p}{(}\PYG{l+m+mi}{42}\PYG{p}{);}
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{unwrappedValue}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{optionalValue}\PYG{p}{.}\PYG{n+na}{get}\PYG{p}{();}
+\end{Verbatim}
