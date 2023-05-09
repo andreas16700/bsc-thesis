@@ -1,0 +1,202 @@
+\chapter{Performance Comparison}
+\section{Value Types vs Reference Types and Copy-On-Write}
+
+In programming languages, value types and reference types represent two ways to handle data. Understanding the difference between them and their performance implications is crucial to making informed decisions when choosing a language for serverless applications. Swift not only distinguishes between value and reference types, but also employs Copy-On-Write optimization for most of its value types, including collections such as Arrays, Dictionaries, and Sets.
+
+\subsection{Value Types}
+
+Value types are types for which the value is stored directly in the memory. When a value type is assigned or passed to a function, a separate copy of the value is created. The main benefit of value types is that they are generally more efficient in terms of memory usage and can result in more predictable performance. In Swift, the distinction between value and reference types is handled through structs (value types) and classes (reference types).
+
+\subsection{Reference Types}
+
+Reference types represent data where the memory location (or reference) is stored, rather than the data itself. When a reference type is assigned or passed to a function, the reference (memory address) is copied, not the actual data. This means that different variables can point to the same data, potentially leading to unexpected behavior if the data is modified.
+
+\subsection{Copy-On-Write (CoW)}
+
+Swift uses Copy-On-Write (CoW) for most of its value types, including collections such as Arrays, Dictionaries, and Sets. Collections whose Element type is also a value type essentially leverage CoW for free. CoW is an optimization strategy where the copying of a value type is delayed until it's necessary, i.e., when the value needs to be modified.
+
+This approach has several performance benefits when compared to simply copying the data every time:
+
+\begin{itemize}
+  \item Sharing the same data among multiple instances of a collection is more memory efficient, as multiple copies of the same data are not required.
+  \item When a value is not modified, the overhead of data copying is eliminated, resulting in improved performance.
+  \item Copying is performed only when modifications are made, avoiding unnecessary data duplication.
+\end{itemize}
+
+\subsection{Performance Benefits}
+
+The distinction between value and reference types, as well as Swift's usage of CoW, has several implications for performance:
+
+\begin{itemize}
+  \item Value types with CoW can lead to more predictable performance, as the compiler can make better optimization decisions when it knows that data cannot be shared or modified externally. Furthermore, the actual data copying is delayed until it's necessary.
+  \item Copying value types can be faster, as the memory layout is more predictable and can often be associated with better cache utilization.
+  \item Avoiding the overhead of managing memory references for reference types can result in performance improvements, as fewer indirections are needed for memory access.
+\end{itemize}
+
+In summary, the distinction between value and reference types in a language like Swift, combined with the use of Copy-On-Write optimizations, provides developers with fine-grained control over memory handling and potentially leads to better performance when compared to languages that do not offer such a distinction. These aspects make Swift an attractive choice for serverless applications where performance is critical.
+
+
+\section{Qualitive Comparison with Go, Java, Javascript, and Python}
+Is the distinction between value types and reference types achievable in each language? Is any benefit from the distinction possible in each language? 
+In this section, we will compare the distinction between reference and value types in Swift to Go, Python, Node.js (JavaScript), and Java. We will examine whether these languages offer a similar distinction, and if any benefits from the distinction are achievable in each language.
+
+\subsection{Go}
+
+Go supports both reference types and value types. In Go, structs are used as value types, while slices, maps, and channels are some examples of reference types.
+
+\paragraph{Value types in Go:}
+When a value type variable is assigned or passed to a function, a copy of the value is created. Consider the following example:
+
+\begin{minted}{go}
+package main
+
+import "fmt"
+
+type Point struct {
+	X int
+	Y int
+}
+
+func main() {
+	p1 := Point{1, 2}
+	p2 := p1
+	p2.X = 3
+
+	fmt.Println(p1) // Output: {1 2}
+	fmt.Println(p2) // Output: {3 2}
+}
+\end{minted}
+
+In this example, assigning \mintinline{go}{p1} to \mintinline{go}{p2} creates a separate copy of the value, hence changing \mintinline{go}{p2.X} does not affect \mintinline{go}{p1}.
+
+\paragraph{Reference types in Go:}
+While Go also has reference types, like slices, they behave differently than reference types in Swift. Here's an example using slices:
+
+\begin{minted}{go}
+package main
+
+import "fmt"
+
+func main() {
+	s1 := []int{1, 2, 3}
+	s2 := s1
+	s2[0] = 9
+
+	fmt.Println(s1) // Output: [9 2 3]
+	fmt.Println(s2) // Output: [9 2 3]
+}
+\end{minted}
+
+In this case, assigning \mintinline{go}{s1} to \mintinline{go}{s2} creates a reference to the same slice. Modifying \mintinline{go}{s2[0]} affects \mintinline{go}{s1} as well.
+
+Although Go has value and reference types, it does not support Copy-On-Write (CoW) optimizations like Swift, limiting its potential for similar performance improvements.
+
+\subsection{Python}
+
+Python, being a dynamically typed language, does not explicitly provide separate value and reference types. However, the distinction can still be made between mutable and immutable objects, which relates to the concept of value and reference types.
+
+\paragraph{Immutable objects:}
+Immutable objects like tuples, strings, and frozensets behave similarly to value types:
+
+\begin{minted}{python}
+t1 = (1, 2)
+t2 = t1
+t2 += (3,)
+
+print(t1)  # Output: (1, 2)
+print(t2)  # Output: (1, 2, 3)
+\end{minted}
+
+In this example, updating \mintinline{python}{t2} by adding a new element does not affect \mintinline{python}{t1}.
+
+\paragraph{Mutable objects:}
+Mutable objects like lists, dictionaries, and sets behave more like reference types:
+
+\begin{minted}{python}
+l1 = [1, 2, 3]
+l2 = l1
+l2[0] = 9
+
+print(l1)  # Output: [9, 2, 3]
+print(l2)  # Output: [9, 2, 3]
+\end{minted}
+
+Here, assigning \mintinline{python}{l1} to \mintinline{python}{l2} creates a reference to the same list. Modifying \mintinline{python}{l2[0]} affects \mintinline{python}{l1} as well.
+
+Python's performance characteristics are quite different from languages like Swift and Go. As Python does not have a built-in CoW mechanism and is generally slower due to its dynamic typing and interpreted nature, the benefits achievable from the distinction between value and reference types are comparatively limited.
+
+\subsection{Node.js (JavaScript)}
+
+JavaScript, the language used in Node.js, is also dynamically typed and principally uses reference types. All objects in JavaScript are reference types, including arrays and functions.
+
+\paragraph{Reference types in JavaScript:}
+When an object is assigned or passed to a function, it's the reference that is passed, not the actual data:
+
+\begin{minted}{javascript}
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+arr2[0] = 9;
+
+console.log(arr1); // Output: [ 9, 2, 3 ]
+console.log(arr2); // Output: [ 9, 2, 3 ]
+\end{minted}
+
+In this example, assigning \mintinline{javascript}{arr1} to \mintinline{javascript}{arr2} creates a reference to the same array. Modifying \mintinline{javascript}{arr2[0]} affects \mintinline{javascript}{arr1} as well.
+
+\paragraph{Simulating value types in JavaScript:}
+Although JavaScript does not have native value types, developers can simulate value-like behavior using techniques such as object cloning:
+
+\begin{minted}{javascript}
+function clone(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+
+let obj1 = { x: 1, y: 2 };
+let obj2 = clone(obj1);
+obj2.x = 3;
+
+console.log(obj1); // Output: { x: 1, y: 2 }
+console.log(obj2); // Output: { x: 3, y: 2 }
+\end{minted}
+
+Despite being able to simulate value types, the distinction between value and reference types in JavaScript is not as natural as it is in Swift. Furthermore, JavaScript lacks built-in CoW optimizations, limiting the performance benefits that can be derived from the distinction.
+
+\subsection{Java}
+
+Java, being an object-oriented language, primarily deals with reference types like classes and interfaces. Primitive types in Java, like \mintinline{java}{int}, \mintinline{java}{float}, and \mintinline{java}{boolean}, are value types.
+
+\paragraph{Value types in Java:}
+Java's primitive types are value types:
+
+\begin{minted}{java}
+int a = 1;
+int b = a;
+b = 3;
+
+System.out.println(a); // Output: 1
+System.out.println(b); // Output: 3
+\end{minted}
+
+In this case, assigning \mintinline{java}{a} to \mintinline{java}{b} creates a separate copy of the value. Changing the value of \mintinline{java}{b} does not affect \mintinline{java}{a}.
+
+\paragraph{Reference types in Java:}
+Java's objects behave as reference types:
+
+\begin{minted}{java}
+List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3));
+List<Integer> list2 = list1;
+list2.set(0, 9);
+
+System.out.println(list1); // Output: [9, 2, 3]
+System.out.println(list2); // Output: [9, 2, 3]
+\end{minted}
+
+In this example, assigning \mintinline{java}{list1} to \mintinline{java}{list2} creates a reference to the same list. Modifying an element in \mintinline{java}{list2} affects \mintinline{java}{list1} as well.
+
+Java has a more explicit distinction between value (primitive types) and reference types (objects). However, since Java does not have CoW optimizations like Swift, the potential performance benefits from such distinctions are more limited in comparison.
+
+\section{Summary}
+
+In summary, all five languages -- Swift, Go, Python, JavaScript (Node.js), and Java -- offer some degrees of distinction between value and reference types or related concepts (mutable/immutable objects). The distinction is often more explicit in statically-typed languages like Swift, Go, and Java, while dynamically-typed languages like Python and JavaScript handle the distinction via mutable/immutable objects or using programmer-provided methods for simulating value types.
+
+However, the primary differentiator for Swift is its built-in Copy-On-Write (CoW) optimization for value types. This feature allows Swift to offer performance benefits for serverless applications that may not be as easily achievable in other languages under comparison. Performance improvements, both in terms of memory usage and execution time, can be derived from the proper understanding and application of the distinction between value and reference types, as well as making the most of the CoW optimization in Swift.

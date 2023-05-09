@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{l1} \PYG{o}{=} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{]}
+\PYG{n}{l2} \PYG{o}{=} \PYG{n}{l1}
+\PYG{n}{l2}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{l+m+mi}{9}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{l1}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: [9, 2, 3]}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{l2}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Output: [9, 2, 3]}
+\end{Verbatim}

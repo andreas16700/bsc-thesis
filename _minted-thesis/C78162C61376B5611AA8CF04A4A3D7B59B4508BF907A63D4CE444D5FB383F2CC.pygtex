@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{function}\PYG{+w}{ }\PYG{n+nx}{clone}\PYG{p}{(}\PYG{n+nx}{obj}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n+nb}{JSON}\PYG{p}{.}\PYG{n+nx}{parse}\PYG{p}{(}\PYG{n+nb}{JSON}\PYG{p}{.}\PYG{n+nx}{stringify}\PYG{p}{(}\PYG{n+nx}{obj}\PYG{p}{));}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{obj1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{x}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{y}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mf}{2}\PYG{+w}{ }\PYG{p}{\PYGZcb{};}
+\PYG{k+kd}{let}\PYG{+w}{ }\PYG{n+nx}{obj2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{clone}\PYG{p}{(}\PYG{n+nx}{obj1}\PYG{p}{);}
+\PYG{n+nx}{obj2}\PYG{p}{.}\PYG{n+nx}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{3}\PYG{p}{;}
+
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{obj1}\PYG{p}{);}\PYG{+w}{ }\PYG{c+c1}{// Output: \PYGZob{} x: 1, y: 2 \PYGZcb{}}
+\PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{n+nx}{obj2}\PYG{p}{);}\PYG{+w}{ }\PYG{c+c1}{// Output: \PYGZob{} x: 3, y: 2 \PYGZcb{}}
+\end{Verbatim}
