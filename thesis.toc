@@ -24,7 +24,15 @@
 \contentsline {paragraph}{Python}{13}{}%
 \contentsline {paragraph}{Node.js}{13}{}%
 \contentsline {paragraph}{Java}{13}{}%
-\contentsline {subsubsection}{Example Use Cases}{13}{}%
+\contentsline {subsubsection}{Example Use Cases}{14}{}%
 \contentsline {subsubsection}{Vapor and Swift Package Manager}{14}{}%
-\contentsline {chapter}{Bibliography}{15}{}%
-\contentsline {chapter}{\numberline {A}Appendix A}{17}{}%
+\contentsline {subsubsection}{Documentation and Community Support}{15}{}%
+\contentsline {subsubsection}{Example: Swift Package Manager Bug}{15}{}%
+\contentsline {subsection}{\numberline {2.2.2}Developer community and support}{16}{}%
+\contentsline {subsection}{\numberline {2.2.3}Tooling and IDE support}{16}{}%
+\contentsline {subsection}{\numberline {2.2.4}Integration with serverless platforms}{16}{}%
+\contentsline {subsection}{\numberline {2.2.5}Learning curve}{16}{}%
+\contentsline {subsection}{\numberline {2.2.6}Linux Support}{16}{}%
+\contentsline {subsubsection}{An Example}{17}{}%
+\contentsline {chapter}{Bibliography}{19}{}%
+\contentsline {chapter}{\numberline {A}Appendix A}{21}{}%

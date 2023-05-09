@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  8 MAY 2023 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  9 MAY 2023 11:40
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -274,6 +274,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 runsystem(which pygmentize && touch thesis.aex)...executed.
 
@@ -282,20 +285,20 @@ runsystem(rm thesis.aex)...executed.
  (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count301
@@ -446,37 +449,116 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 Underfull \vbox (badness 1521) has occurred while \output is active []
 
  [12] [13{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (26.51025pt too wide) in paragraph at lines 319--320
+Overfull \hbox (26.51025pt too wide) in paragraph at lines 320--321
 []\T1/cmr/bx/n/12 Database In-te-gra-tion\T1/cmr/m/n/12 : Many web ap-pli-ca-tions re-quire in-te-gra-tion with databases.
  []
 
-) (./resource_util.tex) (./cost_anal.tex) (./conclusions.tex) [14] (./thesis.bbl
+[14]
+\openout4 = `thesis.pyg'.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+ (./_minted-thesis/53A57B0FD1FA91F883E3B75FF754FE0BDD95E99AA7B4976517879FA5762B39A7.pygtex)
+Overfull \hbox (87.26643pt too wide) in paragraph at lines 339--340
+[]\T1/cmr/m/n/12 ).
+ []
 
-) [15
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 343.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 343.
 
-] [16
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
+[][]\T1/cmr/m/n/10 "Dependency on (very) ac-tive branch doesn't pull new com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
+\T1/cmr/m/n/10 mits", Swift Fo-rums, Jan-uary 2020 $\T1/cmtt/m/n/10 https : / / forums . swift . org / t /
+ []
+
+
+Underfull \vbox (badness 3260) has occurred while \output is active []
+
+ [15]
+Overfull \hbox (6.04185pt too wide) in paragraph at lines 357--358
+\T1/cmr/m/n/12 The ease of in-te-grat-ing Swift with server-less plat-forms like Open-Whisk, AWS Lambda,
+ []
+
+\openout4 = `thesis.pyg'.
+
+(./_minted-thesis/61604E87CC640DFED83783C6B5B2DD01DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/C7FD3539B12EF898936D46E156DFDB1ADD95E99AA7B4976517879FA5762B39A7.pygtex) [16]
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=82, 1240.635pt x 168.63pt>
+File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png Graphic file (type png)
+<use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png>
+Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png  used on input line 377.
+(pdftex.def)             Requested size: 341.43437pt x 46.40813pt.
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=84, 813.0375pt x 220.825pt>
+File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png Graphic file (type png)
+<use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>
+Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png  used on input line 387.
+(pdftex.def)             Requested size: 341.43437pt x 92.73238pt.
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=85, 2589.675pt x 1126.2075pt>
+File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png Graphic file (type png)
+<use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>
+Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png  used on input line 397.
+(pdftex.def)             Requested size: 341.43437pt x 148.47426pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+\openout4 = `thesis.pyg'.
+
+(./_minted-thesis/0E6422E4EF11EC6D2613079F06D00667DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/942CBD749B64FAEE60B50EC38007BE0CDD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/1F0A6156EEA50C3D6A9FD1F39B942B03DD95E99AA7B4976517879FA5762B39A7.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex) [17 </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>]
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./resource_util.tex) (./cost_anal.tex) (./conclusions.tex) [18 </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>] (./thesis.bbl
+Underfull \hbox (badness 1412) in paragraph at lines 22--23
+[]\T1/cmr/m/n/12 O. Cor-po-ra-tion: ``Javaserver faces,'' nd, $\T1/cmtt/m/n/12 https : / / www . oracle . com / java /
+ []
+
+) [19
+
+] [20
 
 ]
 Appendix A.
-[17] (./thesis.aux)
+[21] (./thesis.aux)
 runsystem(rm thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 8784 strings out of 476025
- 170554 string characters out of 5790018
+ 8977 strings out of 476025
+ 179141 string characters out of 5790018
  1858388 words of memory out of 5000000
- 28998 multiletter control sequences out of 15000+600000
- 522166 words of font info for 52 fonts, out of 8000000 for 9000
+ 29147 multiletter control sequences out of 15000+600000
+ 525458 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,11n,81p,571b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (22 pages, 201478 bytes).
+ 77i,12n,81p,837b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (26 pages, 383693 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 166 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
