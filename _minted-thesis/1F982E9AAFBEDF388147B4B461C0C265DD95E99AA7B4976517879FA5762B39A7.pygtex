@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{struct} \PYG{n+nc}{InventoryLevel}\PYG{p}{:} \PYG{n}{Identifiable} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{let} \PYG{n+nv}{inventoryItemID}\PYG{p}{:} \PYG{n+nb}{Int}
+    \PYG{k+kd}{var} \PYG{n+nv}{id}\PYG{p}{:} \PYG{n+nb}{Int} \PYG{p}{\PYGZob{}} \PYG{n}{inventoryItemID} \PYG{p}{\PYGZcb{}}
+    \PYG{k+kd}{var} \PYG{n+nv}{stock}\PYG{p}{:} \PYG{n+nb}{Int}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{struct} \PYG{n+nc}{SHVariant}\PYG{p}{:} \PYG{n}{Identifiable} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{let} \PYG{n+nv}{id}\PYG{p}{:} \PYG{n+nb}{Int}
+    \PYG{k+kd}{let} \PYG{n+nv}{productID}\PYG{p}{:} \PYG{n+nb}{Int}
+    \PYG{k+kd}{let} \PYG{n+nv}{sku}\PYG{p}{:} \PYG{n+nb}{String}
+    \PYG{k+kd}{let} \PYG{n+nv}{inventoryItemID}\PYG{p}{:} \PYG{n+nb}{Int}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{struct} \PYG{n+nc}{SHProduct}\PYG{p}{:} \PYG{n}{Identifiable} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{let} \PYG{n+nv}{id}\PYG{p}{:} \PYG{n+nb}{Int}
+    \PYG{k+kd}{let} \PYG{n+nv}{handle}\PYG{p}{:} \PYG{n+nb}{String}
+    \PYG{p}{...}
+    \PYG{k+kd}{let} \PYG{n+nv}{variants}\PYG{p}{:} \PYG{p}{[}\PYG{n}{SHVariant}\PYG{p}{]}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

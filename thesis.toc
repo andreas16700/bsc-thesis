@@ -57,6 +57,17 @@
 \contentsline {chapter}{\numberline {4}Synchronization System Case Study}{27}{}%
 \contentsline {section}{\numberline {4.1}System Overview}{27}{}%
 \contentsline {section}{\numberline {4.2}Experimental Setup}{27}{}%
-\contentsline {section}{\numberline {4.3}Results and Discussion}{27}{}%
-\contentsline {section}{\numberline {4.4}Improvements and Future Work}{28}{}%
-\contentsline {section}{\numberline {4.5}Conclusion}{28}{}%
+\contentsline {section}{\numberline {4.3}Benchmarking Process}{27}{}%
+\contentsline {subsection}{\numberline {4.3.1}Main Components}{28}{}%
+\contentsline {subsubsection}{PS Server}{28}{}%
+\contentsline {subsubsection}{SH Server}{28}{}%
+\contentsline {subsubsection}{ModelSyncer}{29}{}%
+\contentsline {subsection}{\numberline {4.3.2}Workload}{29}{}%
+\contentsline {subsection}{\numberline {4.3.3}Benchmarker}{29}{}%
+\contentsline {subsubsection}{Setting up the servers}{29}{}%
+\contentsline {paragraph}{Generating models on PS Server}{30}{}%
+\contentsline {paragraph}{Generating equivalent resource on SH Server}{30}{}%
+\contentsline {subsubsection}{Running a workload}{30}{}%
+\contentsline {section}{\numberline {4.4}Results and Discussion}{32}{}%
+\contentsline {section}{\numberline {4.5}Improvements and Future Work}{33}{}%
+\contentsline {section}{\numberline {4.6}Conclusion}{33}{}%

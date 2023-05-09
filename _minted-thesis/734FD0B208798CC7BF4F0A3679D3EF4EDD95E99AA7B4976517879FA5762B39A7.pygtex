@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{protocol} \PYG{n+nc}{WorkloadRunner} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{init}\PYG{p}{(}\PYG{n}{psURL}\PYG{p}{:} \PYG{n}{URL}\PYG{p}{,} \PYG{n}{shURL}\PYG{p}{:} \PYG{n}{URL}\PYG{p}{,} \PYG{n}{msDelay}\PYG{p}{:} \PYG{n+nb}{Int}\PYG{p}{?)}
+    \PYG{k+kd}{static} \PYG{k+kd}{var} \PYG{n+nv}{name}\PYG{p}{:} \PYG{n+nb}{String} \PYG{p}{\PYGZob{}} \PYG{k+kr}{get} \PYG{p}{\PYGZcb{}}
+    \PYG{k+kd}{var} \PYG{n+nv}{psClient}\PYG{p}{:} \PYG{n}{MockPsClient} \PYG{p}{\PYGZob{}} \PYG{k+kr}{get} \PYG{p}{\PYGZcb{}}
+    \PYG{k+kd}{var} \PYG{n+nv}{shClient}\PYG{p}{:} \PYG{n}{MockShClient} \PYG{p}{\PYGZob{}} \PYG{k+kr}{get} \PYG{p}{\PYGZcb{}}
+    \PYG{k+kd}{func} \PYG{n+nf}{runSync}\PYG{p}{(}\PYG{n}{sourceData}\PYG{p}{:} \PYG{n}{SourceData}\PYG{p}{)} \PYG{k}{async} \PYG{k+kr}{throws} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{p}{(}\PYG{n+nb}{Int}\PYG{p}{,} \PYG{n+nb}{Int}\PYG{p}{,} \PYG{p}{[}\PYG{n+nb}{UInt64}\PYG{p}{])}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

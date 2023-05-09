@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  9 MAY 2023 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  9 MAY 2023 17:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -678,17 +678,41 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./resource_util.tex) (./cost_anal.tex) (./sync_case_study.tex [26 </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>]
 Chapter 4.
-<rate_l70ms_latency_med.pdf, id=122, 426.93503pt x 318.7709pt>
+\openout3 = `thesis.pyg'.
+
+(./_minted-thesis/D4FCB243019181234912674B7F0C04A4DD95E99AA7B4976517879FA5762B39A7.pygtex [27
+
+])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex [28]) [29]
+Overfull \hbox (0.57854pt too wide) in paragraph at lines 100--101
+[]\T1/cmr/m/n/12 2. Equiv-a-lent re-sources ex-ist par-tially (SH-Prod-uct, SHVari-ants, In-ven-to-ryLevels)
+ []
+
+\openout3 = `thesis.pyg'.
+
+(./_minted-thesis/734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex [30])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 15.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+) [31])
+\openout3 = `thesis.pyg'.
+
+ (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex)
+<rate_l70ms_latency_med.pdf, id=140, 426.93503pt x 318.7709pt>
 File: rate_l70ms_latency_med.pdf Graphic file (type pdf)
 <use rate_l70ms_latency_med.pdf>
-Package pdftex.def Info: rate_l70ms_latency_med.pdf  used on input line 22.
+Package pdftex.def Info: rate_l70ms_latency_med.pdf  used on input line 196.
 (pdftex.def)             Requested size: 426.79135pt x 318.68257pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27
-
-] [28 <./rate_l70ms_latency_med.pdf>] [29] (./thesis.aux)
+[32] [33 <./rate_l70ms_latency_med.pdf>] [34] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -696,18 +720,18 @@ runsystem(rm thesis.pyg)...executed.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 9172 strings out of 476025
- 195658 string characters out of 5790018
+ 9218 strings out of 476025
+ 198717 string characters out of 5790018
  1858388 words of memory out of 5000000
- 29241 multiletter control sequences out of 15000+600000
- 525458 words of font info for 57 fonts, out of 8000000 for 9000
+ 29268 multiletter control sequences out of 15000+600000
+ 525755 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,81p,837b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (34 pages, 415470 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on thesis.pdf (39 pages, 444730 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
+ 239 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
