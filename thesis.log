@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  9 MAY 2023 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  9 MAY 2023 15:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -574,7 +574,26 @@ Chapter 3.
  (./_minted-thesis/3154310D6E8CA3FC43B3438E67074E9498AC6650688363CDFA3DF2E4C7E54189.pygtex [19])
 Underfull \vbox (badness 1521) has occurred while \output is active []
 
- [20] [21]
+ [20]
+
+LaTeX Warning: Citation `django' on page 21 undefined on input line 299.
+
+
+LaTeX Warning: Citation `flask' on page 21 undefined on input line 300.
+
+
+LaTeX Warning: Citation `express' on page 21 undefined on input line 305.
+
+
+LaTeX Warning: Citation `koa' on page 21 undefined on input line 306.
+
+
+LaTeX Warning: Citation `springboot' on page 21 undefined on input line 311.
+
+
+LaTeX Warning: Citation `jsf' on page 21 undefined on input line 312.
+
+[21]
 Overfull \hbox (26.51025pt too wide) in paragraph at lines 320--321
 []\T1/cmr/bx/n/12 Database In-te-gra-tion\T1/cmr/m/n/12 : Many web ap-pli-ca-tions re-quire in-te-gra-tion with databases.
  []
@@ -657,34 +676,38 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex) [25 </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>]
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./resource_util.tex) (./cost_anal.tex) (./conclusions.tex) [26 </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>] (./thesis.bbl
-Underfull \hbox (badness 1412) in paragraph at lines 22--23
-[]\T1/cmr/m/n/12 O. Cor-po-ra-tion: ``Javaserver faces,'' nd, $\T1/cmtt/m/n/12 https : / / www . oracle . com / java /
- []
+ (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./resource_util.tex) (./cost_anal.tex) (./sync_case_study.tex [26 </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>]
+Chapter 4.
+<rate_l70ms_latency_med.pdf, id=122, 426.93503pt x 318.7709pt>
+File: rate_l70ms_latency_med.pdf Graphic file (type pdf)
+<use rate_l70ms_latency_med.pdf>
+Package pdftex.def Info: rate_l70ms_latency_med.pdf  used on input line 22.
+(pdftex.def)             Requested size: 426.79135pt x 318.68257pt.
 
-) [27
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-] [28
+[27
 
-]
-Appendix A.
-[29] (./thesis.aux)
+] [28 <./rate_l70ms_latency_med.pdf>] [29] (./thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
 runsystem(rm thesis.pyg)...executed.
 
- ) 
+ ) ) 
 Here is how much of TeX's memory you used:
- 9176 strings out of 476025
- 195470 string characters out of 5790018
+ 9172 strings out of 476025
+ 195658 string characters out of 5790018
  1858388 words of memory out of 5000000
- 29243 multiletter control sequences out of 15000+600000
+ 29241 multiletter control sequences out of 15000+600000
  525458 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,81p,837b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (34 pages, 401274 bytes).
+Output written on thesis.pdf (34 pages, 415470 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -54,5 +54,9 @@
 \contentsline {subsection}{\numberline {3.2.5}Learning curve}{24}{}%
 \contentsline {subsection}{\numberline {3.2.6}Linux Support}{24}{}%
 \contentsline {subsubsection}{An Example}{25}{}%
-\contentsline {chapter}{Bibliography}{27}{}%
-\contentsline {chapter}{\numberline {A}Appendix A}{29}{}%
+\contentsline {chapter}{\numberline {4}Synchronization System Case Study}{27}{}%
+\contentsline {section}{\numberline {4.1}System Overview}{27}{}%
+\contentsline {section}{\numberline {4.2}Experimental Setup}{27}{}%
+\contentsline {section}{\numberline {4.3}Results and Discussion}{27}{}%
+\contentsline {section}{\numberline {4.4}Improvements and Future Work}{28}{}%
+\contentsline {section}{\numberline {4.5}Conclusion}{28}{}%
