@@ -29,45 +29,59 @@
 \contentsline {paragraph}{Value types in Java:}{10}{}%
 \contentsline {paragraph}{Reference types in Java:}{10}{}%
 \contentsline {section}{\numberline {2.3}Summary}{11}{}%
-\contentsline {chapter}{\numberline {3}Ease of Development}{13}{}%
-\contentsline {section}{\numberline {3.1}Language Simplicity and Syntax}{13}{}%
-\contentsline {subsubsection}{Simplicity in Swift}{13}{}%
-\contentsline {subsubsection}{Safety Features}{14}{}%
-\contentsline {subsubsection}{Readability}{14}{}%
-\contentsline {subsubsection}{Copy-on-Write (CoW)}{15}{}%
-\contentsline {subsubsection}{Extensions}{16}{}%
-\contentsline {subsubsection}{Custom Operators}{16}{}%
-\contentsline {subsubsection}{Property Wrappers}{17}{}%
-\contentsline {section}{\numberline {3.2}Available Libraries and Frameworks}{20}{}%
-\contentsline {subsection}{\numberline {3.2.1}Web Development}{20}{}%
-\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{21}{}%
-\contentsline {paragraph}{Python}{21}{}%
-\contentsline {paragraph}{Node.js}{21}{}%
-\contentsline {paragraph}{Java}{21}{}%
-\contentsline {subsubsection}{Example Use Cases}{22}{}%
-\contentsline {subsubsection}{Vapor and Swift Package Manager}{22}{}%
-\contentsline {subsubsection}{Documentation and Community Support}{23}{}%
-\contentsline {subsubsection}{Example: Swift Package Manager Bug}{23}{}%
-\contentsline {subsection}{\numberline {3.2.2}Developer community and support}{24}{}%
-\contentsline {subsection}{\numberline {3.2.3}Tooling and IDE support}{24}{}%
-\contentsline {subsection}{\numberline {3.2.4}Integration with serverless platforms}{24}{}%
-\contentsline {subsection}{\numberline {3.2.5}Learning curve}{24}{}%
-\contentsline {subsection}{\numberline {3.2.6}Linux Support}{24}{}%
-\contentsline {subsubsection}{An Example}{25}{}%
-\contentsline {chapter}{\numberline {4}Synchronization System Case Study}{27}{}%
-\contentsline {section}{\numberline {4.1}System Overview}{27}{}%
-\contentsline {section}{\numberline {4.2}Experimental Setup}{27}{}%
-\contentsline {section}{\numberline {4.3}Benchmarking Process}{27}{}%
-\contentsline {subsection}{\numberline {4.3.1}Main Components}{28}{}%
-\contentsline {subsubsection}{PS Server}{28}{}%
-\contentsline {subsubsection}{SH Server}{28}{}%
-\contentsline {subsubsection}{ModelSyncer}{29}{}%
-\contentsline {subsection}{\numberline {4.3.2}Workload}{29}{}%
-\contentsline {subsection}{\numberline {4.3.3}Benchmarker}{29}{}%
-\contentsline {subsubsection}{Setting up the servers}{29}{}%
-\contentsline {paragraph}{Generating models on PS Server}{30}{}%
-\contentsline {paragraph}{Generating equivalent resource on SH Server}{30}{}%
-\contentsline {subsubsection}{Running a workload}{30}{}%
-\contentsline {section}{\numberline {4.4}Results and Discussion}{32}{}%
-\contentsline {section}{\numberline {4.5}Improvements and Future Work}{33}{}%
-\contentsline {section}{\numberline {4.6}Conclusion}{33}{}%
+\contentsline {chapter}{\numberline {3}Cold Start Analysis of Serverless Languages on OpenWhisk}{13}{}%
+\contentsline {section}{\numberline {3.1}Introduction}{13}{}%
+\contentsline {section}{\numberline {3.2}Background and Related Work}{13}{}%
+\contentsline {section}{\numberline {3.3}Benchmark Functions Selection}{13}{}%
+\contentsline {section}{\numberline {3.4}OpenWhisk Setup and Configuration}{13}{}%
+\contentsline {section}{\numberline {3.5}Methodology}{13}{}%
+\contentsline {subsection}{\numberline {3.5.1}Deployment and Timing Approach}{13}{}%
+\contentsline {subsection}{\numberline {3.5.2}Fairness and Consistency}{13}{}%
+\contentsline {section}{\numberline {3.6}Results and Analysis}{13}{}%
+\contentsline {subsection}{\numberline {3.6.1}Quantitative Results}{13}{}%
+\contentsline {subsection}{\numberline {3.6.2}Comparative Analysis}{13}{}%
+\contentsline {section}{\numberline {3.7}Factors Affecting Cold Start Times}{13}{}%
+\contentsline {section}{\numberline {3.8}Discussion and Interpretation}{13}{}%
+\contentsline {section}{\numberline {3.9}Conclusion}{13}{}%
+\contentsline {chapter}{\numberline {4}Ease of Development}{15}{}%
+\contentsline {section}{\numberline {4.1}Language Simplicity and Syntax}{15}{}%
+\contentsline {subsubsection}{Simplicity in Swift}{15}{}%
+\contentsline {subsubsection}{Safety Features}{16}{}%
+\contentsline {subsubsection}{Readability}{16}{}%
+\contentsline {subsubsection}{Copy-on-Write (CoW)}{17}{}%
+\contentsline {subsubsection}{Extensions}{18}{}%
+\contentsline {subsubsection}{Custom Operators}{18}{}%
+\contentsline {subsubsection}{Property Wrappers}{19}{}%
+\contentsline {section}{\numberline {4.2}Available Libraries and Frameworks}{22}{}%
+\contentsline {subsection}{\numberline {4.2.1}Web Development}{22}{}%
+\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{23}{}%
+\contentsline {paragraph}{Python}{23}{}%
+\contentsline {paragraph}{Node.js}{23}{}%
+\contentsline {paragraph}{Java}{23}{}%
+\contentsline {subsubsection}{Example Use Cases}{24}{}%
+\contentsline {subsubsection}{Vapor and Swift Package Manager}{24}{}%
+\contentsline {subsubsection}{Documentation and Community Support}{25}{}%
+\contentsline {subsubsection}{Example: Swift Package Manager Bug}{25}{}%
+\contentsline {subsection}{\numberline {4.2.2}Developer community and support}{26}{}%
+\contentsline {subsection}{\numberline {4.2.3}Tooling and IDE support}{26}{}%
+\contentsline {subsection}{\numberline {4.2.4}Integration with serverless platforms}{26}{}%
+\contentsline {subsection}{\numberline {4.2.5}Learning curve}{26}{}%
+\contentsline {subsection}{\numberline {4.2.6}Linux Support}{26}{}%
+\contentsline {subsubsection}{An Example}{27}{}%
+\contentsline {chapter}{\numberline {5}Synchronization System Case Study}{29}{}%
+\contentsline {section}{\numberline {5.1}System Overview}{29}{}%
+\contentsline {section}{\numberline {5.2}Experimental Setup}{29}{}%
+\contentsline {section}{\numberline {5.3}Benchmarking Process}{29}{}%
+\contentsline {subsection}{\numberline {5.3.1}Main Components}{30}{}%
+\contentsline {subsubsection}{PS Server}{30}{}%
+\contentsline {subsubsection}{SH Server}{30}{}%
+\contentsline {subsubsection}{ModelSyncer}{31}{}%
+\contentsline {subsection}{\numberline {5.3.2}Workload}{31}{}%
+\contentsline {subsection}{\numberline {5.3.3}Benchmarker}{31}{}%
+\contentsline {subsubsection}{Setting up the servers}{31}{}%
+\contentsline {paragraph}{Generating models on PS Server}{32}{}%
+\contentsline {paragraph}{Generating equivalent resource on SH Server}{32}{}%
+\contentsline {subsubsection}{Running a workload}{32}{}%
+\contentsline {section}{\numberline {5.4}Results and Discussion}{34}{}%
+\contentsline {section}{\numberline {5.5}Improvements and Future Work}{35}{}%
+\contentsline {section}{\numberline {5.6}Conclusion}{35}{}%

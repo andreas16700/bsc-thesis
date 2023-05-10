@@ -36,64 +36,94 @@
 \@writefile{toc}{\contentsline {paragraph}{Value types in Java:}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Reference types in Java:}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}Summary}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Ease of Development}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Cold Start Analysis of Serverless Languages on OpenWhisk}{13}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Language Simplicity and Syntax}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simplicity in Swift}{13}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Safety Features}{14}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Readability}{14}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Copy-on-Write (CoW)}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Extensions}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Custom Operators}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Property Wrappers}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Available Libraries and Frameworks}{20}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Web Development}{20}{}\protected@file@percent }
+\newlabel{chap:cold_start_analysis}{{3}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{13}{}\protected@file@percent }
+\newlabel{sec:introduction_cold_start_analysis}{{3.1}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Background and Related Work}{13}{}\protected@file@percent }
+\newlabel{sec:background_and_related_work}{{3.2}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Benchmark Functions Selection}{13}{}\protected@file@percent }
+\newlabel{sec:benchmark_functions_selection}{{3.3}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}OpenWhisk Setup and Configuration}{13}{}\protected@file@percent }
+\newlabel{sec:openwhisk_setup_and_configuration}{{3.4}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Methodology}{13}{}\protected@file@percent }
+\newlabel{sec:methodology}{{3.5}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Deployment and Timing Approach}{13}{}\protected@file@percent }
+\newlabel{subsec:deployment_and_timing_approach}{{3.5.1}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Fairness and Consistency}{13}{}\protected@file@percent }
+\newlabel{subsec:fairness_and_consistency}{{3.5.2}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Results and Analysis}{13}{}\protected@file@percent }
+\newlabel{sec:results_and_analysis}{{3.6}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Quantitative Results}{13}{}\protected@file@percent }
+\newlabel{subsec:quantitative_results}{{3.6.1}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Comparative Analysis}{13}{}\protected@file@percent }
+\newlabel{subsec:comparative_analysis}{{3.6.2}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Factors Affecting Cold Start Times}{13}{}\protected@file@percent }
+\newlabel{sec:factors_affecting_cold_start_times}{{3.7}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Discussion and Interpretation}{13}{}\protected@file@percent }
+\newlabel{sec:discussion_and_interpretation}{{3.8}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}Conclusion}{13}{}\protected@file@percent }
+\newlabel{sec:conclusion_cold_start_analysis}{{3.9}{13}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Ease of Development}{15}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Language Simplicity and Syntax}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Simplicity in Swift}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Safety Features}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Readability}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Copy-on-Write (CoW)}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Extensions}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Custom Operators}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Property Wrappers}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Available Libraries and Frameworks}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Web Development}{22}{}\protected@file@percent }
 \citation{django}
 \citation{flask}
 \citation{express}
 \citation{koa}
 \citation{springboot}
 \citation{jsf}
-\@writefile{toc}{\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{21}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Python}{21}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Node.js}{21}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Java}{21}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Example Use Cases}{22}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Vapor and Swift Package Manager}{22}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Documentation and Community Support}{23}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Example: Swift Package Manager Bug}{23}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Developer community and support}{24}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Tooling and IDE support}{24}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Integration with serverless platforms}{24}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Learning curve}{24}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.6}Linux Support}{24}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{An Example}{25}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{25}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{25}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{26}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Synchronization System Case Study}{27}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Python}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Node.js}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Java}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Example Use Cases}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Vapor and Swift Package Manager}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Documentation and Community Support}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Example: Swift Package Manager Bug}{25}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Developer community and support}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Tooling and IDE support}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Integration with serverless platforms}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Learning curve}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.6}Linux Support}{26}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{An Example}{27}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{27}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{27}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{28}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Synchronization System Case Study}{29}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:synchronization}{{4}{27}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}System Overview}{27}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Experimental Setup}{27}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Benchmarking Process}{27}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Main Components}{28}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{PS Server}{28}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{SH Server}{28}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ModelSyncer}{29}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Workload}{29}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Benchmarker}{29}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Setting up the servers}{29}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Generating models on PS Server}{30}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Generating equivalent resource on SH Server}{30}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Running a workload}{30}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Results and Discussion}{32}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Rate-limited comparison between serverless and monolithic implementations}}{33}{}\protected@file@percent }
-\newlabel{fig:rate_limited_comparison}{{4.1}{33}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Improvements and Future Work}{33}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Conclusion}{33}{}\protected@file@percent }
+\newlabel{chap:synchronization}{{5}{29}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}System Overview}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Experimental Setup}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Benchmarking Process}{29}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Main Components}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{PS Server}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{SH Server}{30}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{ModelSyncer}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Workload}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Benchmarker}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Setting up the servers}{31}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generating models on PS Server}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generating equivalent resource on SH Server}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Running a workload}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Results and Discussion}{34}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Rate-limited comparison between serverless and monolithic implementations}}{35}{}\protected@file@percent }
+\newlabel{fig:rate_limited_comparison}{{5.1}{35}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Improvements and Future Work}{35}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{35}{}\protected@file@percent }
 \gdef\minted@oldcachelist{,
   default.pygstyle,
   0BF21D71C650960795C24B180FBAC6DFC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex,
@@ -169,4 +199,4 @@
   734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex,
   3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex,
   54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex}
-\gdef \@abspage@last{39}
+\gdef \@abspage@last{42}
