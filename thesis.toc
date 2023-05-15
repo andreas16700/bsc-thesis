@@ -1,87 +1,110 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Acknowledgements}{i}{}%
 \contentsline {chapter}{Abstract}{iii}{}%
 \contentsline {chapter}{\numberline {1}Introduction}{3}{}%
+\etoc@startlocaltoc {2}
 \contentsline {section}{\numberline {1.1}Background}{3}{}%
 \contentsline {section}{\numberline {1.2}Research Questions}{3}{}%
 \contentsline {subsection}{\numberline {1.2.1}Performance Comparison}{3}{}%
 \contentsline {subsection}{\numberline {1.2.2}Cold Start Analysis}{3}{}%
 \contentsline {subsection}{\numberline {1.2.3}Ease of Development}{3}{}%
 \contentsline {subsection}{\numberline {1.2.4}Resource Utilization}{3}{}%
-\contentsline {subsection}{\numberline {1.2.5}Cost Analysis}{3}{}%
-\contentsline {chapter}{\numberline {2}Performance Comparison}{5}{}%
-\contentsline {section}{\numberline {2.1}Value Types vs Reference Types and Copy-On-Write}{5}{}%
-\contentsline {subsection}{\numberline {2.1.1}Value Types}{5}{}%
-\contentsline {subsection}{\numberline {2.1.2}Reference Types}{5}{}%
-\contentsline {subsection}{\numberline {2.1.3}Copy-On-Write (CoW)}{5}{}%
-\contentsline {subsection}{\numberline {2.1.4}Performance Benefits}{6}{}%
-\contentsline {section}{\numberline {2.2}Qualitive Comparison with Go, Java, Javascript, and Python}{6}{}%
-\contentsline {subsection}{\numberline {2.2.1}Go}{7}{}%
-\contentsline {paragraph}{Value types in Go:}{7}{}%
-\contentsline {paragraph}{Reference types in Go:}{7}{}%
-\contentsline {subsection}{\numberline {2.2.2}Python}{8}{}%
-\contentsline {paragraph}{Immutable objects:}{8}{}%
-\contentsline {paragraph}{Mutable objects:}{8}{}%
-\contentsline {subsection}{\numberline {2.2.3}Node.js (JavaScript)}{9}{}%
-\contentsline {paragraph}{Reference types in JavaScript:}{9}{}%
-\contentsline {paragraph}{Simulating value types in JavaScript:}{9}{}%
-\contentsline {subsection}{\numberline {2.2.4}Java}{10}{}%
-\contentsline {paragraph}{Value types in Java:}{10}{}%
-\contentsline {paragraph}{Reference types in Java:}{10}{}%
-\contentsline {section}{\numberline {2.3}Summary}{11}{}%
-\contentsline {chapter}{\numberline {3}Cold Start Analysis of Serverless Languages on OpenWhisk}{13}{}%
-\contentsline {section}{\numberline {3.1}Introduction}{13}{}%
-\contentsline {section}{\numberline {3.2}Background and Related Work}{13}{}%
-\contentsline {section}{\numberline {3.3}Benchmark Functions Selection}{13}{}%
-\contentsline {section}{\numberline {3.4}OpenWhisk Setup and Configuration}{13}{}%
-\contentsline {section}{\numberline {3.5}Methodology}{13}{}%
-\contentsline {subsection}{\numberline {3.5.1}Deployment and Timing Approach}{13}{}%
-\contentsline {subsection}{\numberline {3.5.2}Fairness and Consistency}{13}{}%
-\contentsline {section}{\numberline {3.6}Results and Analysis}{13}{}%
-\contentsline {subsection}{\numberline {3.6.1}Quantitative Results}{13}{}%
-\contentsline {subsection}{\numberline {3.6.2}Comparative Analysis}{13}{}%
-\contentsline {section}{\numberline {3.7}Factors Affecting Cold Start Times}{13}{}%
-\contentsline {section}{\numberline {3.8}Discussion and Interpretation}{13}{}%
-\contentsline {section}{\numberline {3.9}Conclusion}{13}{}%
-\contentsline {chapter}{\numberline {4}Ease of Development}{15}{}%
-\contentsline {section}{\numberline {4.1}Language Simplicity and Syntax}{15}{}%
-\contentsline {subsubsection}{Simplicity in Swift}{15}{}%
-\contentsline {subsubsection}{Safety Features}{16}{}%
-\contentsline {subsubsection}{Readability}{16}{}%
-\contentsline {subsubsection}{Copy-on-Write (CoW)}{17}{}%
-\contentsline {subsubsection}{Extensions}{18}{}%
-\contentsline {subsubsection}{Custom Operators}{18}{}%
-\contentsline {subsubsection}{Property Wrappers}{19}{}%
-\contentsline {section}{\numberline {4.2}Available Libraries and Frameworks}{22}{}%
-\contentsline {subsection}{\numberline {4.2.1}Web Development}{22}{}%
-\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{23}{}%
-\contentsline {paragraph}{Python}{23}{}%
-\contentsline {paragraph}{Node.js}{23}{}%
-\contentsline {paragraph}{Java}{23}{}%
-\contentsline {subsubsection}{Example Use Cases}{24}{}%
-\contentsline {subsubsection}{Vapor and Swift Package Manager}{24}{}%
-\contentsline {subsubsection}{Documentation and Community Support}{25}{}%
-\contentsline {subsubsection}{Example: Swift Package Manager Bug}{25}{}%
-\contentsline {subsection}{\numberline {4.2.2}Developer community and support}{26}{}%
-\contentsline {subsection}{\numberline {4.2.3}Tooling and IDE support}{26}{}%
-\contentsline {subsection}{\numberline {4.2.4}Integration with serverless platforms}{26}{}%
-\contentsline {subsection}{\numberline {4.2.5}Learning curve}{26}{}%
-\contentsline {subsection}{\numberline {4.2.6}Linux Support}{26}{}%
-\contentsline {subsubsection}{An Example}{27}{}%
-\contentsline {chapter}{\numberline {5}Synchronization System Case Study}{29}{}%
-\contentsline {section}{\numberline {5.1}System Overview}{29}{}%
-\contentsline {section}{\numberline {5.2}Experimental Setup}{29}{}%
-\contentsline {section}{\numberline {5.3}Benchmarking Process}{29}{}%
-\contentsline {subsection}{\numberline {5.3.1}Main Components}{30}{}%
-\contentsline {subsubsection}{PS Server}{30}{}%
-\contentsline {subsubsection}{SH Server}{30}{}%
-\contentsline {subsubsection}{ModelSyncer}{31}{}%
-\contentsline {subsection}{\numberline {5.3.2}Workload}{31}{}%
-\contentsline {subsection}{\numberline {5.3.3}Benchmarker}{31}{}%
-\contentsline {subsubsection}{Setting up the servers}{31}{}%
-\contentsline {paragraph}{Generating models on PS Server}{32}{}%
-\contentsline {paragraph}{Generating equivalent resource on SH Server}{32}{}%
-\contentsline {subsubsection}{Running a workload}{32}{}%
-\contentsline {section}{\numberline {5.4}Results and Discussion}{34}{}%
-\contentsline {section}{\numberline {5.5}Improvements and Future Work}{35}{}%
-\contentsline {section}{\numberline {5.6}Conclusion}{35}{}%
+\contentsline {subsection}{\numberline {1.2.5}Cost Analysis}{4}{}%
+\contentsline {chapter}{\numberline {2}Updating the Swift Runtime for OpenWhisk}{5}{}%
+\etoc@startlocaltoc {3}
+\contentsline {section}{\numberline {2.1}Introduction to the need for updating the Swift runtime}{5}{}%
+\contentsline {subsection}{\numberline {2.1.1}Runtimes in OpenWhisk}{5}{}%
+\contentsline {subsection}{\numberline {2.1.2}ActionLoop Proxy}{6}{}%
+\contentsline {section}{\numberline {2.2}Overview of the officially supported Swift runtime in OpenWhisk}{6}{}%
+\contentsline {section}{\numberline {2.3}Benefits of newer Swift features for serverless computing}{7}{}%
+\contentsline {section}{\numberline {2.4}Challenges faced while updating the runtime}{7}{}%
+\contentsline {subsection}{\numberline {2.4.1}Understanding the current runtime architecture}{7}{}%
+\contentsline {subsection}{\numberline {2.4.2}Implementing support for the latest Swift version (5.8)}{7}{}%
+\contentsline {section}{\numberline {2.5}Steps to update the Swift runtime in OpenWhisk}{7}{}%
+\contentsline {subsection}{\numberline {2.5.1}Description of the process and tools required}{7}{}%
+\contentsline {subsection}{\numberline {2.5.2}Code snippets and configuration changes for updating the runtime}{7}{}%
+\contentsline {section}{\numberline {2.6}Verifying the updated runtime functionality}{7}{}%
+\contentsline {subsection}{\numberline {2.6.1}Testing and validating the new runtime with the synchronization system case study}{7}{}%
+\contentsline {section}{\numberline {2.7}Potential benefits and applications of the updated runtime for future researchers}{7}{}%
+\contentsline {section}{\numberline {2.8}Possible further improvements or updates to the runtime}{7}{}%
+\contentsline {chapter}{\numberline {3}Performance Comparison}{9}{}%
+\etoc@startlocaltoc {4}
+\contentsline {section}{\numberline {3.1}Value Types vs Reference Types and Copy-On-Write}{9}{}%
+\contentsline {subsection}{\numberline {3.1.1}Value Types}{9}{}%
+\contentsline {subsection}{\numberline {3.1.2}Reference Types}{9}{}%
+\contentsline {subsection}{\numberline {3.1.3}Copy-On-Write (CoW)}{10}{}%
+\contentsline {subsection}{\numberline {3.1.4}Performance Benefits}{10}{}%
+\contentsline {section}{\numberline {3.2}Qualitive Comparison with Go, Java, Javascript, and Python}{11}{}%
+\contentsline {subsection}{\numberline {3.2.1}Go}{11}{}%
+\contentsline {paragraph}{Value types in Go:}{11}{}%
+\contentsline {paragraph}{Reference types in Go:}{11}{}%
+\contentsline {subsection}{\numberline {3.2.2}Python}{12}{}%
+\contentsline {paragraph}{Immutable objects:}{12}{}%
+\contentsline {paragraph}{Mutable objects:}{12}{}%
+\contentsline {subsection}{\numberline {3.2.3}Node.js (JavaScript)}{13}{}%
+\contentsline {paragraph}{Reference types in JavaScript:}{13}{}%
+\contentsline {paragraph}{Simulating value types in JavaScript:}{13}{}%
+\contentsline {subsection}{\numberline {3.2.4}Java}{14}{}%
+\contentsline {paragraph}{Value types in Java:}{14}{}%
+\contentsline {paragraph}{Reference types in Java:}{14}{}%
+\contentsline {section}{\numberline {3.3}Summary}{15}{}%
+\contentsline {chapter}{\numberline {4}Startup Analysis of Serverless Languages on OpenWhisk}{17}{}%
+\etoc@startlocaltoc {5}
+\contentsline {section}{\numberline {4.1}Introduction}{18}{}%
+\contentsline {section}{\numberline {4.2}Background and Related Work}{18}{}%
+\contentsline {section}{\numberline {4.3}Benchmark Functions Selection}{18}{}%
+\contentsline {section}{\numberline {4.4}OpenWhisk Setup and Configuration}{18}{}%
+\contentsline {section}{\numberline {4.5}Methodology}{18}{}%
+\contentsline {subsection}{\numberline {4.5.1}Deployment and Timing Approach}{18}{}%
+\contentsline {subsection}{\numberline {4.5.2}Fairness and Consistency}{18}{}%
+\contentsline {section}{\numberline {4.6}Results and Analysis}{18}{}%
+\contentsline {subsection}{\numberline {4.6.1}Quantitative Results}{18}{}%
+\contentsline {subsection}{\numberline {4.6.2}Comparative Analysis}{18}{}%
+\contentsline {section}{\numberline {4.7}Factors Affecting Cold Start Times}{18}{}%
+\contentsline {section}{\numberline {4.8}Discussion and Interpretation}{18}{}%
+\contentsline {section}{\numberline {4.9}Conclusion}{18}{}%
+\contentsline {chapter}{\numberline {5}Ease of Development}{19}{}%
+\etoc@startlocaltoc {6}
+\contentsline {section}{\numberline {5.1}Language Simplicity and Syntax}{19}{}%
+\contentsline {subsubsection}{Simplicity in Swift}{19}{}%
+\contentsline {subsubsection}{Safety Features}{20}{}%
+\contentsline {subsubsection}{Readability}{21}{}%
+\contentsline {subsubsection}{Copy-on-Write (CoW)}{21}{}%
+\contentsline {subsubsection}{Extensions}{22}{}%
+\contentsline {subsubsection}{Custom Operators}{23}{}%
+\contentsline {subsubsection}{Property Wrappers}{23}{}%
+\contentsline {section}{\numberline {5.2}Available Libraries and Frameworks}{26}{}%
+\contentsline {subsection}{\numberline {5.2.1}Web Development}{27}{}%
+\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{27}{}%
+\contentsline {paragraph}{Python}{27}{}%
+\contentsline {paragraph}{Node.js}{27}{}%
+\contentsline {paragraph}{Java}{27}{}%
+\contentsline {subsubsection}{Example Use Cases}{28}{}%
+\contentsline {subsubsection}{Vapor and Swift Package Manager}{28}{}%
+\contentsline {subsubsection}{Documentation and Community Support}{29}{}%
+\contentsline {subsubsection}{Example: Swift Package Manager Bug}{29}{}%
+\contentsline {subsection}{\numberline {5.2.2}Developer community and support}{30}{}%
+\contentsline {subsection}{\numberline {5.2.3}Tooling and IDE support}{30}{}%
+\contentsline {subsection}{\numberline {5.2.4}Integration with serverless platforms}{30}{}%
+\contentsline {subsection}{\numberline {5.2.5}Learning curve}{30}{}%
+\contentsline {subsection}{\numberline {5.2.6}Linux Support}{30}{}%
+\contentsline {subsubsection}{An Example}{31}{}%
+\contentsline {chapter}{\numberline {6}Synchronization System Case Study}{33}{}%
+\etoc@startlocaltoc {7}
+\contentsline {section}{\numberline {6.1}System Overview}{33}{}%
+\contentsline {section}{\numberline {6.2}Experimental Setup}{33}{}%
+\contentsline {section}{\numberline {6.3}Benchmarking Process}{34}{}%
+\contentsline {subsection}{\numberline {6.3.1}Main Components}{34}{}%
+\contentsline {subsubsection}{PS Server}{34}{}%
+\contentsline {subsubsection}{SH Server}{34}{}%
+\contentsline {subsubsection}{ModelSyncer}{35}{}%
+\contentsline {subsection}{\numberline {6.3.2}Workload}{35}{}%
+\contentsline {subsection}{\numberline {6.3.3}Benchmarker}{35}{}%
+\contentsline {subsubsection}{Setting up the servers}{36}{}%
+\contentsline {paragraph}{Generating models on PS Server}{36}{}%
+\contentsline {paragraph}{Generating equivalent resource on SH Server}{36}{}%
+\contentsline {subsubsection}{Running a workload}{37}{}%
+\contentsline {section}{\numberline {6.4}Results and Discussion}{38}{}%
+\contentsline {section}{\numberline {6.5}Improvements and Future Work}{39}{}%
+\contentsline {section}{\numberline {6.6}Conclusion}{40}{}%

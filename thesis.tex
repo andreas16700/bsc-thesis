@@ -12,6 +12,7 @@
 \usepackage{minted}
 \usepackage{xcolor}
 \usepackage{url}
+\usepackage{etoc}
 
 \titleformat{\chapter}{\normalfont\Large\bfseries}{Chapter \thechapter .}{1em}{}
 \titleformat{\section}{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
@@ -62,6 +63,7 @@
 
 \input{introduction.tex}
 \input{literature_review.tex}
+\input{runtime_update.tex}
 \input{research_methodology.tex}
 \input{performance_comparison.tex}
 \input{cold_start.tex}
@@ -76,12 +78,12 @@
 \addcontentsline{toc}{chapter}{Bibliography}
 %\bibliographystyle{plain}
 \bibliographystyle{custom-ucy}
-\bibliography{references} % Replace with your bibtex bibliography file, e.g. 'references.bib'
+\bibliography{references.bib}
 
 % Appendices
 \newpage
 \appendix
 \chapter{Appendix A}
-\lipsum[1-2] % Replace with your appendix content
+\lipsum[1-2]
 
 \end{document}

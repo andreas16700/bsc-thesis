@@ -1,0 +1,67 @@
+\chapter{Updating the Swift Runtime for OpenWhisk}
+\etocsettocstyle{\rule{\textwidth}{1pt}}{\rule{\textwidth}{1pt}} % style for toc
+\localtableofcontents
+
+\section{Introduction to the need for updating the Swift runtime}
+\subsection{Runtimes in OpenWhisk}
+
+In serverless platforms like OpenWhisk, the unit of execution for functions is a container that runs the user's code. These containers are based on pre-configured runtimes, which provide the necessary environment and dependencies to run code written in specific languages. OpenWhisk supports several languages and runtimes out-of-the-box, but it also allows custom runtimes for users who require tighter integration with their specific language or environment needs.
+
+An OpenWhisk runtime follows specific interface requirements and has to adhere to the platform specifications. A runtime should generally perform the following tasks: initialization, activation, and logging. Initialization prepares the runtime container for execution based on the user's code; activation manages the input parameters, runs the function, and returns the function result; and logging captures all the output generated during activation.
+
+\subsection{ActionLoop Proxy}
+
+To include a custom language runtime in OpenWhisk, the runtime must follow certain platform requirements and best practices. It should be implemented in a separate repository to ensure its management lifecycle remains independent of the OpenWhisk platform. Additionally, the runtime must be both introduced into the runtime manifest and included in the Swagger file, accompanied by relevant documentation files describing its usage.
+
+Testing the newly implemented runtime is crucial for ensuring that it is reliable and adheres to the OpenWhisk project's standards. The new runtime repository should include a series of test actions that conform to the Canonical runtime repository layout and successfully pass multiple test suites, including Action Interface tests and Runtime proxy tests.
+
+In this chapter, we will discuss the need for updating the Swift runtime to support the latest version (5.8) and the benefits that the newer language features can bring to serverless computing on the OpenWhisk platform. We will then detail the challenges encountered during the updating process, describing the steps taken to update the Swift runtime, and verifying the updated runtime functionality that can benefit future researchers exploring serverless computing with Swift.
+
+\section{Overview of the officially supported Swift runtime in OpenWhisk}
+Apache OpenWhisk supports a variety of programming languages for writing actions, through the use of specific runtimes. As per the official documentation, the following runtimes are currently supported \cite{openwhisk2023}:
+
+\begin{itemize}
+\item .Net: OpenWhisk runtime for .Net Core 2.2.
+\item Go: OpenWhisk runtime for Go.
+\item Java: OpenWhisk runtime for Java 8 (OpenJDK 8, JVM OpenJ9).
+\item JavaScript: OpenWhisk runtime for Node.js v10, v12, and v14.
+\item PHP: OpenWhisk runtime for PHP 8.0, 7.4, and 7.3.
+\item Python: OpenWhisk runtime for Python 2.7, 3, and a 3 runtime variant for AI/ML (including packages for Tensorflow and PyTorch).
+\item Ruby: OpenWhisk runtime for Ruby 2.5.
+\item Swift: OpenWhisk runtime for Swift 3.1.1, 4.1, and 4.2.
+\end{itemize}
+
+These runtimes are officially released by the Apache OpenWhisk project and made available on the OpenWhisk Downloads page.
+
+\section{Benefits of newer Swift features for serverless computing}
+% Content here, such as async/await
+
+\section{Challenges faced while updating the runtime}
+% General challenges content here
+
+\subsection{Understanding the current runtime architecture}
+% Content about understanding the current architecture
+
+\subsection{Implementing support for the latest Swift version (5.8)}
+% Content about implementing support for Swift 5.8
+
+\section{Steps to update the Swift runtime in OpenWhisk}
+% General steps content here
+
+\subsection{Description of the process and tools required}
+% Content about the process and required tools
+
+\subsection{Code snippets and configuration changes for updating the runtime}
+% Content about code snippets and configuration changes, use listings or any other preferred package for code snippets
+
+\section{Verifying the updated runtime functionality}
+% General content about verifying the updated runtime
+
+\subsection{Testing and validating the new runtime with the synchronization system case study}
+% Content about testing and validation with the case study
+
+\section{Potential benefits and applications of the updated runtime for future researchers}
+% Content about potential benefits and applications
+
+\section{Possible further improvements or updates to the runtime}
+% Content about possible improvements or updates to the runtime
