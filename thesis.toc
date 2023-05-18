@@ -12,8 +12,8 @@
 \contentsline {chapter}{\numberline {2}Updating the Swift Runtime for OpenWhisk}{10}{chapter.2}%
 \etoc@startlocaltoc {3}
 \contentsline {section}{\numberline {2.1}Introduction to the need for updating the Swift runtime}{11}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Runtimes in OpenWhisk}{11}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}ActionLoop Proxy}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.1}Action Interface in OpenWhisk}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}ActionLoop Proxy in OpenWhisk}{12}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Overview of the officially supported Swift runtime in OpenWhisk}{12}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Benefits of newer Swift features for serverless computing}{13}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Challenges faced while updating the runtime}{13}{section.2.4}%

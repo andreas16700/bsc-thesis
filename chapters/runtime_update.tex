@@ -3,19 +3,31 @@
 \localtableofcontents
 
 \section{Introduction to the need for updating the Swift runtime}
-\subsection{Runtimes in OpenWhisk}
+\subsection{Action Interface in OpenWhisk}
 
-In serverless platforms like OpenWhisk, the unit of execution for functions is a container that runs the user's code. These containers are based on pre-configured runtimes, which provide the necessary environment and dependencies to run code written in specific languages. OpenWhisk supports several languages and runtimes out-of-the-box, but it also allows custom runtimes for users who require tighter integration with their specific language or environment needs.
+The core concept in the OpenWhisk environment is an Action. Actions are the smallest deployable units of code and primarily constitute two components: the user function and its corresponding proxy. The user function represents the code logic to be executed, and the proxy serves as an intermediary, implementing a canonical protocol to enable the user function to interact with the OpenWhisk platform \cite{openwhisk2023}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{media/action_interface.pdf}
+    \caption{Abstract representation of the Action Interface in OpenWhisk.}
+    \label{fig:actioninterface}
+\end{figure}
 
-An OpenWhisk runtime follows specific interface requirements and has to adhere to the platform specifications. A runtime should generally perform the following tasks: initialization, activation, and logging. Initialization prepares the runtime container for execution based on the user's code; activation manages the input parameters, runs the function, and returns the function result; and logging captures all the output generated during activation.
+In OpenWhisk, the proxy functions as a web server, exposing two endpoints on port 8080: /init and /run. The /init endpoint is tasked with container initialization and accepts a POST request consisting of a JSON object that includes the action name, function to be executed, the source code, and several environment variables. This initialization happens exactly once and must be completed within a predefined time limit set by the platform \cite{openwhisk2023}.
 
-\subsection{ActionLoop Proxy}
+Once initialization is completed successfully, the proxy transitions to a state where it can activate the function. The /run endpoint is responsible for this task. It receives an HTTP POST request with a new activation context and the function's input parameters. The route needs to accept a JSON object and respond with one, adhering to the OpenWhisk platform's prescribed schema. Every action in OpenWhisk has a set time limit, within which the activation must complete. If the function executes successfully, the route responds with 200 OK, and the response body is recorded as the result of the activation \cite{openwhisk2023}.
 
-To include a custom language runtime in OpenWhisk, the runtime must follow certain platform requirements and best practices. It should be implemented in a separate repository to ensure its management lifecycle remains independent of the OpenWhisk platform. Additionally, the runtime must be both introduced into the runtime manifest and included in the Swagger file, accompanied by relevant documentation files describing its usage.
+Moreover, logging is an integral part of the proxy's functionality. It flushes all the logs generated during initialization and execution, adding a unique frame marker at the end of each activation log stream. This marker is necessary to avoid delayed or truncated activation logs \cite{openwhisk2021}.
 
-Testing the newly implemented runtime is crucial for ensuring that it is reliable and adheres to the OpenWhisk project's standards. The new runtime repository should include a series of test actions that conform to the Canonical runtime repository layout and successfully pass multiple test suites, including Action Interface tests and Runtime proxy tests.
+\subsection{ActionLoop Proxy in OpenWhisk}
 
-In this chapter, we will discuss the need for updating the Swift runtime to support the latest version (5.8) and the benefits that the newer language features can bring to serverless computing on the OpenWhisk platform. We will then detail the challenges encountered during the updating process, describing the steps taken to update the Swift runtime, and verifying the updated runtime functionality that can benefit future researchers exploring serverless computing with Swift.
+The ActionLoop proxy is a tool designed to simplify the process of creating new OpenWhisk runtimes. While one can develop a new runtime by following the OpenWhisk runtime specification, the ActionLoop proxy offers a quicker and more efficient way to achieve this by implementing most of the specification out-of-the-box \cite{openwhisk2023}.
+
+The ActionLoop proxy is a runtime engine, developed in Go, initially designed to support the OpenWhisk Go language runtime. However, its generic design allows it to be adapted for other language runtimes such as Swift, PHP, Python, Rust, Java, Ruby, and Crystal. It was engineered keeping both compiled and scripting languages in mind \cite{openwhisk2023}.
+
+Using the ActionLoop proxy, one can develop a new runtime in a fraction of the time it would take to create one from scratch. This is due to the fact that the ActionLoop proxy requires the developer to write only a command line protocol instead of a full-fledged web server, reducing complexity. Additionally, the ActionLoop proxy is known to significantly enhance the performance of existing runtimes, providing speed improvements ranging from 2x to 20x \cite{openwhisk2023}.
+
+In our work, we leverage the ActionLoop proxy to update the OpenWhisk runtime to support the latest version of Swift, enhancing the potential for Swift to be used as a Serverless language.
 
 \section{Overview of the officially supported Swift runtime in OpenWhisk}
 Apache OpenWhisk supports a variety of programming languages for writing actions, through the use of specific runtimes. As per the official documentation, the following runtimes are currently supported 

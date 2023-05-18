@@ -1,0 +1,45 @@
+\begin{thebibliography}{10}
+
+\bibitem{django}
+{Django}.
+\newblock \url{https://www.djangoproject.com/}.
+
+\bibitem{express}
+{Express}.
+\newblock \url{https://expressjs.com/}.
+
+\bibitem{flask}
+{Flask}.
+\newblock \url{https://flask.palletsprojects.com/}.
+
+\bibitem{jsf}
+{JavaServer Faces}.
+\newblock \url{https://www.oracle.com/java/technologies/javaserverfaces.html}.
+
+\bibitem{koa}
+{Koa}.
+\newblock \url{https://koajs.com/}.
+
+\bibitem{swift-platform-support}
+{Platform Support}.
+\newblock \url{https://swift.org/about/#platform-support}.
+
+\bibitem{springboot}
+{Spring Boot}.
+\newblock \url{https://spring.io/projects/spring-boot}.
+
+\bibitem{openwhisk2023}
+{Apache OpenWhisk - Programming Model}.
+\newblock \url{https://openwhisk.apache.org/documentation.html#programming-model}, 2023.
+
+\bibitem{wsbox_chromiumos}
+{Chromium OS}.
+\newblock {Sandbox}.
+\newblock \url{https://www.chromium.org/developers/design-documents/sandbox}.
+
+\bibitem{swift-forum-bug}
+S.~Forums.
+\newblock {Dependency on (very) active branch doesn’t pull new commits}.
+\newblock \url{https://forums.swift.org/t/dependency-on-very-active-branch-doesnt-pull-new-commits/33204}, 2020.
+
+\end{thebibliography}
