@@ -1,0 +1,783 @@
+%START
+%
+% VTable protection
+%
+@inproceedings{vtv,
+ author = {Tice, Caroline and Roeder, Tom and Collingbourne, Peter and Checkoway, Stephen and Erlingsson, \'{U}lfar and Lozano, Luis and Pike, Geoff},
+ title = {{Enforcing Forward-Edge Control-Flow Integrity in GCC \& LLVM}},
+ booktitle = {Proc. of USENIX SEC},
+ year = {2014},
+ pages = {941--955},
+} 
+@misc{django,
+  title = {{Django}},
+  howpublished = "\url{https://www.djangoproject.com/}"
+}
+
+@misc{flask,
+  title = {{Flask}},
+  howpublished = "\url{https://flask.palletsprojects.com/}"
+}
+
+@misc{express,
+  title = {{Express}},
+  howpublished = "\url{https://expressjs.com/}"
+}
+
+@misc{koa,
+  title = {{Koa}},
+  howpublished = "\url{https://koajs.com/}"
+}
+
+@misc{springboot,
+  title = {{Spring Boot}},
+  howpublished = "\url{https://spring.io/projects/spring-boot}"
+}
+
+@misc{jsf,
+  title = {{JavaServer Faces}},
+  howpublished = "\url{https://www.oracle.com/java/technologies/javaserverfaces.html}"
+}
+
+@misc{openwhisk2023,
+  title = {{Apache OpenWhisk - Programming Model}},
+  year = {2023},
+  howpublished = "\url{https://openwhisk.apache.org/documentation.html#programming-model}"
+}
+@misc{swift-platform-support,
+  title = {{Platform Support}},
+  howpublished = "\url{https://swift.org/about/#platform-support}"
+}
+
+@misc{openwhisk-invoke,
+  title = {{invoke tool}},
+  howpublished = "\url{https://github.com/apache/openwhisk/blob/master/tools/actionProxy/invoke.py}"
+}
+
+@misc{swift-forum-bug,
+  title = {{Dependency on (very) active branch doesn’t pull new commits}},
+  author = {Swift Forums},
+  year = {2020},
+  howpublished = "\url{https://forums.swift.org/t/dependency-on-very-active-branch-doesnt-pull-new-commits/33204}"
+}
+
+@article{ff-pwn2own,
+    title = {{Advanced Exploitation of Mozilla Firefox Use-After-Free Vulnerability (Pwn2Own 2014)}},
+    authors = {{VUPEN}},
+    note = {\url{http://www.vupen.com/blog/20140520.Advanced_Exploitation_Firefox_UaF_Pwn2Own_2014.php}}
+}
+@misc{wsbox_chromiumos,
+	author		= {{Chromium OS}},
+	title		= {{Sandbox}},
+	howpublished	= {\url{https://www.chromium.org/developers/design-documents/sandbox}},
+}
+
+%END
+%
+%
+%
+%%
+%% VTable protection
+%%
+%@inproceedings{vtv,
+% author = {Tice, Caroline and Roeder, Tom and Collingbourne, Peter and Checkoway, Stephen and Erlingsson, \'{U}lfar and Lozano, Luis and Pike, Geoff},
+% title = {{Enforcing Forward-Edge Control-Flow Integrity in GCC \& LLVM}},
+% booktitle = {Proc. of USENIX SEC},
+% year = {2014},
+% pages = {941--955},
+%} 
+%
+%@misc{vtpingithub,
+%  title = {{VTPin prototype}},
+%  howpublished = "\url{https://github.com/uberspot/VTPin}"
+%}
+%
+%@inproceedings{safedispatch,
+%  title={{SAFEDISPATCH: Securing C++ Virtual Calls from Memory Corruption Attacks}},
+%  author={Jang, Dongseok and Tatlock, Zachary and Lerner, Sorin},
+%  booktitle={Proc. of NDSS},
+%  year={2014}
+%}
+%
+%@inproceedings{vtint,
+%    title={{VTint: Protecting Virtual Function Tables' Integrity}},
+%    author={Chao Zhang and Chengyu Songz and Kevin Zhijie Chen and Zhaofeng Cheny and Dawn Song},
+%    booktitle={Proc. of NDSS},	    
+%    year={2015}
+%}
+%
+%@inproceedings{vfguard,
+%    title={{vfGuard: Strict Protection for Virtual Function Calls in COTS C++ Binaries}},
+%    author={Aravind Prakash and Xunchao Hu and Heng Yin},
+%    booktitle={Proc. of NDSS},
+%    year={2015}
+%}
+%
+%@inproceedings{tvip,
+% author = {Gawlik, Robert and Holz, Thorsten},
+% title = {{Towards Automated Integrity Protection of C++ Virtual Function Tables in Binary Programs}},
+% booktitle = {Proc. of ACSAC},
+% year = {2014},
+% pages = {396--405},
+%} 
+%
+%@inproceedings{vtrust,
+%  title={{VTrust: Regaining Trust on Virtual Calls}},
+%  author={Chao Zhang and Scott A. Carr and Tongxin Li and Yu Ding and
+%	  Chengyu Song and Mathias Payer and Dawn Song},
+%  booktitle={Proc. of NDSS},
+%  year={2016}
+%}
+%
+%@inproceedings{cpp-recovery,
+% author = {Jin, Wesley and Cohen, Cory and Gennari, Jeffrey and Hines, Charles and Chaki, Sagar and Gurfinkel, Arie and Havrilla, Jeffrey and Narasimhan, Priya},
+% title = {{Recovering C++ Objects From Binaries Using Inter-Procedural Data-Flow Analysis}},
+% booktitle = {Proceedings of ACM SIGPLAN on Program Protection and Reverse Engineering Workshop 2014},
+% series = {PPREW'14},
+% year = {2014},
+% isbn = {978-1-4503-2649-0},
+% location = {San Diego, CA, USA},
+% pages = {1:1--1:11},
+% articleno = {1},
+% numpages = {11},
+% url = {http://doi.acm.org/10.1145/2556464.2556465},
+% doi = {10.1145/2556464.2556465},
+% acmid = {2556465},
+% publisher = {ACM},
+% address = {New York, NY, USA},
+%} 
+%
+%@inproceedings{liu2014static,
+%  title={{Static-Dynamic Control Flow Integrity}},
+%  author={Liu, Xiaolong and Wei, Qiang and Ye, Ziwei},
+%  booktitle={P2P, Parallel, Grid, Cloud and Internet Computing (3PGCIC), 2014 Ninth International Conference on},
+%  pages={189--196},
+%  year={2014},
+%  organization={IEEE}
+%}
+%
+%@article{stack-smashing,
+%    title={Smashing the stack for fun and profit},
+%    author={One, Aleph},
+%    journal={Phrack magazine},
+%    volume={7},
+%    number={49},
+%    pages={365},
+%    year={1996}
+%}
+%
+%@inproceedings{stackguard,
+%    title={{StackGuard: Automatic adaptive detection and prevention of buffer-overflow attacks}},
+%    author={Cowan, Crispin and Pu, Calton and Maier, Dave and Hinton, Heather and Walpole, Jonathan and Bakke, Peat and Beattie, Steve and Grier, Aaron and Wagle, Perry and Zhang, Qian and others},
+%    booktitle={Proceedings of the 7th USENIX Security Symposium},
+%    volume={81},
+%    pages={346--355},
+%    year={1998}
+%}
+%
+%@InProceedings{rop,
+%    author =       {Hovav Shacham},
+%    title =        {{The Geometry of Innocent Flesh on the Bone:
+%                    Return-into-libc without Function Calls (on the
+%                    x86)}},
+%    booktitle =    {Proceedings of the 14th ACM conference on Computer and 
+%    Communications security},
+%    month =        {October},
+%    year =         {2007},
+%    pages =        {552-61}
+%}
+%
+%@inproceedings{jitrop,
+%	author = {Kevin Z. Snow and Lucas Davi and Alexandra Dmitrienko and Christopher Liebchen and Fabian Monrose and Ahmad-Reza Sadeghi},
+%	title = {{Just-In-Time Code Reuse: On the Effectiveness of Fine-Grained Address Space Layout Randomization}},
+%	month = {May},
+%	year = {2013},
+%	booktitle = {Proceedings of the 34th IEEE Symposium on Security and Privacy}
+%}
+%
+%
+%@inproceedings{cfi,
+%    author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and Ligatti, Jay},
+%    title = {{Control-Flow Integrity}},
+%    booktitle = {Proc. of ACM CCS},
+%    year = {2005},
+%    pages = {340--353},
+%    numpages = {14}
+%} 
+%
+%
+%@inproceedings{ccfir,
+%    author      = {Chao Zhang and Tao Wei and Zhaofeng Chen and Lei Duan and Szekeres, L.
+%                and McCamant, S. and Song, D. and Wei Zou},
+%    booktitle   = {Proc. of IEEE S\&P},
+%    title       = {{Practical Control Flow Integrity \& Randomization for
+%                Binary Executables}},
+%    year        = {2013},
+%    pages       = {559--573}
+%}
+%
+%
+%@inproceedings{bincfi,
+%    title={{Control Flow Integrity for COTS Binaries}},
+%    author={Zhang, Mingwei and Sekar, R},
+%    booktitle={Proc. of USENIX SEC},
+%    year={2013},
+%    pages = {337--352},
+%}
+%
+%@inproceedings{cfi-attack,
+%  title={{Out Of Control: Overcoming Control-Flow Integrity}},
+%  author={G{\"o}kta{\c s}, Enes  and Athanasopoulos, Elias and Bos, Herbert and Portokalidis, Georgios},
+%  booktitle={Proc. of IEEE S\&P},
+%  pages={575--589},
+%  year={2014},
+%}
+%
+%@inproceedings {kbouncer-attack,
+%    author = {Enes G{\"o}kta{\c s} and Elias Athanasopoulos and Michalis Polychronakis and Herbert Bos and Georgios Portokalidis},
+%    title = {{Size Does Matter: Why Using Gadget-Chain Length to Prevent Code-Reuse Attacks is Hard}},
+%    booktitle = {Proc. of USENIX SEC},
+%    year = {2014},
+%    pages = {417--432},
+%}
+%
+%@inproceedings{stitching-the-gadgets,
+%    author = {Lucas Davi and Ahmad-Reza Sadeghi and Daniel Lehmann and Fabian Monrose},
+%    title = {{Stitching the Gadgets: On the Ineffectiveness of Coarse-Grained Control-Flow Integrity Protection}},
+%    booktitle = {Proc. of USENIX SEC},
+%    year = {2014},
+%    pages = {401--416},
+%}
+%
+%@inproceedings{rop-is-still-dangerous,
+%    author = {Nicholas Carlini and David Wagner},
+%    title = {{ROP is Still Dangerous: Breaking Modern Defenses}},
+%    booktitle = {Proc. of USENIX SEC},
+%    year = {2014},
+%    pages = {385--399},
+%}
+%
+%@inproceedings{rop-eval,
+%  author    = {Felix Schuster and
+%               Thomas Tendyck and
+%               Jannik Pewny and
+%               Andreas Maa{\ss} and
+%               Martin Steegmanns and
+%               Moritz Contag and
+%               Thorsten Holz},
+%  title     = {{Evaluating the Effectiveness of Current Anti-ROP Defenses}},
+%  booktitle = {Proc. of RAID},
+%  pages     = {88--108},
+%  year      = {2014},
+%}
+%
+%@inproceedings{kbouncer,
+%    author = {Vasilis Pappas and Michalis Polychronakis and Angelos D. Keromytis},
+%    title = {{Transparent ROP Exploit Mitigation Using Indirect Branch Tracing}},
+%    booktitle = {Presented as part of the 22nd USENIX Security Symposium (USENIX Security 13)},
+%    year = {2013},
+%    isbn = {978-1-931971-03-4},
+%    address = {Washington, D.C.},
+%    pages = {447--462},
+%    url = {https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/pappas},
+%    publisher = {USENIX},
+%}
+%
+%@inproceedings{ropecker,
+%  author    = {Yueqiang Cheng and
+%               Zongwei Zhou and
+%               Miao Yu and
+%               Xuhua Ding and
+%               Robert H. Deng},
+%  title     = {{ROPecker: A Generic and Practical Approach For Defending Against
+%               ROP Attacks}},
+%  booktitle = {21st Annual Network and Distributed System Security Symposium, {NDSS}
+%               2014, San Diego, California, USA, February 23-26, 2013},
+%  year      = {2014},
+%  url       = {http://www.internetsociety.org/doc/ropecker-generic-and-practical-approach-defending-against-rop-attacks},
+%  timestamp = {Tue, 02 Dec 2014 18:34:54 +0100},
+%  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/ndss/ChengZYDD14},
+%  bibsource = {dblp computer science bibliography, http://dblp.org}
+%}
+%
+%@inproceedings{cpi,
+% author = {{Kuznetsov, Volodymyr and Szekeres, L\'{a}szl\'{o} and Payer, Mathias and Candea, George and Sekar, R. and Song, Dawn}},
+% title = {{Code-pointer Integrity}},
+% booktitle = {Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation},
+% series = {OSDI'14},
+% year = {2014},
+% isbn = {978-1-931971-16-4},
+% location = {Broomfield, CO},
+% pages = {147--163},
+% numpages = {17},
+% url = {http://dl.acm.org/citation.cfm?id=2685048.2685061},
+% acmid = {2685061},
+% publisher = {USENIX Association},
+% address = {Berkeley, CA, USA},
+%} 
+%
+%@inproceedings{mocfi,
+% author = {Niu, Ben and Tan, Gang},
+% title = {{Modular Control-flow Integrity}},
+% booktitle = {Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+% series = {PLDI '14},
+% year = {2014},
+% isbn = {978-1-4503-2784-8},
+% location = {Edinburgh, United Kingdom},
+% pages = {577--587},
+% numpages = {11},
+% url = {http://doi.acm.org/10.1145/2594291.2594295},
+% doi = {10.1145/2594291.2594295},
+% acmid = {2594295},
+% publisher = {ACM},
+% address = {New York, NY, USA},
+% keywords = {control-flow integrity, modularity, separate compilation},
+%} 
+%
+%@inproceedings{coop,
+%	author = {Felix Schuster and Thomas Tendyck and Christopher Liebchen and Lucas Davi
+%and Ahmad-Reza Sadeghi and Thorsten Holz},
+%	title = {{Counterfeit Object-oriented Programming: On the Difficulty of Preventing
+%Code Reuse Attacks in C++ Applications}},
+%	year = {2015},
+%	booktitle = {Proc. of IEEE S\&P},
+%}
+%
+%@inproceedings{cf-bending,
+% author = {Carlini, Nicolas and Barresi, Antonio and Payer, Mathias and Wagner, David and Gross, Thomas R.},
+% title = {{Control-Flow Bending: On the Effectiveness of Control-Flow Integrity}},
+% booktitle = {Proc. of USENIX SEC},
+% year = {2015},
+% pages = {161--176},
+%} 
+%
+%@inproceedings{cf-jujutsu,
+% author = {Evans, Isaac and Long, Fan and Otgonbaatar, Ulziibayar and Shrobe, Howard and Rinard, Martin and Okhravi, Hamed and Sidiroglou-Douskos, Stelios},
+% title = {{Control Jujutsu: On the Weaknesses of Fine-Grained Control Flow Integrity}},
+% booktitle = {Proc. of ACM CCS},
+% year = {2015},
+% pages = {901--913},
+%} 
+%
+%@inproceedings{typearmor,
+%  author    = {Victor {van der Veen} and Enes G\"{o}kta\c{s} and Moritz Contag and Andre Pawloski and Xi Chen and Sanjay Rawat and Herbert Bos and Thorsten Holz and Elias Athanasopoulos and Cristiano Giuffrida},
+%  title     = {{A Tough \texttt{call}: Mitigating Advanced Code-Reuse Attacks At The Binary Level}},
+%  booktitle = {Proc. of IEEE S\&P},
+%  month     = {May},
+%  year      = {2016},
+%  pages     = {934--953},
+%}
+%
+%@inproceedings{patharmor,
+% author = {van der Veen, Victor and Andriesse, Dennis and G\"{o}kta\c{s}, Enes and Gras, Ben and Sambuc, Lionel and Slowinska, Asia and Bos, Herbert and Giuffrida, Cristiano},
+% title = {{Practical Context-Sensitive CFI}},
+% booktitle = {Proc. of ACM CCS},
+% year = {2015},
+% pages = {927--940}
+%} 
+%
+%%
+%% Use-after-free specific.
+%%
+%
+%@inproceedings{cling,
+%  author = {Akritidis, Periklis},
+%  booktitle = {Proc. of USENIX SEC},
+%  pages = {177-192},
+%  title = {{Cling: A Memory Allocator to Mitigate Dangling Pointers.}},
+%  year = 2010
+%}
+%
+%@inproceedings{freesentry,
+%  author    = {Yves Younan},
+%  title     = {{FreeSentry: Protecting Against Use-After-Free Vulnerabilities Due
+%               to Dangling Pointers}},
+%  booktitle = {Proc. of NDSS},
+%  year      = {2015},
+%}
+%
+%@inproceedings{diehard,
+% author = {Berger, Emery D. and Zorn, Benjamin G.},
+% title = {{DieHard: Probabilistic Memory Safety for Unsafe Languages}},
+% booktitle = {Proc. of ACM PLDI},
+% year = {2006},
+% pages = {158--168},
+%} 
+%
+%
+%@inproceedings{dieharder,
+% author = {Novark, Gene and Berger, Emery D.},
+% title = {{DieHarder: Securing the Heap}},
+% booktitle = {Proc. of ACM CCS},
+% year = {2010},
+% pages = {573--584},
+%} 
+%
+%@inproceedings{undangle,
+% author = {Caballero, Juan and Grieco, Gustavo and Marron, Mark and Nappa, Antonio},
+% title = {{Undangle: Early Detection of Dangling Pointers in Use-after-free and Double-free Vulnerabilities}},
+% booktitle = {Proc. of ISSTA},
+% year = {2012},
+% pages = {133--143},
+%} 
+%
+%@inproceedings{dangnull,
+%  author    = {Byoungyoung Lee and
+%               Chengyu Song and
+%               Yeongjin Jang and
+%               Tielei Wang and
+%               Taesoo Kim and
+%               Long Lu and
+%               Wenke Lee},
+%  title     = {{Preventing Use-after-free with Dangling Pointers Nullification}},
+%  booktitle = {Proc. of NDSS},
+%  year      = {2015},
+%}
+%
+%@inproceedings{cets,
+%  author    = {Santosh Nagarakatte and
+%               Jianzhou Zhao and
+%               Milo M. K. Martin and
+%               Steve Zdancewic},
+%  title     = {{CETS: Compiler-Enforced Temporal Safety for C}},
+%  booktitle = {Proc. of ISMM},
+%  pages     = {31--40},
+%  year      = {2010},
+%}
+%
+%@inproceedings{purify,
+%  title={{Purify: Fast Detection of Memory Leaks and Access Errors}},
+%  author={Hastings, Reed and Joyce, Bob},
+%  booktitle={Proc. of USENIX ATC},
+%  year={1992},
+%  pages={125--136}
+%}
+%
+%@inproceedings{valgrind,
+% author = {Nethercote, Nicholas and Seward, Julian},
+% title = {{Valgrind: A Framework for Heavyweight Dynamic Binary Instrumentation}},
+% booktitle = {Proc. of ACM PLDI},
+% year = {2007},
+% pages = {89--100},
+%} 
+%
+%@inproceedings{address-sanitizer,
+% author = {Serebryany, Konstantin and Bruening, Derek and Potapenko, Alexander and Vyukov, Dmitry},
+% title = {{AddressSanitizer: A Fast Address Sanity Checker}},
+% booktitle = {Proc. of USENIX ATC},
+% year = {2012},
+% pages = {309--318},
+%} 
+%
+%%
+%% ROP
+%%
+%
+%@inproceedings{orp,
+% author = {Pappas, Vasilis and Polychronakis, Michalis and Keromytis, Angelos D.},
+% title = {{Smashing the Gadgets: Hindering Return-Oriented Programming Using In-place Code Randomization}},
+% booktitle = {Proc. of IEEE S\&P},
+% year = {2012},
+% pages = {601--615},
+%} 
+%
+%@inproceedings{stir,
+% author = {Wartell, Richard and Mohan, Vishwath and Hamlen, Kevin W. and Lin, Zhiqiang},
+% title = {{Binary Stirring: Self-randomizing Instruction Addresses of Legacy x86 Binary Code}},
+% booktitle = {Proc. of ACM CCS},
+% year = {2012},
+% pages = {157--168},
+%} 
+%
+%@inproceedings{ilr,
+% author = {Hiser, Jason and Nguyen-Tuong, Anh and Co, Michele and Hall, Matthew and Davidson, Jack W.},
+% title = {{ILR: Where'd My Gadgets Go?}},
+% booktitle = {Proc. of IEEE S\&P},
+% year = {2012},
+% pages = {571--585},
+%} 
+%
+%@inproceedings{aslr3,
+%	title = {{Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization}},
+%	booktitle = {Proc. of USENIX SEC},
+%	author = {Giuffrida, Cristiano and Kuijsten, Anton and Tanenbaum, Andrew S.},
+%	year = {2012},
+%	pages = {475--490},
+%}
+%
+%%
+%% Generic.
+%%
+%
+%@inproceedings{slab,
+% author = {Bonwick, Jeff},
+% title = {{The Slab Allocator: An Object-caching Kernel Memory Allocator}},
+% booktitle = {Proceedings of the USENIX Summer 1994 Technical Conference on USENIX Summer 1994 Technical Conference - Volume 1},
+% series = {USTC'94},
+% year = {1994},
+% location = {Boston, Massachusetts},
+% pages = {6--6},
+% numpages = {1},
+% url = {http://dl.acm.org/citation.cfm?id=1267257.1267263},
+% acmid = {1267263},
+% publisher = {USENIX Association},
+% address = {Berkeley, CA, USA},
+%} 
+%
+%
+%@article{ff-pwn2own,
+%    title = {{Advanced Exploitation of Mozilla Firefox Use-After-Free Vulnerability (Pwn2Own 2014)}},
+%    authors = {{VUPEN}},
+%    note = {\url{http://www.vupen.com/blog/20140520.Advanced_Exploitation_Firefox_UaF_Pwn2Own_2014.php}}
+%}
+%
+%@article{ff-mfsa,
+%    title = {{Advanced Exploitation of Mozilla Firefox Use-after-free Vulnerability (MFSA 2012-22)}},
+%    authors = {{VUPEN}},
+%    note = {\url{http://www.vupen.com/blog/20120625.Advanced_Exploitation_of_Mozilla_Firefox_UaF_CVE-2012-0469.php}}
+%}
+%
+%@article{chrome-pwn2own,
+%    title = {{(Pwn2Own) Google Chrome Blink Use-After-Free Remote Code Execution Vulnerability}},
+%    authors = {{Zero Day Initiative}},
+%    note = {\url{http://www.zerodayinitiative.com/advisories/ZDI-14-086/}}
+%}
+%
+%@article{adobe-pwn2own,
+%    title = {{(Pwn2Own) Adobe Flash Player AS3 ConvolutionFilter Use-After-Free Remote Code Execution Vulnerability}},
+%    authors = {{Zero Day Initiative}},
+%    note = {\url{http://www.zerodayinitiative.com/advisories/ZDI-15-134/}}
+%}
+%
+%@article{pwn2own15,
+%    title = {{Pwn2Own 2015: The year every web browser went down}},
+%    authors = {{ZDNet.com}},
+%    note = {\url{http://www.zdnet.com/article/pwn2own-2015-the-year-every-browser-went-down/}}
+%}
+%
+%@article{pwn2own16,
+%    title = {{Pwn2Own 2016: Hackers Earn \$460,000 for 21 New Flaws}},
+%    authors = {{SecurityWeek.com}},
+%    note = {\url{http://www.securityweek.com/pwn2own-2016-hackers-earn-460000-21-new-flaws}}
+%}
+%
+%
+%@misc{itanium,
+%  title={{Itanium C++ ABI}},
+%  note={\url{https://mentorembedded.github.io/cxx-abi/abi.html}}
+%}
+%
+%
+%@inproceedings{heap-feng-shui,
+%  added-at = {2010-10-27T03:39:37.000+0200},
+%  author = {Sotirov, Alexander},
+%  biburl = {http://www.bibsonomy.org/bibtex/2ce64a8fb9da74ee9826b64677a6f368a/liangzk},
+%  booktitle = {Blackhat 2007},
+%  file = {sotirov07blackhat.pdf:blackhat/sotirov07blackhat.pdf:PDF},
+%  interhash = {e2812d9a66b27395bd53fe4caadd14c4},
+%  intrahash = {ce64a8fb9da74ee9826b64677a6f368a},
+%  keywords = {heapspraying},
+%  timestamp = {2010-10-27T03:39:37.000+0200},
+%  title = {{Heap Feng Shui in JavaScript}},
+%  year = 2007
+%}
+%
+%@conference{expltrends,
+%	author		= {Tim Rains and Matt Miller and David Weston},
+%	title		= {{Exploitation Trends: From Potential Risk to Actual
+%				Risk}},
+%	booktitle	= {RSA Conference},
+%	year		= {2015},
+%}
+%
+%@misc{emet,
+%  title={{Enhanced Mitigation Experience Toolkit}},
+%  author={{Microsoft}},
+%  note={\url{http://www.microsoft.com/emet}},
+%  year={2016}
+%}
+%
+%@misc{aslr,
+%  title={{Address Space Layout Randomization (ASLR)}},
+%  author={{PaX Team}},
+%  note={\url{http://pax.grsecurity.net/docs/aslr.txt}},
+%  year={2003}
+%}
+%
+%@misc{chromium-multi,
+%  title={{Coding style for Chromium}},
+%  note={\url{https://www.chromium.org/developers/coding-style#TOC-Multiple-inheritance}}
+%}
+%
+%@misc{dep,
+%  title = {{Changes to Functionality in Microsoft Windows XP Service 
+%           Pack 2, Part 3: Memory Protection Technologies, 
+%          {Data Execution Prevention}}},
+%  author = {Starr Andersen and Vincent Abella},
+%  howpublished = {{Microsoft TechNet Library}},
+%  month = {September},
+%  year = {2004},
+%  note = {\url{http://technet.microsoft.com/en-us/library/bb457155.aspx}}
+%}
+%
+%@misc{wsbox_chromiumos,
+%	author		= {{Chromium OS}},
+%	title		= {{Sandbox}},
+%	howpublished	= {\url{https://www.chromium.org/developers/design-documents/sandbox}},
+%}
+%
+%@inproceedings{brop,
+% author = {Bittau, Andrea and Belay, Adam and Mashtizadeh, Ali and Mazi\`{e}res, David and Boneh, Dan},
+% title = {Hacking Blind},
+% booktitle = {Proceedings of the 2014 IEEE Symposium on Security and Privacy},
+% series = {SP '14},
+% year = {2014},
+% isbn = {978-1-4799-4686-0},
+% pages = {227--242},
+% numpages = {16},
+% url = {http://dx.doi.org/10.1109/SP.2014.22},
+% doi = {10.1109/SP.2014.22},
+% acmid = {2650800},
+% publisher = {IEEE Computer Society},
+% address = {Washington, DC, USA},
+%} 
+%
+%@inproceedings{jemalloc,
+%  title={{A Scalable Concurrent \texttt{malloc(3)} Implementation for FreeBSD}},
+%  author={Evans, Jason},
+%  booktitle={Proc. of BSDCan},
+%  year={2006}
+%}
+%
+%@inproceedings{tcmalloc,
+%  title={{Feedback directed optimization of TCMalloc}},
+%  author={Lee, Sangho and Johnson, Teresa and Raman, Easwaran},
+%  booktitle={Proc. of MSPC},
+%  year={2014},
+%}
+%
+%@misc{libc_realloc,
+%    title = {{\texttt{realloc()} -- GNU C Library.}},
+%    note = {\url{http://bazaar.launchpad.net/~vcs-imports/glibc/master/view/head:/malloc/malloc.c#L4235}}
+%}
+%
+%@misc{firefox-hooks,
+%    title = {{Hooking the memory allocator in Firefox}},
+%    note = {\url{https://glandium.org/blog/?p=2848}}
+%}
+%
+%@conference{reverse-cpp,
+%  author={Sabanal, Paul Vincent and Yason, Mark Vincent},
+%  title={{Reversing C++}},
+%  booktitle= {BlackHat},
+%  year={2007}
+%}
+%
+%@article{cpp-object-model,
+%  title={{C++ Object Model}},
+%  author={\texttt{shifan@freecity.cn}},
+%  note = {\url{http://lifegoo.pluskid.org/upload/doc/object_models/C++%20Object%20Model.pdf}}
+%}
+%
+%@article{seh,
+%    title = {{A Crash Course on the Depths of Win32 Structured Exception Handling}},
+%    author = {{Matt Pietrek}},
+%    note = {\url{https://www.microsoft.com/msj/0197/exception/exception.aspx}},
+%    month = {January},
+%    year = {1997}
+%}  
+%
+%@inproceedings{subversive-c,
+%  title={{Subversive-C: Abusing and Protecting Dynamic Message Dispatch}},
+%  author={Lettner, Julian and Kollenda, Benjamin and Homescu, Andrei and Larsen, Per and Schuster, Felix and Davi, Lucas and Sadeghi, Ahmad-Reza and Holz, Thorsten and Franz, Michael},
+%  booktitle = {Proc. of USENIX ATC},
+%  pages = {209--221},
+%  year = {2016},
+%}
+%
+%@inproceedings{gc-frequency,
+% author = {Hirzel, Martin and Diwan, Amer},
+% title = {{On the Type Accuracy of Garbage Collection}},
+% booktitle = {Proc. of ISMM},
+% year = {2000},
+% pages = {1--11},
+%}
+%
+%@article{gc-accuracy,
+% author = {Hirzel, Martin and Diwan, Amer and Henkel, Johannes},
+% title = {{On the Usefulness of Type and Liveness Accuracy for Garbage Collection and Leak Detection}},
+% journal = {ACM Trans. Program. Lang. Syst.},
+% issue_date = {November 2002},
+% volume = {24},
+% number = {6},
+% month = nov,
+% year = {2002},
+% pages = {593--624}
+%} 
+%
+%@inproceedings{boehm-gc,
+% author = {Boehm, Hans-J. and Demers, Alan J. and Shenker, Scott},
+% title = {{Mostly Parallel Garbage Collection}},
+% booktitle = {Proc. of ACM PLDI},
+% year = {1991},
+% pages = {157--164}
+%} 
+%
+%@book{design-patterns,
+%  title={{Design Patterns: Elements of Reusable Object-Oriented Software}},
+%  author={Erich Gamma and Richard Helm and Ralph Johnson and John Vlissides}, 
+%  year={1995},
+%  publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+%}
+%
+%@inproceedings{heisenbyte,
+% author = {Tang, Adrian and Sethumadhavan, Simha and Stolfo, Salvatore},
+% title = {Heisenbyte: Thwarting Memory Disclosure Attacks Using Destructive Code Reads},
+% booktitle = {Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security},
+% series = {CCS '15},
+% year = {2015},
+% isbn = {978-1-4503-3832-5},
+% location = {Denver, Colorado, USA},
+% pages = {256--267},
+% numpages = {12},
+% url = {http://doi.acm.org/10.1145/2810103.2813685},
+% doi = {10.1145/2810103.2813685},
+% acmid = {2813685},
+% publisher = {ACM},
+% address = {New York, NY, USA},
+% keywords = {binary rewriting, destructive code reads, memory disclosure},
+%} 
+%
+%@inproceedings{splay-bc,
+% author = {Dhurjati, Dinakar and Adve, Vikram},
+% title = {{Backwards-Compatible Array Bounds Checking for C with Very Low Overhead}},
+% booktitle = {Proc. of ICSE},
+% year = {2006},
+% pages = {162--171},
+%} 
+%
+%@misc{tsx-kaslr,
+%	author		= {{Rafal Wojtczuk}},
+%	title		= {{TSX improves timing attacks against KASLR}},
+%	howpublished	= {\url{https://labs.bromium.com/2014/10/27/tsx-improves-timing-attacks-against-kaslr/}},
+%}
+%
+%@inproceedings{shrinkwrap,
+%  added-at = {2015-12-15T00:00:00.000+0100},
+%  author = {Haller, István and G{\"o}kta{\c s}, Enes and Athanasopoulos, Elias and Portokalidis, Georgios and Bos, Herbert},
+%  biburl = {http://www.bibsonomy.org/bibtex/284e79eeb79b3664710e113ed09d27e6f/dblp},
+%  booktitle = {ACSAC},
+%  ee = {http://doi.acm.org/10.1145/2818000.2818025},
+%  interhash = {2a64f2f5f243e9f312f789902284366b},
+%  intrahash = {84e79eeb79b3664710e113ed09d27e6f},
+%  isbn = {978-1-4503-3682-6},
+%  keywords = {dblp},
+%  pages = {341-350},
+%  publisher = {ACM},
+%  timestamp = {2015-12-16T11:36:39.000+0100},
+%  title = {ShrinkWrap: VTable Protection without Loose Ends.},
+%  url = {http://dblp.uni-trier.de/db/conf/acsac/acsac2015.html#HallerGAPB15},
+%  year = 2015
+%}
+
+

@@ -287,7 +287,7 @@ In summary, Swift’s property wrappers contribute to the language’s simplicit
 
 \section{Available Libraries and Frameworks}
 
-Swift has a growing ecosystem that is constantly evolving and expanding. However, it might not be as extensive as more established languages like Python, Java, and Node.js. This could affect the availability of libraries and frameworks needed for specific use cases in the context of FaaS. In this section, we will discuss some of the notable libraries and frameworks available for Swift, as well as some of the challenges developers may face in certain scenarios.
+Swift has a growing ecosystem that is constantly evolving and expanding. However, it might not be as extensive as more established languages like Python, Java, and Node.js. This could affect the availability of libraries and frameworks needed for specific use cases in the context of FaaS. In this section, we will discuss some of the notable libraries and frameworks available for Swift, as well as some of the challenges developers may face in certain scenarios. ~\cite{wsbox_chromiumos}
 
 \subsection{Web Development}
 
@@ -299,20 +299,26 @@ In contrast to Swift's Vapor, more established languages such as Python, Node.js
 
 \paragraph{Python}
 \begin{itemize}
-    \item \textbf{Django}: A high-level web framework that promotes rapid development and clean, pragmatic design. It includes an ORM, authentication support, an admin interface, and many other features out-of-the-box~\cite{django}.
-    \item \textbf{Flask}: A lightweight web framework that provides flexibility for developers to choose their own components, such as databases and authentication systems~\cite{flask}.
+    \item \textbf{Django}: A high-level web framework that promotes rapid development and clean, pragmatic design. It includes an ORM, authentication support, an admin interface, and many other features out-of-the-box
+%    \item ~\cite{django}.
+    \item \textbf{Flask}: A lightweight web framework that provides flexibility for developers to choose their own components, such as databases and authentication systems
+%    \item ~\cite{flask}.
 \end{itemize}
 
 \paragraph{Node.js}
 \begin{itemize}
-    \item \textbf{Express}: A minimal and flexible web application framework for Node.js that provides a robust set of features for web and mobile applications. Express is widely used and has a large number of plugins and middleware available~\cite{express}.
-    \item \textbf{Koa}: A next-generation web framework for Node.js, created by the team behind Express. Koa is designed to be more expressive and robust while being smaller and more lightweight~\cite{koa}.
+    \item \textbf{Express}: A minimal and flexible web application framework for Node.js that provides a robust set of features for web and mobile applications. Express is widely used and has a large number of plugins and middleware available
+%    \item ~\cite{express}.
+    \item \textbf{Koa}: A next-generation web framework for Node.js, created by the team behind Express. Koa is designed to be more expressive and robust while being smaller and more lightweight
+%    \item ~\cite{koa}.
 \end{itemize}
 
 \paragraph{Java}
 \begin{itemize}
-    \item \textbf{Spring Boot}: A widely-used framework that simplifies the development and deployment of Java-based web applications. Spring Boot provides built-in support for embedded servers, security, data access, and more~\cite{springboot}.
-    \item \textbf{JavaServer Faces (JSF)}: A Java web application framework that simplifies building user interfaces for Java EE applications. JSF provides a component-based approach, allowing developers to build UIs by assembling pre-built components~\cite{jsf}.
+    \item \textbf{Spring Boot}: A widely-used framework that simplifies the development and deployment of Java-based web applications. Spring Boot provides built-in support for embedded servers, security, data access, and more
+%    \item ~\cite{springboot}.
+    \item \textbf{JavaServer Faces (JSF)}: A Java web application framework that simplifies building user interfaces for Java EE applications. JSF provides a component-based approach, allowing developers to build UIs by assembling pre-built components
+%    \item ~\cite{jsf}.
 \end{itemize}
 
 
@@ -339,11 +345,15 @@ Despite these challenges, Swift's ecosystem continues to grow and improve, and m
 
 \subsubsection{Example: Swift Package Manager Bug}
 
-One example that highlights Swift's infancy and lack of maturity for production use is a bug related to the Swift Package Manager. In the past, the Swift Package Manager had an issue where the package cache would not get invalidated for recent commits when a dependency was set to a branch of a Git repository (e.g., \mintinline{swift}{.package(url: "https://github.com/andreas16700/OTModelSyncer_pub", branch: "main")}). This bug significantly hindered development, as developers were forced to resort to obscure workarounds to manage their dependencies.
+One example that highlights Swift's infancy and lack of maturity for production use is a bug related to the Swift Package Manager. In the past, the Swift Package Manager had an issue where the package cache would not get invalidated for recent commits when a dependency was set to a branch of a Git repository 
+(e.g., \mintinline{swift}{.package(url: "https://github.com/andreas16700/OTModelSyncer_pub", branch: "main")}).
+This bug significantly hindered development, as developers were forced to resort to obscure workarounds to manage their dependencies.
 
 In the specific case mentioned, the project was divided into several packages, and changes were committed frequently. Due to this bug, the development process became considerably more challenging. The developer had to run unit tests and use Docker containers to ensure operational consistency with Linux, which resulted in increased development time and effort.
 
-Although the bug has now been fixed, it took more than three years since it first appeared on the Swift forums\footnote{"Dependency on (very) active branch doesn’t pull new commits", Swift Forums, January 2020 \url{https://forums.swift.org/t/dependency-on-very-active-branch-doesnt-pull-new-commits/33204}}. This example demonstrates that while Swift is a powerful and promising language, it still faces challenges due to its relative immaturity compared to more established languages.
+Although the bug has now been fixed, it took more than three years since it first appeared on the Swift forums
+%~\cite{swift-forum-bug}
+. This example demonstrates that while Swift is a powerful and promising language, it still faces challenges due to its relative immaturity compared to more established languages.
 
 As the Swift ecosystem continues to grow and mature, it is likely that such issues will become less common. However, developers should be aware of the potential challenges they may face when adopting Swift for serverless functions and be prepared to invest additional time and effort to address them.
 
@@ -365,9 +375,12 @@ The ease of development in a language also depends on an individual developer's 
     
 \subsection{Linux Support}
 
-Swift's support for Linux is relatively recent, and there are some features that are not available or have limited functionality due to the absence of the Objective-C runtime. Swift was designed to interoperate closely with Objective-C when it is present, but it was also designed to work in environments where the Objective-C runtime does not exist\footnote{"Platform Support", swift.org \url{https://swift.org/about/#platform-support}}. This means that some features that depend on the Objective-C runtime are not available on Linux.
+Swift's support for Linux is relatively recent, and there are some features that are not available or have limited functionality due to the absence of the Objective-C runtime. Swift was designed to interoperate closely with Objective-C when it is present, but it was also designed to work in environments where the Objective-C runtime does not exist
+%~\cite{swift-platform-support}
+. This means that some features that depend on the Objective-C runtime are not available on Linux.
 
-For example, when a Swift class on Apple’s platforms is marked \mintinline{swift}{@objc} or subclasses \mintinline{swift}{NSObject}, you can use the Objective-C runtime to enumerate available methods on an object or call methods using selectors. Such capabilities are absent on Linux because they depend on the Objective-C runtime\footnote{ibid}.
+For example, when a Swift class on Apple’s platforms is marked \mintinline{swift}{@objc} or subclasses \mintinline{swift}{NSObject}, you can use the Objective-C runtime to enumerate available methods on an object or call methods using selectors. Such capabilities are absent on Linux because they depend on the Objective-C runtime
+%~\cite{swift-platform-support}.
 
 Developers might encounter unexpected limitations when developing serverless functions due to these differences. The exact features that are not available on linux are not well documented. While a program may compile and run fine on a Mac, it may either encounter a compiler-time error on linux or, albeit sparingly, crash at runtime. Developers may need to resort to writing unit tests and running them in Docker containers to ensure operational consistency between platforms.
 
@@ -381,7 +394,9 @@ While developing a crucial serverless function, compiling and deploying it raise
     \caption{Invoking the action using Apache's invoke.py tool}
 \end{figure}
 
-\noindent Note: This is using the \textit{invoke tool}\footnote{\url{https://github.com/apache/openwhisk/blob/master/tools/actionProxy/invoke.py}} provided by OpenWhisk for debugging runtimes.
+\noindent Note: This is using the \textit{invoke tool}
+%~\cite{openwhisk-invoke}
+ provided by OpenWhisk for debugging runtimes.
 
 Every action runs on a language runtime. A runtime is a docker image. Attaching to the docker container and trying to run the binary to get more clues, we can see the following issue:
 

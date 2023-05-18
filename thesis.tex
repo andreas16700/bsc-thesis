@@ -1,89 +1,188 @@
-\documentclass[a4paper,12pt,openright,twoside]{report}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{graphicx}
-\usepackage[a4paper,inner=3.5cm,outer=2.5cm,top=2.5cm,bottom=3.0cm]{geometry}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{fancyhdr}
-\usepackage{lipsum}  % For sample text
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[12pt]{report}
+\usepackage{balance}			                    % proper column balancing 
+\usepackage{cite}			                        % well-formed numeric citations
+\usepackage{epsfig}			                        % add support for `EPS' figures
+\usepackage{epstopdf}			                    % automatic `EPS' to `PDF' conversion
+\usepackage[T1]{fontenc}		                    % enable `Type 1' fonts
+\usepackage[pagebackref = false, pdftex]{hyperref}	% add support for hypertext marks
+\usepackage{graphicx}			                    % add support for graphics
+\usepackage{listings}			                    % add support for source code listings
+\usepackage{mathptmx}			                    % use `Times' as the default font
+\usepackage{subfigure}			                    % add support for `subfloats'
+\usepackage{tikz}			                        % add support for custom graphics
+\usetikzlibrary{calc} 
+\usepackage{verbatim}	                            % better `verbatim'
+\usepackage{xcolor}			                        % add support for color names
+\usepackage{xspace}			                        % proper macro spacing
+\usepackage{mdframed}
+\usepackage{geometry}
 \usepackage{minted}
-\usepackage{xcolor}
-\usepackage{url}
+
 \usepackage{etoc}
 
-\titleformat{\chapter}{\normalfont\Large\bfseries}{Chapter \thechapter .}{1em}{}
-\titleformat{\section}{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
+\geometry{
+    a4paper,
+    left = 3.5cm,
+    top = 2.5cm,
+    right = 2.5cm,
+    bottom = 3.0cm
+}
 
-\fancyfoot[C]{\thepage}
-\pagestyle{fancy}
-\fancyhead{}
-\renewcommand{\headrulewidth}{0pt}
+% title, keywords
+\def\ptitle{Exploring Swift as a Serverless Language on OpenWhisk}
+\def\pkeywords{keyword1, keyword2}
 
-\setcounter{tocdepth}{1}
-\onehalfspacing
+% comment out the following line to disable comments in text
+% \newcommand{\commentsenabled}{X}
+% comment commands
+\ifdefined\commentsenabled
+\newcommand{\el}[1]{\textbf{\color[rgb]{1,0,0} elathan: #1}}
+\newcommand{\pw}[2]{\textbf{\color[rgb]{0,0,1} yourhandle: #1}}
+\else
+\newcommand{\el}[1]{}
+\newcommand{\pw}[2]{}
+\fi
+
+% listings setup
+\lstset{
+	backgroundcolor	= \color{white},
+	basicstyle	= \scriptsize,
+	breaklines	= true,
+	captionpos	= b,
+	commentstyle	= \color{gray}\ttfamily,
+	frame		= lines, 
+	language	= C++, 
+	numbers		= left,
+	tabsize		= 2,
+	xleftmargin	= 6pt,
+}
+
+% hyperref setup
+\hypersetup{
+	unicode,
+	citecolor	= black,
+	colorlinks	= true,
+	filecolor	= black,
+	linkcolor	= black,
+	pagebackref	= true,
+	pdfkeywords	= {\pkeywords},
+	pdftitle	= {\ptitle},
+	urlcolor	= black,
+} 
+
+% checkmark
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+% hacks
+\newenvironment{code}{\small\verbatim}{\endverbatim\normalsize}
+\newcommand{\note}[1]{\noindent\textbf{\color{red}[#1]}}
+\newcommand{\commentout}[1]{}
+
+% custom macros
+\newcommand{\ie}{\emph{i.e.,}\xspace}
+\newcommand{\eg}{\emph{e.g.,}\xspace}
+\newcommand{\etc}{\emph{etc.}\xspace}
+
+\linespread{1.25} 
+
 
 \begin{document}
-
-% Cover page
 \begin{titlepage}
-    \centering
-    \vspace*{1in}
-    \large University of Cyprus \\
-    Department of Computer Science \\
-    \vspace*{2in}
-    \LARGE \textbf{Exploring Swift as a Serverless Language on OpenWhisk} \\
-    \vspace*{1in}
-    \large Andreas Loizides \\
-    \vspace*{0.5in}
-    \large Mentor: Dr Haris Volos \\
-    \vfill
-    \large May 2023 \\
+\begin{center}
+\vspace*{1cm}
+
+Thesis Dissertation
+
+\vspace*{2cm}
+
+\Large{\textbf{\MakeUppercase{\ptitle{}}}}
+
+\vspace*{2cm}
+
+\large{\textbf{Andreas Loizides}}
+
+\vspace*{1cm}
+\Large{\textbf{\MakeUppercase{University of Cyprus}}}
+
+\vspace*{2cm}
+
+\includegraphics[width=0.2\textwidth]{media/ucy-logo.png}
+
+\vspace*{2cm}
+
+\Large{\textbf{\MakeUppercase{Computer Science Department}}}
+
+\vspace*{4cm}
+
+\normalsize{May 2023}
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width = 1pt] ($(current page.north west) + (1in,-1in)$) rectangle ($(current page.south east) + (-1in,1in)$);
+\end{tikzpicture}
+\end{center}
 \end{titlepage}
 
-% Acknowledgements
-\pagenumbering{roman}
-\newpage
-\input{acks.tex}
+\begin{titlepage}
 
-% Abstract
-\newpage
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-\lipsum[1] % Replace with your abstract
+\begin{center}
+\LARGE{\textbf{\MakeUppercase{University of Cyprus}}}
 
-% Table of Contents
+\Large{\textbf{\MakeUppercase{Computer Science Department}}}
+
+\vspace*{6cm}
+
+\large{\textbf{\ptitle{}}}
+
+\vspace*{0.5cm}
+
+\large{\textbf{Andreas Loizides}}
+
+\vspace*{5cm}
+
+\large{Supervisor}
+
+\large{Dr. Haris Volos}
+
+\vspace*{4cm}
+
+Thesis submitted in partial fulfilment of the requirements for the award of degree of Bachelor in Computer Science at University of Cyprus
+
+\vspace*{1cm}
+
+May 2023
+\end{center}
+
+\end{titlepage}
+
+\input{chapters/acks.tex}
+
 \newpage
+
+\section*{Summary}
+
 \tableofcontents
+\listoffigures
+\listoftables
 
-% Chapters
-\pagenumbering{arabic}
+% outline
+\input{chapters/introduction.tex}
+\input{chapters/literature_review.tex}
+\input{chapters/runtime_update.tex}
+\input{chapters/research_methodology.tex}
+\input{chapters/performance_comparison.tex}
+\input{chapters/cold_start.tex}
+\input{chapters/ease_of_dev.tex}
+\input{chapters/resource_util.tex}
+\input{chapters/cost_anal.tex}
+\input{chapters/sync_case_study.tex}
+\input{chapters/conclusions.tex}
+%\input{sync_case_study.tex}
 
-\input{introduction.tex}
-\input{literature_review.tex}
-\input{runtime_update.tex}
-\input{research_methodology.tex}
-\input{performance_comparison.tex}
-\input{cold_start.tex}
-\input{ease_of_dev.tex}
-\input{resource_util.tex}
-\input{cost_anal.tex}
-\input{sync_case_study.tex}
-\input{conclusions.tex}
 
-% Bibliography
-\newpage
-\addcontentsline{toc}{chapter}{Bibliography}
-%\bibliographystyle{plain}
-\bibliographystyle{custom-ucy}
-\bibliography{references.bib}
+% bibliography
+\bibliographystyle{abbrv}
+\balance
+\bibliography{thesis}
 
-% Appendices
-\newpage
-\appendix
-\chapter{Appendix A}
-\lipsum[1-2]
 
+% that's all folks
 \end{document}
