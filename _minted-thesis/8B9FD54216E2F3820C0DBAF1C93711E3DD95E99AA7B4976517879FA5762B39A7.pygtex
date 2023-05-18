@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{func} \PYG{n+nf}{\PYGZus{}run\PYGZus{}main}\PYG{p}{\PYGZlt{}}\PYG{n}{Out}\PYG{p}{:} \PYG{n}{Encodable}\PYG{p}{\PYGZgt{}(}\PYG{n}{mainFunction}\PYG{p}{:} \PYG{p}{(} \PYG{p}{@}\PYG{n}{escaping} \PYG{p}{(}\PYG{n}{Out}\PYG{p}{?,} \PYG{n}{Error}\PYG{p}{?)} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb}{Void}\PYG{p}{)} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb}{Void}\PYG{p}{,} \PYG{n}{json}\PYG{p}{:} \PYG{n}{Data}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+	\PYG{k+kd}{let} \PYG{n+nv}{resultHandler} \PYG{p}{=} \PYG{p}{\PYGZob{}} \PYG{p}{(}\PYG{n}{out}\PYG{p}{:} \PYG{n}{Out}\PYG{p}{?,} \PYG{n}{error}\PYG{p}{:} \PYG{n}{Error}\PYG{p}{?)} \PYG{k}{in}
+		\PYG{k}{if} \PYG{k+kd}{let} \PYG{n+nv}{error} \PYG{p}{=} \PYG{n}{error} \PYG{p}{\PYGZob{}}
+			\PYG{n}{\PYGZus{}whisk\PYGZus{}print\PYGZus{}error}\PYG{p}{(}\PYG{n}{message}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}Action handler callback returned an error:\PYGZdq{}}\PYG{p}{,} \PYG{n}{error}\PYG{p}{:} \PYG{n}{error}\PYG{p}{)}
+			\PYG{k}{return}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{guard} \PYG{k+kd}{let} \PYG{n+nv}{out} \PYG{p}{=} \PYG{n}{out} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+			\PYG{n}{\PYGZus{}whisk\PYGZus{}print\PYGZus{}error}\PYG{p}{(}\PYG{n}{message}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}Action handler callback did not return response or error.\PYGZdq{}}\PYG{p}{,} \PYG{n}{error}\PYG{p}{:} \PYG{k+kc}{nil}\PYG{p}{)}
+			\PYG{k}{return}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{do} \PYG{p}{\PYGZob{}}
+			\PYG{k+kd}{let} \PYG{n+nv}{jsonData} \PYG{p}{=} \PYG{k}{try} \PYG{n}{Whisk}\PYG{p}{.}\PYG{n}{jsonEncoder}\PYG{p}{.}\PYG{n}{encode}\PYG{p}{(}\PYG{n}{out}\PYG{p}{)}
+			\PYG{n}{\PYGZus{}whisk\PYGZus{}print\PYGZus{}result}\PYG{p}{(}\PYG{n}{jsonData}\PYG{p}{:} \PYG{n}{jsonData}\PYG{p}{)}
+		\PYG{p}{\PYGZcb{}} \PYG{k}{catch} \PYG{k+kd}{let} \PYG{n+nv}{error} \PYG{k}{as} \PYG{n}{EncodingError} \PYG{p}{\PYGZob{}}
+			\PYG{n}{\PYGZus{}whisk\PYGZus{}print\PYGZus{}error}\PYG{p}{(}\PYG{n}{message}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}JSONEncoder failed to encode Codable type to JSON string:\PYGZdq{}}\PYG{p}{,} \PYG{n}{error}\PYG{p}{:} \PYG{n}{error}\PYG{p}{)}
+			\PYG{k}{return}
+		\PYG{p}{\PYGZcb{}} \PYG{k}{catch} \PYG{p}{\PYGZob{}}
+			\PYG{n}{\PYGZus{}whisk\PYGZus{}print\PYGZus{}error}\PYG{p}{(}\PYG{n}{message}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}Failed to execute action handler with error:\PYGZdq{}}\PYG{p}{,} \PYG{n}{error}\PYG{p}{:} \PYG{n}{error}\PYG{p}{)}
+			\PYG{k}{return}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{let} \PYG{n+nv}{\PYGZus{}} \PYG{p}{=} \PYG{n}{mainFunction}\PYG{p}{(}\PYG{n}{resultHandler}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

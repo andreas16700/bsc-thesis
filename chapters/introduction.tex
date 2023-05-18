@@ -2,16 +2,12 @@
 \etocsettocstyle{\rule{\textwidth}{1pt}}{\rule{\textwidth}{1pt}} % style for toc
 \localtableofcontents
 \section{Background}
-% Replace with your introduction text
+The advent of serverless computing has opened new avenues for language performance and development convenience. This thesis explores Swift, a language traditionally known for iOS development, as a potential candidate for serverless computing, specifically in the OpenWhisk environment.
 \section{Research Questions}
 % You can list each research question in its own subsection
 \subsection{Performance Comparison}
 How does the performance of Swift compare to other serverless languages, such as Python, Java, and Node.js? We can run synthetic benchmarking workloads on OpenWhisk to compare the performance of Swift with other languages.
-\subsection{Cold Start Analysis}
-Cold start refers to the time taken to initialize a new serverless function. How does the cold start time of Swift compare with other serverless languages? We can use OpenWhisk to run tests to analyze the cold start time of Swift.
 \subsection{Ease of Development}
 How easy is it to develop serverless functions in Swift compared to other languages? We can evaluate the development experience of Swift by comparing it with other serverless languages.
-\subsection{Resource Utilization}
-How efficiently does Swift utilize serverless resources, such as CPU and memory? You can use OpenWhisk to monitor resource utilization and analyze the efficiency of Swift in utilizing these resources.
-\subsection{Cost Analysis}
-How does the cost of running serverless functions in Swift compare with other languages? We can compare the cost of running Swift functions on OpenWhisk with the cost of running functions in other serverless languages.
+
+In order to delve deeper into these research questions, a case study was conducted comparing a monolithic to a serverless implementation of a custom synchronization system, both in Swift. The latencies, throughput, and execution time of both systems were compared, providing a practical exploration of Swift's performance and development experience in a serverless context. This thesis aims to provide a comprehensive understanding of the viability of Swift as a serverless language on OpenWhisk.

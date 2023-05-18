@@ -79,6 +79,23 @@ Using the ActionLoop proxy, one can develop a new runtime in a fraction of the t
 Since Swift, like all other language runtimes except Javascript, leverage it, understanding the ActioxnLoop proxy is crucial to be able to update the OpenWhisk runtime to support the latest version of Swift, enhancing the potential for Swift to be used as a Serverless language.
 
 \subsection{Compiling a Swift action with the ActionLoop Proxy}
+Runtimes are docker images. One of the features of the ActionLoop proxy is compiling an action into a binary file that can then be used by the runtime to run the action. This could be useful in debugging, as well as accelerating development.
+Having the ability to compile locally is crucial in the development process. Developers can immediately catch any compile-time errors, which in the context of Swift and most statically typed languages, is especially useful since many errors are caught there. This effect is more pronounced in the case of Swift, as we will see in later chapters where we explain some of Swift's safety features.
+Suppose the Swift runtime is built into the docker image tagged as swift-one. With the following command we can build the binary for the action that runs the fuction mainName:
+\begin{minted}{bash}
+docker run swift-one -compile mainName
+\end{minted}
+The standard input of this command is the source file of our function. There are two cases on where that function could reside:
+\begin{description}
+	\item [Single File] the function is contained in a single Swift file
+	\item [Package] the function is part of a Swift package
+\end{description}
+In the case of the Swift package, it should be zipped and be given as standard input to the command. The Swift runtime expects to be able to unzip it, and in the resulting directory run \mintinline{bash}{swift build -c release}. This is extracted into a src directory inside the docker container. In the parent folder there exists a sample swift package skeleton. In the case that the contents of the zip file are nested inside another folder, when the runtime tries to run the swift build command, unexpected behavior will occur. That is because the swift compiler when it can't find the Package.swift file in the current directory, it up the hierarchy to find it, resulting in it trying to build the blank swift package (which will most likely not contained the desired function). In our experience, this has caused countless hours of debugging and trying to figure out what the problem is, because of unhelpful feedback such as "function X not found". Fully understanding the inner workings of the ActionLoop proxy and the Swift runtime was required. One could argue the simplicity the ActionLoop proxy aims to provide is lost in this.
+The following command produces the binary executable fun for the function fun() which is contained in the Swift package which is zipped inside myPackage.zip:
+\mint{bash}{docker run swift-one -compile fun <myPackage.zip >fun.zip}
+fun.zip contains the a folder which contains the actual binary.
+
+The behavior of the binary is as follows: It listens on standard output for the JSON payload OpenWhisk will send it (which contains the parameters of the function). It writes to standard output the result of the function. In case that the output is a Codable type, it returns the JSON encoded text.
 
 \section{Overview of the officially supported Swift runtime in OpenWhisk}
 Apache OpenWhisk supports a variety of programming languages for writing actions, through the use of specific runtimes. As per the official documentation, the following runtimes are currently supported 
@@ -92,18 +109,104 @@ Apache OpenWhisk supports a variety of programming languages for writing actions
 \item PHP: OpenWhisk runtime for PHP 8.0, 7.4, and 7.3.
 \item Python: OpenWhisk runtime for Python 2.7, 3, and a 3 runtime variant for AI/ML (including packages for Tensorflow and PyTorch).
 \item Ruby: OpenWhisk runtime for Ruby 2.5.
-\item Swift: OpenWhisk runtime for Swift 3.1.1, 4.1, and 4.2.
+\item Swift: OpenWhisk runtime for Swift 5.1, 5.3 and 5.4.
 \end{itemize}
 
-These runtimes are officially supperted by OpenWhisk, meaning one can deploy an action in those languages by specifying with the -kind option.
-Any runtime can be used to deploy actions however, as long as it adheres to the Action Interface and is a Docker image publicly available on DockerHub. Our updated version of Swift (v5.8) is publicly available on dockerhub with the image tag andreas16700/swift58-1.
+These runtimes are officially supperted by OpenWhisk, meaning one can deploy an action in those languages by specifying with it the -kind option.
+Any docker image can be used as a runtime to deploy actions, as long as it adheres to the Action Interface and is a Docker image publicly available on DockerHub. Our updated version of Swift (v5.8) is publicly available on dockerhub with the image tag andreas16700/swift58-1.
 \section{Process of Updating the Swift Runtime}
 \label{sec:UpdatingProcess}
 
-We provide a step-by-step account of the updating process, which involved changing the Swift docker image to the latest one and modifying the function signatures to accommodate async functions within the existing Swift runtime.
+The current Swift runtime repository ~\cite{swift-runtime} contains a folder called core which contains the files necessary to build the image for each swift version.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{media/core_contents.png}
+    \caption{Contents of the core folder of the Swift runtime}
+    \label{fig:core_contents}
+\end{figure}
 
+Each folder contains the following files:
+\begin{description}
+	\item [Whisk.swift] A client for invoking actions, creating triggers, and most basic wsk functionalities in Swift. It is not directly needed in the runtime, but it is useful as a simple OpenWhisk SDK for swift.
+	\item [build.gradle] Contains some gradle options. Mainly the name of the docker image (which will be built from this folder).
+	\item [CHANGELOG.md] The changelog for that version.
+	\item [main.swift] Contains just a sample function, used for testing and an initial swift build.
+	\item [Dockerfile] The actual docker file for building the image. It is responsible for including the ActionLoop proxy.
+	\item [Package.swift] Sample package file used for testing.
+	\item [swiftbuild.py] This file is used as the /bin/compile tool, as specified in the ActionLoop proxy. It is responsible for creating the action binary.
+	\item [swiftbuild.py.launcher.swift] This is used as the /bin/compile.launcher file, as specified in the ActionLoop proxy. This file contains all supported signatures for deploying functions.
+	\item [swiftbuildandlink.sh]In the case of Swift, this just build the Swift executable
+\end{description}
+In order to actually update the runtime, a copy of any of the existing runtime folder will do, and requires minimal changes:
+\begin{description}
+	\item [Dockerfile] Simply replace the swift image tag to the latest one (FROM swift:5.4 -> FROM swift:5.8)
+	\item [build.gradle] Change the image tag to a new one: ext.dockerImageName = 'action-swift-v5.4' -> ext.dockerImageName = 'action-swift-v5.8'
+	\item [swiftbuild.py.launcher.swift] Replace the callback-based functions to async based ones
+\end{description}
+
+\begin{minted}{swift}
+func _run_main<Out: Encodable>(mainFunction: ( @escaping (Out?, Error?) -> Void) -> Void, json: Data) {
+	let resultHandler = { (out: Out?, error: Error?) in
+		if let error = error {
+			_whisk_print_error(message: "Action handler callback returned an error:", error: error)
+			return
+		}
+		guard let out = out else {
+			_whisk_print_error(message: "Action handler callback did not return response or error.", error: nil)
+			return
+		}
+		do {
+			let jsonData = try Whisk.jsonEncoder.encode(out)
+			_whisk_print_result(jsonData: jsonData)
+		} catch let error as EncodingError {
+			_whisk_print_error(message: "JSONEncoder failed to encode Codable type to JSON string:", error: error)
+			return
+		} catch {
+			_whisk_print_error(message: "Failed to execute action handler with error:", error: error)
+			return
+		}
+	}
+	let _ = mainFunction(resultHandler)
+}
+\end{minted}
+\begin{minted}{swift}
+func _run_main<Out: Encodable>(mainFunction: ()async -> (Out?, Error?), json: Data) async{
+	let (out, error) = await mainFunction()
+	if let error = error {
+		_whisk_print_error(message: "Action handler callback returned an error:", error: error)
+		return
+	}
+	guard let out = out else {
+		_whisk_print_error(message: "Action handler callback did not return response or error.", error: nil)
+		return
+	}
+	do {
+		let jsonData = try Whisk.jsonEncoder.encode(out)
+		_whisk_print_result(jsonData: jsonData)
+	} catch let error as EncodingError {
+		_whisk_print_error(message: "JSONEncoder failed to encode Codable type to JSON string:", error: error)
+		return
+	} catch {
+		_whisk_print_error(message: "Failed to execute action handler with error:", error: error)
+		return
+	}
+}
+\end{minted}
+Now, \begin{description}
+	\item [swiftbuild.py] needs to be updated so that the code it injects calls the async function with the await keyword:
+\end{description}
+\mintinline{python}{code += f" _run_main(mainFunction: {main}, json: nil)\n"}
+becomes:
+\mintinline{python}{code += f" await _run_main(mainFunction: {main}, json: nil)\n"}
 \section{Challenges Encountered}
 \label{sec:Challenges}
+While updating the runtime in hindsight did not require many changes, understanding how it all works together with the ActionLoop proxy to produce and run a binary required considerable effort. Issues arose frequently. Small mistakes rarely yield useful feedback. As mentioned before, a small change such as nesting the source file just one folder further, leads to confusing behavior.
 
-Lastly, we shed light on the challenges encountered during the process, such as difficulties in debugging and the complexities associated with the usage of three different programming languages, namely Swift, Go, and Python, in the Swift runtime. We explain how these languages are used in different stages of the process: Swift for the entrypoint to accept Swift functions, Go for the ActionLoop proxy, and Python for the initialization step to join the Swift function files.
+For instance, consider how the current swift runtime processes an input. It reads a line from standard input, which is the JSON object OpenWhisk provides. That object, contains the parameters of the activation under the key 'value'. 
+\begin{minted}{swift}
+	let jsonData = try JSONSerialization.data(withJSONObject: parsed["value"] as Any, options: [])
+\end{minted}
+
+Deploying and activating function without parameters is supported by openwhisk and very much possible. What happens when a Swift action is activated with no parameters? The runtime tries to serialize the [value] key which in this case does not exist. The result is that JSONSerialization's data function throws an error, failing the activation. 
+
 

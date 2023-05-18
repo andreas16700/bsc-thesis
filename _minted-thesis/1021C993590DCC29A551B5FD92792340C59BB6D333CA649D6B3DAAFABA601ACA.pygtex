@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+docker\PYG{+w}{ }run\PYG{+w}{ }swift\PYGZhy{}one\PYG{+w}{ }\PYGZhy{}compile\PYG{+w}{ }mainName
+\end{Verbatim}

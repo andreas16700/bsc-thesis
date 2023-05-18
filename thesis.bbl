@@ -24,6 +24,10 @@
 {Koa}.
 \newblock \url{https://koajs.com/}.
 
+\bibitem{swift-runtime}
+{Platform Support}.
+\newblock \url{https://github.com/apache/openwhisk-runtime-swift}.
+
 \bibitem{swift-platform-support}
 {Platform Support}.
 \newblock \url{https://swift.org/about/#platform-support}.

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{code} \PYG{o}{+=} \PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{} \PYGZus{}run\PYGZus{}main(mainFunction: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{main}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{, json: nil)}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s2}{\PYGZdq{}}
+\end{Verbatim}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  18 MAY 2023 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  19 MAY 2023 02:51
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -787,41 +787,41 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 71.
-Package hyperref Info: Option `colorlinks' set `true' on input line 71.
+Package hyperref Info: Option `unicode' set `true' on input line 72.
+Package hyperref Info: Option `colorlinks' set `true' on input line 72.
 
 
 Package hyperref Warning: Option `pagebackref' has already been used,
-(hyperref)                setting the option has no effect on input line 71.
+(hyperref)                setting the option has no effect on input line 72.
 
 runsystem(which pygmentize && touch thesis.aex)...executed.
 
 runsystem(rm thesis.aex)...executed.
 
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 89.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 90.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count358
@@ -836,7 +836,7 @@ LaTeX Font Info:    ... okay on input line 89.
 \makeMPintoPDFobject=\count363
 \everyMPtoPDFconversion=\toks39
 )
-Package hyperref Info: Link coloring ON on input line 89.
+Package hyperref Info: Link coloring ON on input line 90.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
@@ -879,10 +879,10 @@ Package hyperref Info: Link coloring ON on input line 89.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \Etoc@tf=\read6
-<media/ucy-logo.png, id=288, 2007.5pt x 2007.5pt>
+<media/ucy-logo.png, id=276, 2007.5pt x 2007.5pt>
 File: media/ucy-logo.png Graphic file (type png)
 <use media/ucy-logo.png>
-Package pdftex.def Info: media/ucy-logo.png  used on input line 109.
+Package pdftex.def Info: media/ucy-logo.png  used on input line 110.
 (pdftex.def)             Requested size: 85.35696pt x 85.34059pt.
 [1
 
@@ -890,12 +890,12 @@ Package pdftex.def Info: media/ucy-logo.png  used on input line 109.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \end{titlepage}
+l.155 \end{titlepage}
                       [1] (./chapters/acks.tex)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \newpage
+l.159 \newpage
                [1
 
 ]
@@ -903,32 +903,32 @@ l.158 \newpage
 \openout7 = `thesis.toc'.
 
  [2]
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 163.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 164.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 163.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 164.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 163.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 164.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 163.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 164.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 163.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 164.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 163.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
  [3
 
 ] [4] [5] (./thesis.lof)
@@ -955,9 +955,9 @@ Overfull \hbox (1.74904pt too wide) in paragraph at lines 9--10
 \T1/ptm/m/n/12 How does the per-for-mance of Swift com-pare to other server-less lan-guages, such as Python,
  []
 
-[8
+) (./chapters/literature_review.tex [8
 
-]) (./chapters/literature_review.tex) (./chapters/runtime_update.tex [9]
+]) (./chapters/runtime_update.tex [9]
 Chapter 2.
 [10
 
@@ -971,7 +971,7 @@ Overfull \hbox (1.35321pt too wide) in paragraph at lines 48--49
 \T1/ptm/m/n/12 Overall, the en-hance-ments in Swift 5.5 sig-nif-i-cantly im-proved the de-vel-op-ment and bench-
  []
 
-<media/action_interface.pdf, id=443, 980.1748pt x 355.9969pt>
+<media/action_interface.pdf, id=427, 980.1748pt x 355.9969pt>
 File: media/action_interface.pdf Graphic file (type pdf)
 <use media/action_interface.pdf>
 Package pdftex.def Info: media/action_interface.pdf  used on input line 60.
@@ -982,29 +982,68 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) h
                                                   \__shipout_drop_firstpage_...
 l.76 
       <./media/action_interface.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 88.
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/default.pygstyle) (./_minted-thesis/1021C993590DCC29A551B5FD92792340C59BB6D333CA649D6B3DAAFABA601ACA.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+))
+\openout5 = `thesis.pyg'.
+
+ (./_minted-thesis/ADA8D6FC6D2924CB438A014F5B7DCBE6C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
+\openout5 = `thesis.pyg'.
+
+ (./_minted-thesis/75789AF8B0A7AC25DD8D07F5A77EF141C59BB6D333CA649D6B3DAAFABA601ACA.pygtex [14{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 105.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [14]) (./chapters/research_methodology.tex) (./chapters/performance_comparison.tex [15]
+) [15]
+<media/core_contents.png, id=468, 243.91125pt x 136.51pt>
+File: media/core_contents.png Graphic file (type png)
+<use media/core_contents.png>
+Package pdftex.def Info: media/core_contents.png  used on input line 123.
+(pdftex.def)             Requested size: 426.79135pt x 238.8669pt.
+ [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.135 	\item [Package.swift]
+                             Sample package file used for testing. <./media/core_contents.png>]
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/8B9FD54216E2F3820C0DBAF1C93711E3DD95E99AA7B4976517879FA5762B39A7.pygtex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+ [17])
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/D81C3AFC1D2F198EAA7898BD4224337CDD95E99AA7B4976517879FA5762B39A7.pygtex [18])
+\openout5 = `thesis.pyg'.
+
+ (./_minted-thesis/967295FA8AB1063AED99FA305003F52DB6F646E3DFE3820A178305059A4BB3A3.pygtex)
+\openout5 = `thesis.pyg'.
+
+ (./_minted-thesis/044E9130B2B63AE2107D5A7BD5E35725B6F646E3DFE3820A178305059A4BB3A3.pygtex)
+\openout4 = `thesis.pyg'.
+
+ (./_minted-thesis/5B1168EF322873895467403749AF7C3FDD95E99AA7B4976517879FA5762B39A7.pygtex)) (./chapters/research_methodology.tex) (./chapters/performance_comparison.tex [19]
 Chapter 3.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
 [][] 
  []
 
-[16
+[20
 
-] [17]
+] [21]
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/default.pygstyle) (./_minted-thesis/0BF21D71C650960795C24B180FBAC6DFC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
- [18{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
+ (./_minted-thesis/0BF21D71C650960795C24B180FBAC6DFC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex [22])
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/FF27148A4F43F95B7446EDCEFF986F68C0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex)
@@ -1034,7 +1073,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
  (./_minted-thesis/519F03D7D7D9A62DB27918DEB6D8A24DC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/5655D20B34E913E993F2726A91C06D57B6F646E3DFE3820A178305059A4BB3A3.pygtex [19])
+ (./_minted-thesis/5655D20B34E913E993F2726A91C06D57B6F646E3DFE3820A178305059A4BB3A3.pygtex [23])
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/7AC3AFD84E120EEA459A29E142D941A5B6F646E3DFE3820A178305059A4BB3A3.pygtex)
@@ -1064,14 +1103,14 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
  (./_minted-thesis/CBC6AD14940941BDDC4A7E10D71C7D029B4508BF907A63D4CE444D5FB383F2CC.pygtex)
 \openout5 = `thesis.pyg'.
 
-
-(./_minted-thesis/92FB20BB8561C089D742DF644D2C307D9B4508BF907A63D4CE444D5FB383F2CC.pygtex)
+ (./_minted-thesis/92FB20BB8561C089D742DF644D2C307D9B4508BF907A63D4CE444D5FB383F2CC.pygtex)
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/979077496D14698B29782AEAA2F4B34A9B4508BF907A63D4CE444D5FB383F2CC.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/CBC6AD14940941BDDC4A7E10D71C7D029B4508BF907A63D4CE444D5FB383F2CC.pygtex) [20]
+
+(./_minted-thesis/CBC6AD14940941BDDC4A7E10D71C7D029B4508BF907A63D4CE444D5FB383F2CC.pygtex) [24]
 Overfull \hbox (2.8884pt too wide) in paragraph at lines 149--150
 \T1/ptm/m/n/12 types, de-vel-op-ers can sim-u-late value-like be-hav-ior us-ing tech-niques such as ob-ject cloning: 
  []
@@ -1105,7 +1144,7 @@ Overfull \hbox (2.8884pt too wide) in paragraph at lines 149--150
  (./_minted-thesis/60B725F10C9C85C70D97880DFE8191B398AC6650688363CDFA3DF2E4C7E54189.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/D85378C7433EE0FB18AB57060F46FDE098AC6650688363CDFA3DF2E4C7E54189.pygtex [21])
+ (./_minted-thesis/D85378C7433EE0FB18AB57060F46FDE098AC6650688363CDFA3DF2E4C7E54189.pygtex [25])
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/8304C57391A218EA3F4C053166E6F00098AC6650688363CDFA3DF2E4C7E54189.pygtex)
@@ -1117,16 +1156,16 @@ Overfull \hbox (2.8884pt too wide) in paragraph at lines 149--150
  (./_minted-thesis/DB9B7629A516B98E3251B481A560596E98AC6650688363CDFA3DF2E4C7E54189.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/8304C57391A218EA3F4C053166E6F00098AC6650688363CDFA3DF2E4C7E54189.pygtex)) (./chapters/cold_start.tex [22]
+ (./_minted-thesis/8304C57391A218EA3F4C053166E6F00098AC6650688363CDFA3DF2E4C7E54189.pygtex)) (./chapters/cold_start.tex [26]
 Chapter 4.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--5
 [][] 
  []
 
-) (./chapters/ease_of_dev.tex [23
+) (./chapters/ease_of_dev.tex [27
 
-] [24]
+] [28]
 Chapter 5.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
@@ -1138,7 +1177,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
 (./_minted-thesis/34AEC85BB13732AFF4C5B2134F3E7BEADD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/B0DD47BC2CB14E68A8CB777BCFD8A357B6F646E3DFE3820A178305059A4BB3A3.pygtex [25
+ (./_minted-thesis/B0DD47BC2CB14E68A8CB777BCFD8A357B6F646E3DFE3820A178305059A4BB3A3.pygtex [29
 
 ])
 \openout4 = `thesis.pyg'.
@@ -1155,7 +1194,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
  (./_minted-thesis/CEB449AACF55F795D0A3DF2959B14BF0DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/88FDEDDEF3FD874635EBAB5A039078D6B6F646E3DFE3820A178305059A4BB3A3.pygtex) [26]
+ (./_minted-thesis/88FDEDDEF3FD874635EBAB5A039078D6B6F646E3DFE3820A178305059A4BB3A3.pygtex) [30]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/3F50800911A56EAABC893FCE6E8AB6E4DD95E99AA7B4976517879FA5762B39A7.pygtex)
@@ -1170,7 +1209,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
  (./_minted-thesis/7918940DCA5163295F179A659A0110F598AC6650688363CDFA3DF2E4C7E54189.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/97665612CAD83A31A7A2A4EB6950B244DD95E99AA7B4976517879FA5762B39A7.pygtex [27])
+ (./_minted-thesis/97665612CAD83A31A7A2A4EB6950B244DD95E99AA7B4976517879FA5762B39A7.pygtex [31])
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/17DE9129E1A4E1340AFB3377FC8E027798AC6650688363CDFA3DF2E4C7E54189.pygtex)
@@ -1179,43 +1218,38 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
  (./_minted-thesis/85463F08AD1F9EF4E069188A6F0263E6DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/CCF9229D1AA232924A0655886A43381E98AC6650688363CDFA3DF2E4C7E54189.pygtex) [28]
+ (./_minted-thesis/CCF9229D1AA232924A0655886A43381E98AC6650688363CDFA3DF2E4C7E54189.pygtex) [32]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/496EE2B2A17704869B19A3279F197BD4DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/67D41C66AA4AC7E665FF13C8CBBBD7EC98AC6650688363CDFA3DF2E4C7E54189.pygtex) [29]
+ (./_minted-thesis/67D41C66AA4AC7E665FF13C8CBBBD7EC98AC6650688363CDFA3DF2E4C7E54189.pygtex) [33]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/1B1D2479DDF8281AE23786725F09F48CDD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/25C032417B67B6462D5DDAA5021BA736B6F646E3DFE3820A178305059A4BB3A3.pygtex [30])
+ (./_minted-thesis/25C032417B67B6462D5DDAA5021BA736B6F646E3DFE3820A178305059A4BB3A3.pygtex [34])
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/3154310D6E8CA3FC43B3438E67074E9498AC6650688363CDFA3DF2E4C7E54189.pygtex [31]) [32] [33] [34]
+ (./_minted-thesis/3154310D6E8CA3FC43B3438E67074E9498AC6650688363CDFA3DF2E4C7E54189.pygtex [35]) [36] [37] [38]
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/53A57B0FD1FA91F883E3B75FF754FE0BDD95E99AA7B4976517879FA5762B39A7.pygtex)
-Overfull \hbox (340.28922pt too wide) in paragraph at lines 342--345
-\T1/ptm/m/n/12 pen-dency was set to a branch of a Git repos-i-tory (e.g., []).
- []
-
-[35]
+ (./_minted-thesis/53A57B0FD1FA91F883E3B75FF754FE0BDD95E99AA7B4976517879FA5762B39A7.pygtex) [39]
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/61604E87CC640DFED83783C6B5B2DD01DD95E99AA7B4976517879FA5762B39A7.pygtex)
+
+(./_minted-thesis/61604E87CC640DFED83783C6B5B2DD01DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/C7FD3539B12EF898936D46E156DFDB1ADD95E99AA7B4976517879FA5762B39A7.pygtex)
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=648, 1240.635pt x 168.63pt>
+ (./_minted-thesis/C7FD3539B12EF898936D46E156DFDB1ADD95E99AA7B4976517879FA5762B39A7.pygtex) [40]
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=659, 1240.635pt x 168.63pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png  used on input line 384.
 (pdftex.def)             Requested size: 341.43437pt x 46.40813pt.
- [36]
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=655, 813.0375pt x 220.825pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=661, 813.0375pt x 220.825pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png  used on input line 395.
@@ -1226,14 +1260,18 @@ Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~Cl
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=656, 2589.675pt x 1126.2075pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=662, 2589.675pt x 1126.2075pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png  used on input line 405.
 (pdftex.def)             Requested size: 341.43437pt x 148.47426pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/0E6422E4EF11EC6D2613079F06D00667DD95E99AA7B4976517879FA5762B39A7.pygtex)
+(./_minted-thesis/0E6422E4EF11EC6D2613079F06D00667DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/942CBD749B64FAEE60B50EC38007BE0CDD95E99AA7B4976517879FA5762B39A7.pygtex)
@@ -1245,7 +1283,7 @@ Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~Cl
  (./_minted-thesis/1F0A6156EEA50C3D6A9FD1F39B942B03DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex) [37
+ (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex) [41
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1255,15 +1293,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.410 
-      
+       </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>]
+\openout5 = `thesis.pyg'.
+
+ (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./chapters/resource_util.tex) (./chapters/cost_anal.tex) (./chapters/sync_case_study.tex [42
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.410 
-       </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>]
-\openout5 = `thesis.pyg'.
-
- (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./chapters/resource_util.tex) (./chapters/cost_anal.tex) (./chapters/sync_case_study.tex [38]
+l.1 \chapter
+            {Synchronization System Case Study} </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>]
 Chapter 6.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--5
@@ -1275,7 +1313,7 @@ Overfull \hbox (2.97525pt too wide) in paragraph at lines 10--11
 \T1/ptm/m/n/12 syn-chro-niza-tion task is mainly en-cap-su-lated in a sin-gle func-tion, \T1/cmtt/m/n/12 syncModel(modelCode:
  []
 
-[39
+[43
 
 ]
 \openout4 = `thesis.pyg'.
@@ -1283,91 +1321,95 @@ Overfull \hbox (2.97525pt too wide) in paragraph at lines 10--11
  (./_minted-thesis/D4FCB243019181234912674B7F0C04A4DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex [40]) [41] [42]
+ (./_minted-thesis/1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex [44]) [45] [46]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex [43]
+ (./_minted-thesis/3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex [47]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 15.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ))
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex) [44{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<media/rate_l70ms_latency_med.pdf, id=717, 426.93503pt x 318.7709pt>
+ (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex [48{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
+<media/rate_l70ms_latency_med.pdf, id=722, 426.93503pt x 318.7709pt>
 File: media/rate_l70ms_latency_med.pdf Graphic file (type pdf)
 <use media/rate_l70ms_latency_med.pdf>
 Package pdftex.def Info: media/rate_l70ms_latency_med.pdf  used on input line 197.
 (pdftex.def)             Requested size: 426.79135pt x 318.68257pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \hbox (10.12508pt too wide) in paragraph at lines 202--203
 \T1/ptm/m/n/12 show any clear ben-e-fits. This may be at-tributed to the lack of sup-port for "intra-concurrency"
  []
 
-[45
+[49]) (./chapters/conclusions.tex) (./thesis.bbl [50
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.207 
-       <./media/rate_l70ms_latency_med.pdf>]) (./chapters/conclusions.tex) (./thesis.bbl [46]
+l.1 \begin{thebibliography}{10}
+                                <./media/rate_l70ms_latency_med.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\T1/ptm/m/n/12 JavaServer Faces.  [][]$\T1/cmtt/m/n/12 https : / / www . oracle . com / java / technologies /
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 36--38
+Underfull \hbox (badness 5050) in paragraph at lines 40--42
 []\T1/ptm/m/n/12 Apache Open-Whisk - Ac-tion In-ter-face.  [][]$\T1/cmtt/m/n/12 https : / / github . com / apache /
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 40--42
+Underfull \hbox (badness 2221) in paragraph at lines 44--46
 []\T1/ptm/m/n/12 Apache Open-Whisk - Ac-tion-Loop Proxy.  [][]$\T1/cmtt/m/n/12 https : / / github . com / apache /
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 48--51
+Underfull \hbox (badness 5832) in paragraph at lines 52--55
 []\T1/ptm/m/n/12 Chromium OS.  Sand-box.  [][]$\T1/cmtt/m/n/12 https : / / www . chromium . org / developers /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 []\T1/ptm/m/n/12 S. Fo-rums.  De-pen-dency on (very) ac-tive branch doesn't
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 \T1/ptm/m/n/12 pull new com-mits.  [][]$\T1/cmtt/m/n/12 https : / / forums . swift . org / t /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 \T1/cmtt/m/n/12 dependency-[]on-[]very-[]active-[]branch-[]doesnt-[]pull-[]new-[]commits / 33204$[][]\T1/ptm/m/n/12 ,
  []
 
-) [47
+) [51
 
 ] (./thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 472EDC7B15F55F43962DD69E3A47BEB6;12515.
+(rerunfilecheck)             Checksum: 03A29374C65B420795EE6CC506904078;12057.
 runsystem(rm thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27358 strings out of 476025
- 548389 string characters out of 5790018
+ 27440 strings out of 476025
+ 552919 string characters out of 5790018
  1865388 words of memory out of 5000000
- 46872 multiletter control sequences out of 15000+600000
- 551437 words of font info for 80 fonts, out of 8000000 for 9000
+ 46918 multiletter control sequences out of 15000+600000
+ 562508 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,89p,1188b,815s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,89p,1286b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (49 pages, 406701 bytes).
+Output written on thesis.pdf (53 pages, 430330 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
- 753 compressed objects within 8 object streams
- 181 named destinations out of 1000 (max. 500000)
- 603 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 853 PDF objects out of 1000 (max. 8388607)
+ 752 compressed objects within 8 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 584 words of extra memory for PDF output out of 10000 (max. 10000000)
 
