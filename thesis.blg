@@ -3,391 +3,392 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: /Users/andrew_yos/bsc-thesis/thesis.aux
 The style file: abbrv.bst
 Database file #1: thesis.bib
-You're missing a field name---line 83 of file thesis.bib
+You're missing a field name---line 93 of file thesis.bib
  : 
  : % author = {Tice, Caroline and Roeder, Tom and Collingbourne, Peter and Checkoway, Stephen and Erlingsson, \'{U}lfar and Lozano, Luis and Pike, Geoff},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 91 of file thesis.bib
+You're missing a field name---line 101 of file thesis.bib
  : 
  : %  title = {{VTPin prototype}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 96 of file thesis.bib
+You're missing a field name---line 106 of file thesis.bib
  : 
  : %  title={{SAFEDISPATCH: Securing C++ Virtual Calls from Memory Corruption Attacks}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 103 of file thesis.bib
+You're missing a field name---line 113 of file thesis.bib
  : 
  : %    title={{VTint: Protecting Virtual Function Tables' Integrity}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 110 of file thesis.bib
+You're missing a field name---line 120 of file thesis.bib
  : 
  : %    title={{vfGuard: Strict Protection for Virtual Function Calls in COTS C++ Binaries}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 117 of file thesis.bib
+You're missing a field name---line 127 of file thesis.bib
  : 
  : % author = {Gawlik, Robert and Holz, Thorsten},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 125 of file thesis.bib
+You're missing a field name---line 135 of file thesis.bib
  : 
  : %  title={{VTrust: Regaining Trust on Virtual Calls}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 133 of file thesis.bib
+You're missing a field name---line 143 of file thesis.bib
  : 
  : % author = {Jin, Wesley and Cohen, Cory and Gennari, Jeffrey and Hines, Charles and Chaki, Sagar and Gurfinkel, Arie and Havrilla, Jeffrey and Narasimhan, Priya},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 151 of file thesis.bib
+You're missing a field name---line 161 of file thesis.bib
  : 
  : %  title={{Static-Dynamic Control Flow Integrity}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 160 of file thesis.bib
+You're missing a field name---line 170 of file thesis.bib
  : 
  : %    title={Smashing the stack for fun and profit},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 170 of file thesis.bib
+You're missing a field name---line 180 of file thesis.bib
  : 
  : %    title={{StackGuard: Automatic adaptive detection and prevention of buffer-overflow attacks}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 179 of file thesis.bib
+You're missing a field name---line 189 of file thesis.bib
  : 
  : %    author =       {Hovav Shacham},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 191 of file thesis.bib
+You're missing a field name---line 201 of file thesis.bib
  : 
  : % author = {Kevin Z. Snow and Lucas Davi and Alexandra Dmitrienko and Christopher Liebchen and Fabian Monrose and Ahmad-Reza Sadeghi},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 200 of file thesis.bib
+You're missing a field name---line 210 of file thesis.bib
  : 
  : %    author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and Ligatti, Jay},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 210 of file thesis.bib
+You're missing a field name---line 220 of file thesis.bib
  : 
  : %    author      = {Chao Zhang and Tao Wei and Zhaofeng Chen and Lei Duan and Szekeres, L.
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 221 of file thesis.bib
+You're missing a field name---line 231 of file thesis.bib
  : 
  : %    title={{Control Flow Integrity for COTS Binaries}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 229 of file thesis.bib
+You're missing a field name---line 239 of file thesis.bib
  : 
  : %  title={{Out Of Control: Overcoming Control-Flow Integrity}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 237 of file thesis.bib
+You're missing a field name---line 247 of file thesis.bib
  : 
  : %    author = {Enes G{\"o}kta{\c s} and Elias Athanasopoulos and Michalis Polychronakis and Herbert Bos and Georgios Portokalidis},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 245 of file thesis.bib
+You're missing a field name---line 255 of file thesis.bib
  : 
  : %    author = {Lucas Davi and Ahmad-Reza Sadeghi and Daniel Lehmann and Fabian Monrose},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 253 of file thesis.bib
+You're missing a field name---line 263 of file thesis.bib
  : 
  : %    author = {Nicholas Carlini and David Wagner},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 261 of file thesis.bib
+You're missing a field name---line 271 of file thesis.bib
  : 
  : %  author    = {Felix Schuster and
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 275 of file thesis.bib
+You're missing a field name---line 285 of file thesis.bib
  : 
  : %    author = {Vasilis Pappas and Michalis Polychronakis and Angelos D. Keromytis},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 287 of file thesis.bib
+You're missing a field name---line 297 of file thesis.bib
  : 
  : %  author    = {Yueqiang Cheng and
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 304 of file thesis.bib
+You're missing a field name---line 314 of file thesis.bib
  : 
  : % author = {{Kuznetsov, Volodymyr and Szekeres, L\'{a}szl\'{o} and Payer, Mathias and Candea, George and Sekar, R. and Song, Dawn}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 320 of file thesis.bib
+You're missing a field name---line 330 of file thesis.bib
  : 
  : % author = {Niu, Ben and Tan, Gang},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 338 of file thesis.bib
+You're missing a field name---line 348 of file thesis.bib
  : 
  : % author = {Felix Schuster and Thomas Tendyck and Christopher Liebchen and Lucas Davi
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 347 of file thesis.bib
+You're missing a field name---line 357 of file thesis.bib
  : 
  : % author = {Carlini, Nicolas and Barresi, Antonio and Payer, Mathias and Wagner, David and Gross, Thomas R.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 355 of file thesis.bib
+You're missing a field name---line 365 of file thesis.bib
  : 
  : % author = {Evans, Isaac and Long, Fan and Otgonbaatar, Ulziibayar and Shrobe, Howard and Rinard, Martin and Okhravi, Hamed and Sidiroglou-Douskos, Stelios},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 363 of file thesis.bib
+You're missing a field name---line 373 of file thesis.bib
  : 
  : %  author    = {Victor {van der Veen} and Enes G\"{o}kta\c{s} and Moritz Contag and Andre Pawloski and Xi Chen and Sanjay Rawat and Herbert Bos and Thorsten Holz and Elias Athanasopoulos and Cristiano Giuffrida},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 372 of file thesis.bib
+You're missing a field name---line 382 of file thesis.bib
  : 
  : % author = {van der Veen, Victor and Andriesse, Dennis and G\"{o}kta\c{s}, Enes and Gras, Ben and Sambuc, Lionel and Slowinska, Asia and Bos, Herbert and Giuffrida, Cristiano},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 384 of file thesis.bib
+You're missing a field name---line 394 of file thesis.bib
  : 
  : %  author = {Akritidis, Periklis},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 392 of file thesis.bib
+You're missing a field name---line 402 of file thesis.bib
  : 
  : %  author    = {Yves Younan},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 400 of file thesis.bib
+You're missing a field name---line 410 of file thesis.bib
  : 
  : % author = {Berger, Emery D. and Zorn, Benjamin G.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 409 of file thesis.bib
+You're missing a field name---line 419 of file thesis.bib
  : 
  : % author = {Novark, Gene and Berger, Emery D.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 417 of file thesis.bib
+You're missing a field name---line 427 of file thesis.bib
  : 
  : % author = {Caballero, Juan and Grieco, Gustavo and Marron, Mark and Nappa, Antonio},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 425 of file thesis.bib
+You're missing a field name---line 435 of file thesis.bib
  : 
  : %  author    = {Byoungyoung Lee and
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 438 of file thesis.bib
+You're missing a field name---line 448 of file thesis.bib
  : 
  : %  author    = {Santosh Nagarakatte and
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 449 of file thesis.bib
+You're missing a field name---line 459 of file thesis.bib
  : 
  : %  title={{Purify: Fast Detection of Memory Leaks and Access Errors}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 457 of file thesis.bib
+You're missing a field name---line 467 of file thesis.bib
  : 
  : % author = {Nethercote, Nicholas and Seward, Julian},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 465 of file thesis.bib
+You're missing a field name---line 475 of file thesis.bib
  : 
  : % author = {Serebryany, Konstantin and Bruening, Derek and Potapenko, Alexander and Vyukov, Dmitry},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 477 of file thesis.bib
+You're missing a field name---line 487 of file thesis.bib
  : 
  : % author = {Pappas, Vasilis and Polychronakis, Michalis and Keromytis, Angelos D.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 485 of file thesis.bib
+You're missing a field name---line 495 of file thesis.bib
  : 
  : % author = {Wartell, Richard and Mohan, Vishwath and Hamlen, Kevin W. and Lin, Zhiqiang},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 493 of file thesis.bib
+You're missing a field name---line 503 of file thesis.bib
  : 
  : % author = {Hiser, Jason and Nguyen-Tuong, Anh and Co, Michele and Hall, Matthew and Davidson, Jack W.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 501 of file thesis.bib
+You're missing a field name---line 511 of file thesis.bib
  : 
  : % title = {{Enhanced Operating System Security Through Efficient and Fine-grained Address Space Randomization}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 513 of file thesis.bib
+You're missing a field name---line 523 of file thesis.bib
  : 
  : % author = {Bonwick, Jeff},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 529 of file thesis.bib
+You're missing a field name---line 539 of file thesis.bib
  : 
  : %    title = {{Advanced Exploitation of Mozilla Firefox Use-After-Free Vulnerability (Pwn2Own 2014)}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 535 of file thesis.bib
+You're missing a field name---line 545 of file thesis.bib
  : 
  : %    title = {{Advanced Exploitation of Mozilla Firefox Use-after-free Vulnerability (MFSA 2012-22)}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 541 of file thesis.bib
+You're missing a field name---line 551 of file thesis.bib
  : 
  : %    title = {{(Pwn2Own) Google Chrome Blink Use-After-Free Remote Code Execution Vulnerability}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 547 of file thesis.bib
+You're missing a field name---line 557 of file thesis.bib
  : 
  : %    title = {{(Pwn2Own) Adobe Flash Player AS3 ConvolutionFilter Use-After-Free Remote Code Execution Vulnerability}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 553 of file thesis.bib
+You're missing a field name---line 563 of file thesis.bib
  : 
  : %    title = {{Pwn2Own 2015: The year every web browser went down}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 559 of file thesis.bib
+You're missing a field name---line 569 of file thesis.bib
  : 
  : %    title = {{Pwn2Own 2016: Hackers Earn \$460,000 for 21 New Flaws}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 566 of file thesis.bib
+You're missing a field name---line 576 of file thesis.bib
  : 
  : %  title={{Itanium C++ ABI}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 572 of file thesis.bib
+You're missing a field name---line 582 of file thesis.bib
  : 
  : %  added-at = {2010-10-27T03:39:37.000+0200},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 586 of file thesis.bib
+You're missing a field name---line 596 of file thesis.bib
  : 
  : % author  = {Tim Rains and Matt Miller and David Weston},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 594 of file thesis.bib
+You're missing a field name---line 604 of file thesis.bib
  : 
  : %  title={{Enhanced Mitigation Experience Toolkit}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 601 of file thesis.bib
+You're missing a field name---line 611 of file thesis.bib
  : 
  : %  title={{Address Space Layout Randomization (ASLR)}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 608 of file thesis.bib
+You're missing a field name---line 618 of file thesis.bib
  : 
  : %  title={{Coding style for Chromium}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 613 of file thesis.bib
+You're missing a field name---line 623 of file thesis.bib
  : 
  : %  title = {{Changes to Functionality in Microsoft Windows XP Service
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 623 of file thesis.bib
+Repeated entry---line 633 of file thesis.bib
  : %@misc{wsbox_chromiumos
  :                        ,
 I'm skipping whatever remains of this entry
-You're missing a field name---line 630 of file thesis.bib
+You're missing a field name---line 640 of file thesis.bib
  : 
  : % author = {Bittau, Andrea and Belay, Adam and Mashtizadeh, Ali and Mazi\`{e}res, David and Boneh, Dan},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 646 of file thesis.bib
+You're missing a field name---line 656 of file thesis.bib
  : 
  : %  title={{A Scalable Concurrent \texttt{malloc(3)} Implementation for FreeBSD}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 653 of file thesis.bib
+You're missing a field name---line 663 of file thesis.bib
  : 
  : %  title={{Feedback directed optimization of TCMalloc}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 660 of file thesis.bib
+You're missing a field name---line 670 of file thesis.bib
  : 
  : %    title = {{\texttt{realloc()} -- GNU C Library.}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 665 of file thesis.bib
+You're missing a field name---line 675 of file thesis.bib
  : 
  : %    title = {{Hooking the memory allocator in Firefox}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 670 of file thesis.bib
+You're missing a field name---line 680 of file thesis.bib
  : 
  : %  author={Sabanal, Paul Vincent and Yason, Mark Vincent},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 677 of file thesis.bib
+You're missing a field name---line 687 of file thesis.bib
  : 
  : %  title={{C++ Object Model}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-"}" immediately follows an entry type---line 678 of file thesis.bib
+"}" immediately follows an entry type---line 688 of file thesis.bib
  : %  author={\texttt{shifan@freecity.cn
  :                                      }},
 I'm skipping whatever remains of this entry
-You're missing a field name---line 683 of file thesis.bib
+You're missing a field name---line 693 of file thesis.bib
  : 
  : %    title = {{A Crash Course on the Depths of Win32 Structured Exception Handling}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 691 of file thesis.bib
+You're missing a field name---line 701 of file thesis.bib
  : 
  : %  title={{Subversive-C: Abusing and Protecting Dynamic Message Dispatch}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 699 of file thesis.bib
+You're missing a field name---line 709 of file thesis.bib
  : 
  : % author = {Hirzel, Martin and Diwan, Amer},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 707 of file thesis.bib
+You're missing a field name---line 717 of file thesis.bib
  : 
  : % author = {Hirzel, Martin and Diwan, Amer and Henkel, Johannes},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 719 of file thesis.bib
+You're missing a field name---line 729 of file thesis.bib
  : 
  : % author = {Boehm, Hans-J. and Demers, Alan J. and Shenker, Scott},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 727 of file thesis.bib
+You're missing a field name---line 737 of file thesis.bib
  : 
  : %  title={{Design Patterns: Elements of Reusable Object-Oriented Software}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 734 of file thesis.bib
+You're missing a field name---line 744 of file thesis.bib
  : 
  : % author = {Tang, Adrian and Sethumadhavan, Simha and Stolfo, Salvatore},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 752 of file thesis.bib
+You're missing a field name---line 762 of file thesis.bib
  : 
  : % author = {Dhurjati, Dinakar and Adve, Vikram},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 760 of file thesis.bib
+You're missing a field name---line 770 of file thesis.bib
  : 
  : % author  = {{Rafal Wojtczuk}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 766 of file thesis.bib
+You're missing a field name---line 776 of file thesis.bib
  : 
  : %  added-at = {2015-12-15T00:00:00.000+0100},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "openwhisk2021"
+Warning--to sort, need author or key in action-interface
 Warning--to sort, need author or key in openwhisk2023
+Warning--to sort, need author or key in action-proxy
 Warning--to sort, need author or key in django
 Warning--to sort, need author or key in flask
 Warning--to sort, need author or key in express
@@ -395,45 +396,46 @@ Warning--to sort, need author or key in koa
 Warning--to sort, need author or key in springboot
 Warning--to sort, need author or key in jsf
 Warning--to sort, need author or key in swift-platform-support
-You've used 10 entries,
+Warning--to sort, need author or key in openwhisk-invoke
+You've used 13 entries,
             2118 wiz_defined-function locations,
-            532 strings with 4617 characters,
-and the built_in function-call counts, 1710 in all, are:
-= -- 160
-> -- 22
+            540 strings with 4986 characters,
+and the built_in function-call counts, 2195 in all, are:
+= -- 207
+> -- 25
 < -- 0
-+ -- 14
++ -- 17
 - -- 4
-* -- 54
-:= -- 217
-add.period$ -- 22
-call.type$ -- 10
-change.case$ -- 32
+* -- 71
+:= -- 270
+add.period$ -- 28
+call.type$ -- 13
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 70
-empty$ -- 229
+cite$ -- 24
+duplicate$ -- 91
+empty$ -- 298
 format.name$ -- 4
-if$ -- 413
+if$ -- 535
 int.to.chr$ -- 0
-int.to.str$ -- 10
+int.to.str$ -- 13
 missing$ -- 0
-newline$ -- 45
+newline$ -- 57
 num.names$ -- 4
-pop$ -- 80
+pop$ -- 104
 preamble$ -- 1
-purify$ -- 22
+purify$ -- 28
 quote$ -- 0
-skip$ -- 77
+skip$ -- 99
 stack$ -- 0
-substring$ -- 50
-swap$ -- 10
+substring$ -- 65
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
-warning$ -- 8
+type$ -- 52
+warning$ -- 11
 while$ -- 4
-width$ -- 12
-write$ -- 78
+width$ -- 15
+write$ -- 101
 (There were 77 error messages)

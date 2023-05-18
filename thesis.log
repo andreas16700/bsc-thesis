@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  18 MAY 2023 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  18 MAY 2023 17:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -959,46 +959,42 @@ Overfull \hbox (1.74904pt too wide) in paragraph at lines 9--10
 
 ]) (./chapters/literature_review.tex) (./chapters/runtime_update.tex [9]
 Chapter 2.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
-[][] 
- []
-
-<media/action_interface.pdf, id=451, 980.1748pt x 355.9969pt>
-File: media/action_interface.pdf Graphic file (type pdf)
-<use media/action_interface.pdf>
-Package pdftex.def Info: media/action_interface.pdf  used on input line 11.
-(pdftex.def)             Requested size: 426.79135pt x 155.00949pt.
 [10
 
 ]
+Overfull \hbox (16.59273pt too wide) in paragraph at lines 22--23
+\T1/ptm/m/n/12 structs, rev-o-lu-tion-ized the way asyn-chronous code is writ-ten and un-der-stood. The async/await
+ []
 
-LaTeX Warning: Citation `openwhisk2021' on page 11 undefined on input line 20.
+[11]
+Overfull \hbox (1.35321pt too wide) in paragraph at lines 48--49
+\T1/ptm/m/n/12 Overall, the en-hance-ments in Swift 5.5 sig-nif-i-cantly im-proved the de-vel-op-ment and bench-
+ []
 
-[11
+<media/action_interface.pdf, id=443, 980.1748pt x 355.9969pt>
+File: media/action_interface.pdf Graphic file (type pdf)
+<use media/action_interface.pdf>
+Package pdftex.def Info: media/action_interface.pdf  used on input line 60.
+(pdftex.def)             Requested size: 426.79135pt x 155.00949pt.
+[12] [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.22 \subsection
-                {ActionLoop Proxy in OpenWhisk} <./media/action_interface.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 37.
+l.76 
+      <./media/action_interface.pdf>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 88.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [12]
-Overfull \hbox (5.3255pt too wide) in paragraph at lines 76--76
-[]\T1/ptm/b/n/17.28 Potential ben-e-fits and ap-pli-ca-tions of the up-dated run-
- []
-
-) (./chapters/research_methodology.tex) (./chapters/performance_comparison.tex [13]
+) [14]) (./chapters/research_methodology.tex) (./chapters/performance_comparison.tex [15]
 Chapter 3.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
 [][] 
  []
 
-[14
+[16
 
-] [15]
+] [17]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/default.pygstyle) (./_minted-thesis/0BF21D71C650960795C24B180FBAC6DFC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex
@@ -1008,7 +1004,7 @@ File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
- [16{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
+ [18{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/FF27148A4F43F95B7446EDCEFF986F68C0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex)
@@ -1038,7 +1034,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
  (./_minted-thesis/519F03D7D7D9A62DB27918DEB6D8A24DC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/5655D20B34E913E993F2726A91C06D57B6F646E3DFE3820A178305059A4BB3A3.pygtex [17])
+ (./_minted-thesis/5655D20B34E913E993F2726A91C06D57B6F646E3DFE3820A178305059A4BB3A3.pygtex [19])
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/7AC3AFD84E120EEA459A29E142D941A5B6F646E3DFE3820A178305059A4BB3A3.pygtex)
@@ -1075,7 +1071,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
  (./_minted-thesis/979077496D14698B29782AEAA2F4B34A9B4508BF907A63D4CE444D5FB383F2CC.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/CBC6AD14940941BDDC4A7E10D71C7D029B4508BF907A63D4CE444D5FB383F2CC.pygtex) [18]
+ (./_minted-thesis/CBC6AD14940941BDDC4A7E10D71C7D029B4508BF907A63D4CE444D5FB383F2CC.pygtex) [20]
 Overfull \hbox (2.8884pt too wide) in paragraph at lines 149--150
 \T1/ptm/m/n/12 types, de-vel-op-ers can sim-u-late value-like be-hav-ior us-ing tech-niques such as ob-ject cloning: 
  []
@@ -1109,7 +1105,7 @@ Overfull \hbox (2.8884pt too wide) in paragraph at lines 149--150
  (./_minted-thesis/60B725F10C9C85C70D97880DFE8191B398AC6650688363CDFA3DF2E4C7E54189.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/D85378C7433EE0FB18AB57060F46FDE098AC6650688363CDFA3DF2E4C7E54189.pygtex [19])
+ (./_minted-thesis/D85378C7433EE0FB18AB57060F46FDE098AC6650688363CDFA3DF2E4C7E54189.pygtex [21])
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/8304C57391A218EA3F4C053166E6F00098AC6650688363CDFA3DF2E4C7E54189.pygtex)
@@ -1121,16 +1117,16 @@ Overfull \hbox (2.8884pt too wide) in paragraph at lines 149--150
  (./_minted-thesis/DB9B7629A516B98E3251B481A560596E98AC6650688363CDFA3DF2E4C7E54189.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/8304C57391A218EA3F4C053166E6F00098AC6650688363CDFA3DF2E4C7E54189.pygtex)) (./chapters/cold_start.tex [20]
+ (./_minted-thesis/8304C57391A218EA3F4C053166E6F00098AC6650688363CDFA3DF2E4C7E54189.pygtex)) (./chapters/cold_start.tex [22]
 Chapter 4.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--5
 [][] 
  []
 
-) (./chapters/ease_of_dev.tex [21
+) (./chapters/ease_of_dev.tex [23
 
-] [22]
+] [24]
 Chapter 5.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
@@ -1142,7 +1138,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
 (./_minted-thesis/34AEC85BB13732AFF4C5B2134F3E7BEADD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/B0DD47BC2CB14E68A8CB777BCFD8A357B6F646E3DFE3820A178305059A4BB3A3.pygtex [23
+ (./_minted-thesis/B0DD47BC2CB14E68A8CB777BCFD8A357B6F646E3DFE3820A178305059A4BB3A3.pygtex [25
 
 ])
 \openout4 = `thesis.pyg'.
@@ -1159,7 +1155,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
  (./_minted-thesis/CEB449AACF55F795D0A3DF2959B14BF0DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/88FDEDDEF3FD874635EBAB5A039078D6B6F646E3DFE3820A178305059A4BB3A3.pygtex) [24]
+ (./_minted-thesis/88FDEDDEF3FD874635EBAB5A039078D6B6F646E3DFE3820A178305059A4BB3A3.pygtex) [26]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/3F50800911A56EAABC893FCE6E8AB6E4DD95E99AA7B4976517879FA5762B39A7.pygtex)
@@ -1174,7 +1170,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
  (./_minted-thesis/7918940DCA5163295F179A659A0110F598AC6650688363CDFA3DF2E4C7E54189.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/97665612CAD83A31A7A2A4EB6950B244DD95E99AA7B4976517879FA5762B39A7.pygtex [25])
+ (./_minted-thesis/97665612CAD83A31A7A2A4EB6950B244DD95E99AA7B4976517879FA5762B39A7.pygtex [27])
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/17DE9129E1A4E1340AFB3377FC8E027798AC6650688363CDFA3DF2E4C7E54189.pygtex)
@@ -1183,22 +1179,22 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
  (./_minted-thesis/85463F08AD1F9EF4E069188A6F0263E6DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/CCF9229D1AA232924A0655886A43381E98AC6650688363CDFA3DF2E4C7E54189.pygtex) [26]
+ (./_minted-thesis/CCF9229D1AA232924A0655886A43381E98AC6650688363CDFA3DF2E4C7E54189.pygtex) [28]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/496EE2B2A17704869B19A3279F197BD4DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/67D41C66AA4AC7E665FF13C8CBBBD7EC98AC6650688363CDFA3DF2E4C7E54189.pygtex) [27]
+ (./_minted-thesis/67D41C66AA4AC7E665FF13C8CBBBD7EC98AC6650688363CDFA3DF2E4C7E54189.pygtex) [29]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/1B1D2479DDF8281AE23786725F09F48CDD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/25C032417B67B6462D5DDAA5021BA736B6F646E3DFE3820A178305059A4BB3A3.pygtex [28])
+ (./_minted-thesis/25C032417B67B6462D5DDAA5021BA736B6F646E3DFE3820A178305059A4BB3A3.pygtex [30])
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/3154310D6E8CA3FC43B3438E67074E9498AC6650688363CDFA3DF2E4C7E54189.pygtex [29]) [30] [31] [32]
+ (./_minted-thesis/3154310D6E8CA3FC43B3438E67074E9498AC6650688363CDFA3DF2E4C7E54189.pygtex [31]) [32] [33] [34]
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/53A57B0FD1FA91F883E3B75FF754FE0BDD95E99AA7B4976517879FA5762B39A7.pygtex)
@@ -1206,23 +1202,23 @@ Overfull \hbox (340.28922pt too wide) in paragraph at lines 342--345
 \T1/ptm/m/n/12 pen-dency was set to a branch of a Git repos-i-tory (e.g., []).
  []
 
-[33]
+[35]
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/61604E87CC640DFED83783C6B5B2DD01DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/C7FD3539B12EF898936D46E156DFDB1ADD95E99AA7B4976517879FA5762B39A7.pygtex)
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=657, 1240.635pt x 168.63pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=648, 1240.635pt x 168.63pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png  used on input line 384.
 (pdftex.def)             Requested size: 341.43437pt x 46.40813pt.
- [34]
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=664, 813.0375pt x 220.825pt>
+ [36]
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=655, 813.0375pt x 220.825pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>
-Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png  used on input line 396.
+Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png  used on input line 395.
 (pdftex.def)             Requested size: 341.43437pt x 92.73238pt.
 \openout5 = `thesis.pyg'.
 
@@ -1230,10 +1226,10 @@ Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~Cl
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=665, 2589.675pt x 1126.2075pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=656, 2589.675pt x 1126.2075pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>
-Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png  used on input line 406.
+Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png  used on input line 405.
 (pdftex.def)             Requested size: 341.43437pt x 148.47426pt.
 \openout5 = `thesis.pyg'.
 
@@ -1249,25 +1245,25 @@ Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~Cl
  (./_minted-thesis/1F0A6156EEA50C3D6A9FD1F39B942B03DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex) [35
+ (./_minted-thesis/66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex) [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.411 
+l.410 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.411 
+l.410 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.411 
+l.410 
        </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png> </Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>]
 \openout5 = `thesis.pyg'.
 
- (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./chapters/resource_util.tex) (./chapters/cost_anal.tex) (./chapters/sync_case_study.tex [36]
+ (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)) (./chapters/resource_util.tex) (./chapters/cost_anal.tex) (./chapters/sync_case_study.tex [38]
 Chapter 6.
 
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--5
@@ -1279,7 +1275,7 @@ Overfull \hbox (2.97525pt too wide) in paragraph at lines 10--11
 \T1/ptm/m/n/12 syn-chro-niza-tion task is mainly en-cap-su-lated in a sin-gle func-tion, \T1/cmtt/m/n/12 syncModel(modelCode:
  []
 
-[37
+[39
 
 ]
 \openout4 = `thesis.pyg'.
@@ -1287,21 +1283,21 @@ Overfull \hbox (2.97525pt too wide) in paragraph at lines 10--11
  (./_minted-thesis/D4FCB243019181234912674B7F0C04A4DD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex [38]) [39] [40]
+ (./_minted-thesis/1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex [40]) [41] [42]
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex)
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex [41]
+ (./_minted-thesis/3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex [43]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 15.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ))
 \openout4 = `thesis.pyg'.
 
- (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex) [42{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<media/rate_l70ms_latency_med.pdf, id=725, 426.93503pt x 318.7709pt>
+ (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex) [44{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<media/rate_l70ms_latency_med.pdf, id=717, 426.93503pt x 318.7709pt>
 File: media/rate_l70ms_latency_med.pdf Graphic file (type pdf)
 <use media/rate_l70ms_latency_med.pdf>
 Package pdftex.def Info: media/rate_l70ms_latency_med.pdf  used on input line 197.
@@ -1311,60 +1307,67 @@ Overfull \hbox (10.12508pt too wide) in paragraph at lines 202--203
 \T1/ptm/m/n/12 show any clear ben-e-fits. This may be at-tributed to the lack of sup-port for "intra-concurrency"
  []
 
-[43
+[45
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.207 
-       <./media/rate_l70ms_latency_med.pdf>]) (./chapters/conclusions.tex) (./thesis.bbl [44]
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+       <./media/rate_l70ms_latency_med.pdf>]) (./chapters/conclusions.tex) (./thesis.bbl [46]
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\T1/ptm/m/n/12 JavaServer Faces.  [][]$\T1/cmtt/m/n/12 https : / / www . oracle . com / java / technologies /
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 36--39
+Underfull \hbox (badness 5050) in paragraph at lines 36--38
+[]\T1/ptm/m/n/12 Apache Open-Whisk - Ac-tion In-ter-face.  [][]$\T1/cmtt/m/n/12 https : / / github . com / apache /
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 40--42
+[]\T1/ptm/m/n/12 Apache Open-Whisk - Ac-tion-Loop Proxy.  [][]$\T1/cmtt/m/n/12 https : / / github . com / apache /
+ []
+
+
+Underfull \hbox (badness 5832) in paragraph at lines 48--51
 []\T1/ptm/m/n/12 Chromium OS.  Sand-box.  [][]$\T1/cmtt/m/n/12 https : / / www . chromium . org / developers /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--44
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
 []\T1/ptm/m/n/12 S. Fo-rums.  De-pen-dency on (very) ac-tive branch doesn't
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--44
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
 \T1/ptm/m/n/12 pull new com-mits.  [][]$\T1/cmtt/m/n/12 https : / / forums . swift . org / t /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--44
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
 \T1/cmtt/m/n/12 dependency-[]on-[]very-[]active-[]branch-[]doesnt-[]pull-[]new-[]commits / 33204$[][]\T1/ptm/m/n/12 ,
  []
 
-) [45
+) [47
 
 ] (./thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8C4DF5E944126188D0F04FAA3CF371DD;14392.
+(rerunfilecheck)             Checksum: 472EDC7B15F55F43962DD69E3A47BEB6;12515.
 runsystem(rm thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27341 strings out of 476025
- 548045 string characters out of 5790018
+ 27358 strings out of 476025
+ 548389 string characters out of 5790018
  1865388 words of memory out of 5000000
- 46859 multiletter control sequences out of 15000+600000
+ 46872 multiletter control sequences out of 15000+600000
  551437 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,89p,837b,815s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,7n,89p,1188b,815s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (47 pages, 402697 bytes).
+Output written on thesis.pdf (49 pages, 406701 bytes).
 PDF statistics:
- 847 PDF objects out of 1000 (max. 8388607)
- 754 compressed objects within 8 object streams
- 177 named destinations out of 1000 (max. 500000)
+ 848 PDF objects out of 1000 (max. 8388607)
+ 753 compressed objects within 8 object streams
+ 181 named destinations out of 1000 (max. 500000)
  603 words of extra memory for PDF output out of 10000 (max. 10000000)
 

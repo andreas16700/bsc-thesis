@@ -12,6 +12,10 @@
 {Flask}.
 \newblock \url{https://flask.palletsprojects.com/}.
 
+\bibitem{openwhisk-invoke}
+{invoke tool}.
+\newblock \url{https://github.com/apache/openwhisk/blob/master/tools/actionProxy/invoke.py}.
+
 \bibitem{jsf}
 {JavaServer Faces}.
 \newblock \url{https://www.oracle.com/java/technologies/javaserverfaces.html}.
@@ -27,6 +31,14 @@
 \bibitem{springboot}
 {Spring Boot}.
 \newblock \url{https://spring.io/projects/spring-boot}.
+
+\bibitem{action-interface}
+{Apache OpenWhisk - Action Interface}.
+\newblock \url{https://github.com/apache/openwhisk/blob/master/docs/actions-new.md#action-interface}, 2023.
+
+\bibitem{action-proxy}
+{Apache OpenWhisk - ActionLoop Proxy}.
+\newblock \url{https://github.com/apache/openwhisk/blob/master/docs/actions-actionloop.md}, 2023.
 
 \bibitem{openwhisk2023}
 {Apache OpenWhisk - Programming Model}.

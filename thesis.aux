@@ -28,165 +28,178 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Ease of Development}{9}{subsection.1.2.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}Resource Utilization}{9}{subsection.1.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2.5}Cost Analysis}{9}{subsection.1.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Updating the Swift runtime}{10}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:UpdatingRuntime}{{2}{10}{Updating the Swift runtime}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}\protected@file@percent }
+\newlabel{sec:Introduction}{{2.1}{10}{Introduction}{section.2.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Swift 5.5 Enhancements and their Impact}{11}{section.2.2}\protected@file@percent }
+\newlabel{sec:SwiftEnhancements}{{2.2}{11}{Swift 5.5 Enhancements and their Impact}{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Concurrency Support and Async/Await}{11}{subsection.2.2.1}\protected@file@percent }
+\newlabel{subsec:ConcurrencySupport}{{2.2.1}{11}{Concurrency Support and Async/Await}{subsection.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Structured Concurrency}{11}{subsection.2.2.2}\protected@file@percent }
+\newlabel{subsec:StructuredConcurrency}{{2.2.2}{11}{Structured Concurrency}{subsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Actor Model}{11}{subsection.2.2.3}\protected@file@percent }
+\newlabel{subsec:ActorModel}{{2.2.3}{11}{Actor Model}{subsection.2.2.3}{}}
+\citation{action-interface}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}SwiftNIO 2}{12}{subsection.2.2.4}\protected@file@percent }
+\newlabel{subsec:SwiftNIO}{{2.2.4}{12}{SwiftNIO 2}{subsection.2.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Impact on the Synchronization System Case Study}{12}{subsection.2.2.5}\protected@file@percent }
+\newlabel{subsec:ImpactCaseStudy}{{2.2.5}{12}{Impact on the Synchronization System Case Study}{subsection.2.2.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Understanding Runtimes in OpenWhisk}{12}{section.2.3}\protected@file@percent }
+\newlabel{sec:OpenWhiskRuntimes}{{2.3}{12}{Understanding Runtimes in OpenWhisk}{section.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Actions in OpenWhisk}{12}{section.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Action Interface in OpenWhisk}{12}{subsection.2.4.1}\protected@file@percent }
+\citation{action-interface}
 \citation{openwhisk2023}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Updating the Swift Runtime for OpenWhisk}{10}{chapter.2}\protected@file@percent }
+\citation{openwhisk2023}
+\citation{action-proxy}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Abstract representation of the Action Interface in OpenWhisk.}}{13}{figure.2.1}\protected@file@percent }
+\newlabel{fig:actioninterface}{{2.1}{13}{Abstract representation of the Action Interface in OpenWhisk}{figure.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}ActionLoop Proxy in OpenWhisk}{13}{subsection.2.4.2}\protected@file@percent }
+\citation{action-proxy}
+\citation{openwhisk2023}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Compiling a Swift action with the ActionLoop Proxy}{14}{subsection.2.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Overview of the officially supported Swift runtime in OpenWhisk}{14}{section.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Process of Updating the Swift Runtime}{15}{section.2.6}\protected@file@percent }
+\newlabel{sec:UpdatingProcess}{{2.6}{15}{Process of Updating the Swift Runtime}{section.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Challenges Encountered}{15}{section.2.7}\protected@file@percent }
+\newlabel{sec:Challenges}{{2.7}{15}{Challenges Encountered}{section.2.7}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Performance Comparison}{16}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\etoc@startlocaltoc{3}}
-\citation{openwhisk2023}
-\citation{openwhisk2023}
-\citation{openwhisk2021}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction to the need for updating the Swift runtime}{11}{section.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Action Interface in OpenWhisk}{11}{subsection.2.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Abstract representation of the Action Interface in OpenWhisk.}}{11}{figure.2.1}\protected@file@percent }
-\newlabel{fig:actioninterface}{{2.1}{11}{Abstract representation of the Action Interface in OpenWhisk}{figure.2.1}{}}
-\citation{openwhisk2023}
-\citation{openwhisk2023}
-\citation{openwhisk2023}
-\citation{openwhisk2023}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}ActionLoop Proxy in OpenWhisk}{12}{subsection.2.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Overview of the officially supported Swift runtime in OpenWhisk}{12}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Benefits of newer Swift features for serverless computing}{13}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Challenges faced while updating the runtime}{13}{section.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Understanding the current runtime architecture}{13}{subsection.2.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Implementing support for the latest Swift version (5.8)}{13}{subsection.2.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Steps to update the Swift runtime in OpenWhisk}{13}{section.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Description of the process and tools required}{13}{subsection.2.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Code snippets and configuration changes for updating the runtime}{13}{subsection.2.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.6}Verifying the updated runtime functionality}{13}{section.2.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.1}Testing and validating the new runtime with the synchronization system case study}{13}{subsection.2.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.7}Potential benefits and applications of the updated runtime for future researchers}{13}{section.2.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.8}Possible further improvements or updates to the runtime}{13}{section.2.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Performance Comparison}{14}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Value Types vs Reference Types and Copy-On-Write}{16}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Value Types}{16}{subsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Reference Types}{17}{subsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Copy-On-Write (CoW)}{17}{subsection.3.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Performance Benefits}{17}{subsection.3.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Qualitive Comparison with Go, Java, Javascript, and Python}{18}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Go}{18}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Value types in Go:}{18}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reference types in Go:}{19}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Python}{19}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Immutable objects:}{19}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mutable objects:}{20}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Node.js (JavaScript)}{20}{subsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reference types in JavaScript:}{20}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Simulating value types in JavaScript:}{21}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Java}{21}{subsection.3.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Value types in Java:}{21}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reference types in Java:}{22}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Summary}{22}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Startup Analysis of Serverless Languages on OpenWhisk}{23}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\etoc@startlocaltoc{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Value Types vs Reference Types and Copy-On-Write}{14}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Value Types}{14}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Reference Types}{15}{subsection.3.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Copy-On-Write (CoW)}{15}{subsection.3.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Performance Benefits}{15}{subsection.3.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Qualitive Comparison with Go, Java, Javascript, and Python}{16}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Go}{16}{subsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Value types in Go:}{16}{section*.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Reference types in Go:}{17}{section*.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Python}{17}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Immutable objects:}{17}{section*.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Mutable objects:}{18}{section*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Node.js (JavaScript)}{18}{subsection.3.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Reference types in JavaScript:}{18}{section*.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Simulating value types in JavaScript:}{19}{section*.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Java}{19}{subsection.3.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Value types in Java:}{19}{section*.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Reference types in Java:}{20}{section*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Summary}{20}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Startup Analysis of Serverless Languages on OpenWhisk}{21}{chapter.4}\protected@file@percent }
+\newlabel{chap:cold_start_analysis}{{4}{23}{Startup Analysis of Serverless Languages on OpenWhisk}{etoc@tocid.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{24}{section.4.1}\protected@file@percent }
+\newlabel{sec:introduction_cold_start_analysis}{{4.1}{24}{Introduction}{section.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Background and Related Work}{24}{section.4.2}\protected@file@percent }
+\newlabel{sec:background_and_related_work}{{4.2}{24}{Background and Related Work}{section.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Benchmark Functions Selection}{24}{section.4.3}\protected@file@percent }
+\newlabel{sec:benchmark_functions_selection}{{4.3}{24}{Benchmark Functions Selection}{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}OpenWhisk Setup and Configuration}{24}{section.4.4}\protected@file@percent }
+\newlabel{sec:openwhisk_setup_and_configuration}{{4.4}{24}{OpenWhisk Setup and Configuration}{section.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Methodology}{24}{section.4.5}\protected@file@percent }
+\newlabel{sec:methodology}{{4.5}{24}{Methodology}{section.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Deployment and Timing Approach}{24}{subsection.4.5.1}\protected@file@percent }
+\newlabel{subsec:deployment_and_timing_approach}{{4.5.1}{24}{Deployment and Timing Approach}{subsection.4.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Fairness and Consistency}{24}{subsection.4.5.2}\protected@file@percent }
+\newlabel{subsec:fairness_and_consistency}{{4.5.2}{24}{Fairness and Consistency}{subsection.4.5.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Results and Analysis}{24}{section.4.6}\protected@file@percent }
+\newlabel{sec:results_and_analysis}{{4.6}{24}{Results and Analysis}{section.4.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Quantitative Results}{24}{subsection.4.6.1}\protected@file@percent }
+\newlabel{subsec:quantitative_results}{{4.6.1}{24}{Quantitative Results}{subsection.4.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Comparative Analysis}{24}{subsection.4.6.2}\protected@file@percent }
+\newlabel{subsec:comparative_analysis}{{4.6.2}{24}{Comparative Analysis}{subsection.4.6.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}Factors Affecting Cold Start Times}{24}{section.4.7}\protected@file@percent }
+\newlabel{sec:factors_affecting_cold_start_times}{{4.7}{24}{Factors Affecting Cold Start Times}{section.4.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}Discussion and Interpretation}{24}{section.4.8}\protected@file@percent }
+\newlabel{sec:discussion_and_interpretation}{{4.8}{24}{Discussion and Interpretation}{section.4.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.9}Conclusion}{24}{section.4.9}\protected@file@percent }
+\newlabel{sec:conclusion_cold_start_analysis}{{4.9}{24}{Conclusion}{section.4.9}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Ease of Development}{25}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\etoc@startlocaltoc{5}}
-\newlabel{chap:cold_start_analysis}{{5}{21}{Startup Analysis of Serverless Languages on OpenWhisk}{etoc@tocid.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{22}{section.4.1}\protected@file@percent }
-\newlabel{sec:introduction_cold_start_analysis}{{4.1}{22}{Introduction}{section.4.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Background and Related Work}{22}{section.4.2}\protected@file@percent }
-\newlabel{sec:background_and_related_work}{{4.2}{22}{Background and Related Work}{section.4.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Benchmark Functions Selection}{22}{section.4.3}\protected@file@percent }
-\newlabel{sec:benchmark_functions_selection}{{4.3}{22}{Benchmark Functions Selection}{section.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}OpenWhisk Setup and Configuration}{22}{section.4.4}\protected@file@percent }
-\newlabel{sec:openwhisk_setup_and_configuration}{{4.4}{22}{OpenWhisk Setup and Configuration}{section.4.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Methodology}{22}{section.4.5}\protected@file@percent }
-\newlabel{sec:methodology}{{4.5}{22}{Methodology}{section.4.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Deployment and Timing Approach}{22}{subsection.4.5.1}\protected@file@percent }
-\newlabel{subsec:deployment_and_timing_approach}{{4.5.1}{22}{Deployment and Timing Approach}{subsection.4.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Fairness and Consistency}{22}{subsection.4.5.2}\protected@file@percent }
-\newlabel{subsec:fairness_and_consistency}{{4.5.2}{22}{Fairness and Consistency}{subsection.4.5.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Results and Analysis}{22}{section.4.6}\protected@file@percent }
-\newlabel{sec:results_and_analysis}{{4.6}{22}{Results and Analysis}{section.4.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}Quantitative Results}{22}{subsection.4.6.1}\protected@file@percent }
-\newlabel{subsec:quantitative_results}{{4.6.1}{22}{Quantitative Results}{subsection.4.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Comparative Analysis}{22}{subsection.4.6.2}\protected@file@percent }
-\newlabel{subsec:comparative_analysis}{{4.6.2}{22}{Comparative Analysis}{subsection.4.6.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.7}Factors Affecting Cold Start Times}{22}{section.4.7}\protected@file@percent }
-\newlabel{sec:factors_affecting_cold_start_times}{{4.7}{22}{Factors Affecting Cold Start Times}{section.4.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.8}Discussion and Interpretation}{22}{section.4.8}\protected@file@percent }
-\newlabel{sec:discussion_and_interpretation}{{4.8}{22}{Discussion and Interpretation}{section.4.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.9}Conclusion}{22}{section.4.9}\protected@file@percent }
-\newlabel{sec:conclusion_cold_start_analysis}{{4.9}{22}{Conclusion}{section.4.9}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Ease of Development}{23}{chapter.5}\protected@file@percent }
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\etoc@startlocaltoc{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Language Simplicity and Syntax}{23}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Simplicity in Swift}{23}{section*.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Safety Features}{24}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Readability}{25}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Copy-on-Write (CoW)}{25}{section*.17}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Extensions}{26}{section*.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Custom Operators}{27}{section*.19}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Property Wrappers}{27}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Language Simplicity and Syntax}{25}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Simplicity in Swift}{25}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Safety Features}{26}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Readability}{27}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Copy-on-Write (CoW)}{27}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Extensions}{28}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Custom Operators}{29}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Property Wrappers}{29}{section*.20}\protected@file@percent }
 \citation{wsbox_chromiumos}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Available Libraries and Frameworks}{30}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Available Libraries and Frameworks}{32}{section.5.2}\protected@file@percent }
 \citation{django}
 \citation{flask}
 \citation{express}
 \citation{koa}
 \citation{springboot}
 \citation{jsf}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Web Development}{31}{subsection.5.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{31}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Python}{31}{section*.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Node.js}{31}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Java}{31}{section*.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Example Use Cases}{32}{section*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Vapor and Swift Package Manager}{32}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Web Development}{33}{subsection.5.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{33}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Python}{33}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Node.js}{33}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Java}{33}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Example Use Cases}{34}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Vapor and Swift Package Manager}{34}{section*.26}\protected@file@percent }
 \citation{swift-forum-bug}
-\@writefile{toc}{\contentsline {subsubsection}{Documentation and Community Support}{33}{section*.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Example: Swift Package Manager Bug}{33}{section*.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Developer community and support}{33}{subsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Documentation and Community Support}{35}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Example: Swift Package Manager Bug}{35}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Developer community and support}{35}{subsection.5.2.2}\protected@file@percent }
 \citation{swift-platform-support}
 \citation{swift-platform-support}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Tooling and IDE support}{34}{subsection.5.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Integration with serverless platforms}{34}{subsection.5.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Learning curve}{34}{subsection.5.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Linux Support}{34}{subsection.5.2.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{An Example}{35}{section*.29}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{35}{figure.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{35}{figure.5.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{35}{figure.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Synchronization System Case Study}{37}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Tooling and IDE support}{36}{subsection.5.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Integration with serverless platforms}{36}{subsection.5.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Learning curve}{36}{subsection.5.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Linux Support}{36}{subsection.5.2.6}\protected@file@percent }
+\citation{openwhisk-invoke}
+\@writefile{toc}{\contentsline {subsubsection}{An Example}{37}{section*.29}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{37}{figure.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{37}{figure.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{37}{figure.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Synchronization System Case Study}{39}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\etoc@startlocaltoc{7}}
-\newlabel{chap:synchronization}{{7}{37}{Synchronization System Case Study}{etoc@tocid.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}System Overview}{37}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Experimental Setup}{38}{section.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Benchmarking Process}{38}{section.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Main Components}{38}{subsection.6.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{PS Server}{38}{section*.30}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{SH Server}{39}{section*.31}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ModelSyncer}{39}{section*.32}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Workload}{39}{subsection.6.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Benchmarker}{40}{subsection.6.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Setting up the servers}{40}{section*.33}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Generating models on PS Server}{40}{section*.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Generating equivalent resource on SH Server}{40}{section*.35}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Running a workload}{41}{section*.36}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Results and Discussion}{43}{section.6.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Rate-limited comparison between serverless and monolithic implementations}}{43}{figure.6.1}\protected@file@percent }
-\newlabel{fig:rate_limited_comparison}{{6.1}{43}{Rate-limited comparison between serverless and monolithic implementations}{figure.6.1}{}}
+\@writefile{toc}{\etoc@startlocaltoc{6}}
+\newlabel{chap:synchronization}{{6}{39}{Synchronization System Case Study}{etoc@tocid.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}System Overview}{39}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Experimental Setup}{40}{section.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Benchmarking Process}{40}{section.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Main Components}{40}{subsection.6.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{PS Server}{40}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{SH Server}{41}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{ModelSyncer}{41}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Workload}{41}{subsection.6.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Benchmarker}{42}{subsection.6.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Setting up the servers}{42}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generating models on PS Server}{42}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generating equivalent resource on SH Server}{42}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Running a workload}{43}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Results and Discussion}{45}{section.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Rate-limited comparison between serverless and monolithic implementations}}{45}{figure.6.1}\protected@file@percent }
+\newlabel{fig:rate_limited_comparison}{{6.1}{45}{Rate-limited comparison between serverless and monolithic implementations}{figure.6.1}{}}
 \bibstyle{abbrv}
 \bibdata{thesis}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Improvements and Future Work}{44}{section.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.6}Conclusion}{44}{section.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Improvements and Future Work}{46}{section.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.6}Conclusion}{46}{section.6.6}\protected@file@percent }
 \bibcite{django}{1}
 \bibcite{express}{2}
 \bibcite{flask}{3}
-\bibcite{jsf}{4}
-\bibcite{koa}{5}
-\bibcite{swift-platform-support}{6}
-\bibcite{springboot}{7}
-\bibcite{openwhisk2023}{8}
-\bibcite{wsbox_chromiumos}{9}
-\bibcite{swift-forum-bug}{10}
+\bibcite{openwhisk-invoke}{4}
+\bibcite{jsf}{5}
+\bibcite{koa}{6}
+\bibcite{swift-platform-support}{7}
+\bibcite{springboot}{8}
+\bibcite{action-interface}{9}
+\bibcite{action-proxy}{10}
+\bibcite{openwhisk2023}{11}
+\bibcite{wsbox_chromiumos}{12}
+\bibcite{swift-forum-bug}{13}
 \gdef\minted@oldcachelist{,
   default.pygstyle,
   0BF21D71C650960795C24B180FBAC6DFC0BEDCA0CAC80BCF99DA933E238C2AA3.pygtex,
@@ -262,4 +275,4 @@
   734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex,
   3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex,
   54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex}
-\gdef \@abspage@last{47}
+\gdef \@abspage@last{49}
