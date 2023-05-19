@@ -190,24 +190,78 @@ The above function ensures that for every workload size, every `RunnerType` gets
 
 
 \section{Results and Discussion}
-
-In comparison, the serverless implementation showed significantly slower performance, ranging from 4 to 10 times slower than the monolithic one. Even when using the rate limiter set at 70ms, the serverless implementation took 120ms, significantly slower than the monolithic implementation, which took 25ms.
-
+In a given workload, sending the model sync request raised the following question: how often should the model sync requests be sent? As the workload increases, should any adjustments be made? As it currently stands, the benchmarker uses Swift's TaskGroup construct to send the requests.
+\subsection{Without a Rate Limit}
+First, we experimented with leaving it all up to the task group, which resulted in requests being sent roughly all at once. 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{media/rate_l70ms_latency_med.pdf}
-    \caption{Rate-limited comparison between serverless and monolithic implementations}
-    \label{fig:rate_limited_comparison}
+    \includegraphics[width=\textwidth]{media/no_rl_ex.pdf}
+    \caption{Execution time comparison between serverless and monolithic implementations}
+    \label{fig:rate_unlimited_comparison}
+\end{figure}
+The serverless implementation's execution time increased incomparably to the monolithic version, as seen on figure 5.1.
+While for both implementations the median latency did tend to increase, the serverless implementation's latency increased considerably faster, as seen in figures 5.2 and 5.3.
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/no_rl_mono_lat_med.pdf}
+        \caption{Median latency for a single model request, scaled for the monolithic implementation}
+        \label{fig:rate_unlimited_comparison_lat_mono}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/no_rl_lat_med.pdf}
+        \caption{Median latency for a single model request}
+        \label{fig:rate_unlimited_comparison_lat}
+    \end{minipage}
 \end{figure}
 
-Despite utilizing 18 machines for executing actions, the serverless approach did not show any clear benefits. This may be attributed to the lack of support for "intra-concurrency" in OpenWhisk runtimes, excluding NodeJS. This limitation significantly affects the scaling capabilities of the serverless implementation, which is a crucial aspect of the serverless or FaaS promise.
+The above is explained by a much lower Queries per Second (QPS) by the serverless implementation. As seen on figure 5.4, while the serverless implementation seems to have hit a limit of 28 QPS, the serverless implementation seems to hit a limit of 333, more than ten times bigger.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{media/no_rl_qps.pdf}
+    \caption{QPS comparison between serverless and monolithic implementations}
+    \label{fig:rate_unlimited_comparison_qps}
+\end{figure}
+
+
+\subsection{Implementing a Rate Limit}
+We use the Swift Rate Limitter, which is a custom made Swift rate limitter we have developed~\cite{swift-rl}, which is well tested, which allows us to send requests with a minimum set delay between them. We utilized it to send the requests every 100ms. This will cap the maximum QPS to 10 which ensures neither implementation will be stressed, hopefully allowing us to have a clearer picture of the situtation.
+
+With the rate limit both implementations take the same amount of time and bot achieve roughly 10QPS.
+As evident from figure 5.5, a single model sync takes roughly 280ms and 60ms on the serverless and monolithic implementations respectively.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{media/rl100_lat_med.pdf}
+    \caption{Rate-limited (100ms) comparison between serverless and monolithic implementations}
+    \label{fig:rate_limited_comparison}
+\end{figure}
+An interesting finding, is that the P99.9\% latency (figures 5.6 and 5.7), apart from being higher, it as less stable on the serverless implementation. This is despite utilizing less than the third of its maximum QPS.
+\begin{figure}[h!]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/rl100_tl_mono.pdf}
+        \caption{Median latency for a single model request, scaled for the monolithic implementation}
+        \label{fig:rate_unlimited_comparison_lat_mono}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{media/rl100_tl.pdf}
+        \caption{Median latency for a single model request}
+        \label{fig:rate_unlimited_comparison_lat}
+    \end{minipage}
+\end{figure}
+
+Despite utilizing 18 machines for executing actions, the serverless approach did not show any clear benefits. This may be attributed to the lack of support for "intra-concurrency" in OpenWhisk runtimes, excluding NodeJS. This limitation significantly affects the scaling capabilities of the serverless implementation, which is a crucial aspect of the serverless or FaaS promise. 18 machines achieving 28QPS means that on average, a machine completes 1.5 requests in a minute, which is 5 times slower than its own
 
 \section{Improvements and Future Work}
 
-There are potential avenues for improvement in the serverless system. Notably, updating the Go proxy used by all OpenWhisk runtimes to support intra-concurrency could allow all language runtimes, including Swift, to support it, potentially reducing the execution latency. 
+There are potential avenues for improvement in the serverless system. Notably, updating the Go proxy used by all OpenWhisk runtimes to support intra-concurrency could allow all language runtimes, including Swift, to support concurrent executions, potentially dramatically increasing the maximum QPS.
 
 \section{Conclusion}
 
-The case study findings contribute to the overall conclusion of this thesis, suggesting that the benefit of migrating to a serverless implementation is not always evident and should be carefully assessed for each workflow. The case study also highlights the importance of runtime support for intra-concurrency in realizing the full potential of serverless systems. Notably, the Swift runtime was updated to the latest version to leverage its native async/await features, which played a significant role in the serverless implementation.
+The case study findings contribute to the overall conclusion of this thesis, suggesting that the benefit of migrating to a serverless implementation is not always evident and should be carefully assessed for each workflow. The case study also highlights the importance of runtime support for intra-concurrency in realizing the full potential of serverless systems. Notably, the Swift runtime was updated to the latest version to leverage its native async/await features, which played a significant role in the serverless implementation. A total of eighteen identical machines achieving a throughput of ten times less than one single, identical machine is frankly unacceptable. 
 
 
