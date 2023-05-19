@@ -254,7 +254,7 @@ An interesting finding, is that the P99.9\% latency (figures 5.6 and 5.7), apart
     \end{minipage}
 \end{figure}
 
-Despite utilizing 18 machines for executing actions, the serverless approach did not show any clear benefits. This may be attributed to the lack of support for "intra-concurrency" in OpenWhisk runtimes, excluding NodeJS. This limitation significantly affects the scaling capabilities of the serverless implementation, which is a crucial aspect of the serverless or FaaS promise. 18 machines achieving 28QPS means that on average, a machine completes 1.5 requests in a minute, which is 5 times slower than its own
+Despite utilizing 18 machines for executing actions, the serverless approach did not show any clear benefits. This may be attributed to the lack of support for "intra-concurrency" in OpenWhisk runtimes, excluding NodeJS. This limitation significantly affects the scaling capabilities of the serverless implementation, which is a crucial aspect of the serverless or FaaS promise. 18 machines achieving 28QPS means that on average, a request takes 642ms to complete, which is more than double of the 280ms it takes, when the system is not stressed.
 
 \section{Improvements and Future Work}
 
@@ -262,6 +262,6 @@ There are potential avenues for improvement in the serverless system. Notably, u
 
 \section{Conclusion}
 
-The case study findings contribute to the overall conclusion of this thesis, suggesting that the benefit of migrating to a serverless implementation is not always evident and should be carefully assessed for each workflow. The case study also highlights the importance of runtime support for intra-concurrency in realizing the full potential of serverless systems. Notably, the Swift runtime was updated to the latest version to leverage its native async/await features, which played a significant role in the serverless implementation. A total of eighteen identical machines achieving a throughput of ten times less than one single, identical machine is frankly unacceptable. 
+The case study findings contribute to the overall conclusion of this thesis, suggesting that the benefit of migrating to a serverless implementation is not always evident and should be carefully assessed for each workflow. The case study also highlights the importance of runtime support for intra-concurrency in realizing the full potential of serverless systems. Without intra-concurrency, the requests stay in memory until a container is available to serve them. The overheads of OpenWhisk may explain the 2 times slowdown of its request completion under load. Notably, the Swift runtime was updated to the latest version to leverage its native async/await features, which played a significant role in the serverless implementation. A total of eighteen identical machines achieving a throughput of ten times less than one single, identical machine is frankly unacceptable. Support for intra-concurrency for the ActionLoop proxy should be a priority for the OpenWhisk project as seamless, efficient scaling is the central promise of FaaS.
 
 
