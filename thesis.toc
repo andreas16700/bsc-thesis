@@ -3,102 +3,107 @@
 \contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}%
 \etoc@startlocaltoc {2}
 \contentsline {section}{\numberline {1.1}Background}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Research Questions}{8}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Performance Comparison}{8}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Ease of Development}{8}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {2}Updating the Swift runtime}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Swift 5.5 Enhancements and their Impact}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Concurrency Support and Async/Await}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Structured Concurrency}{11}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Actor Model}{11}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}SwiftNIO 2}{12}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Impact on the Synchronization System Case Study}{12}{subsection.2.2.5}%
-\contentsline {section}{\numberline {2.3}Understanding Runtimes in OpenWhisk}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Actions in OpenWhisk}{12}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Action Interface in OpenWhisk}{12}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}ActionLoop Proxy in OpenWhisk}{13}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Compiling a Swift action with the ActionLoop Proxy}{14}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Overview of the officially supported Swift runtime in OpenWhisk}{15}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Process of Updating the Swift Runtime}{16}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Challenges Encountered}{19}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Performance Comparison}{20}{chapter.3}%
+\contentsline {section}{\numberline {1.2}Swift in Serverless Computing}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Choice of Serverless Environment: OpenWhisk}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Case Study: Synchronization System in eCommerce}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Research Questions}{9}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Performance Comparison}{10}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Ease of Development}{10}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Objective}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Thesis Structure}{10}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Updating the Swift runtime}{12}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Swift 5.5 Enhancements and their Impact}{13}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Concurrency Support and Async/Await}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Structured Concurrency}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Actor Model}{13}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}SwiftNIO 2}{14}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Impact on the Synchronization System Case Study}{14}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}Understanding Runtimes in OpenWhisk}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Actions in OpenWhisk}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Action Interface in OpenWhisk}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}ActionLoop Proxy in OpenWhisk}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Compiling a Swift action with the ActionLoop Proxy}{16}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Overview of the officially supported Swift runtime in OpenWhisk}{17}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Process of Updating the Swift Runtime}{18}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Challenges Encountered}{21}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Performance Comparison}{22}{chapter.3}%
 \etoc@startlocaltoc {3}
-\contentsline {section}{\numberline {3.1}Value Types vs Reference Types and Copy-On-Write}{20}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Value Types}{20}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Reference Types}{21}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Copy-On-Write (CoW)}{21}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Performance Benefits}{21}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Qualitive Comparison with Go, Java, Javascript, and Python}{22}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Go}{22}{subsection.3.2.1}%
-\contentsline {paragraph}{Value types in Go:}{22}{section*.6}%
-\contentsline {paragraph}{Reference types in Go:}{23}{section*.7}%
-\contentsline {subsection}{\numberline {3.2.2}Python}{23}{subsection.3.2.2}%
-\contentsline {paragraph}{Immutable objects:}{23}{section*.8}%
-\contentsline {paragraph}{Mutable objects:}{24}{section*.9}%
-\contentsline {subsection}{\numberline {3.2.3}Node.js (JavaScript)}{24}{subsection.3.2.3}%
-\contentsline {paragraph}{Reference types in JavaScript:}{24}{section*.10}%
-\contentsline {paragraph}{Simulating value types in JavaScript:}{25}{section*.11}%
-\contentsline {subsection}{\numberline {3.2.4}Java}{25}{subsection.3.2.4}%
-\contentsline {paragraph}{Value types in Java:}{25}{section*.12}%
-\contentsline {paragraph}{Reference types in Java:}{26}{section*.13}%
-\contentsline {section}{\numberline {3.3}Summary}{26}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Startup Analysis of Serverless Languages on OpenWhisk}{27}{chapter.4}%
+\contentsline {section}{\numberline {3.1}Value Types vs Reference Types and Copy-On-Write}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Value Types}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Reference Types}{23}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Copy-On-Write (CoW)}{23}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Performance Benefits}{23}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Qualitive Comparison with Go, Java, Javascript, and Python}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Go}{24}{subsection.3.2.1}%
+\contentsline {paragraph}{Value types in Go:}{24}{section*.6}%
+\contentsline {paragraph}{Reference types in Go:}{25}{section*.7}%
+\contentsline {subsection}{\numberline {3.2.2}Python}{25}{subsection.3.2.2}%
+\contentsline {paragraph}{Immutable objects:}{25}{section*.8}%
+\contentsline {paragraph}{Mutable objects:}{26}{section*.9}%
+\contentsline {subsection}{\numberline {3.2.3}Node.js (JavaScript)}{26}{subsection.3.2.3}%
+\contentsline {paragraph}{Reference types in JavaScript:}{26}{section*.10}%
+\contentsline {paragraph}{Simulating value types in JavaScript:}{27}{section*.11}%
+\contentsline {subsection}{\numberline {3.2.4}Java}{27}{subsection.3.2.4}%
+\contentsline {paragraph}{Value types in Java:}{27}{section*.12}%
+\contentsline {paragraph}{Reference types in Java:}{28}{section*.13}%
+\contentsline {section}{\numberline {3.3}Summary}{28}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Startup Analysis of Serverless Languages on OpenWhisk}{29}{chapter.4}%
 \etoc@startlocaltoc {4}
-\contentsline {section}{\numberline {4.1}Introduction}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Background and Related Work}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Benchmark Functions Selection}{28}{section.4.3}%
-\contentsline {section}{\numberline {4.4}OpenWhisk Setup and Configuration}{28}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Methodology}{28}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Deployment and Timing Approach}{28}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Fairness and Consistency}{28}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Results and Analysis}{28}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Quantitative Results}{28}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Comparative Analysis}{28}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Factors Affecting Cold Start Times}{28}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Discussion and Interpretation}{28}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Conclusion}{28}{section.4.9}%
-\contentsline {chapter}{\numberline {5}Ease of Development}{29}{chapter.5}%
+\contentsline {section}{\numberline {4.1}Introduction}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Background and Related Work}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Benchmark Functions Selection}{30}{section.4.3}%
+\contentsline {section}{\numberline {4.4}OpenWhisk Setup and Configuration}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Methodology}{30}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Deployment and Timing Approach}{30}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Fairness and Consistency}{30}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Results and Analysis}{30}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Quantitative Results}{30}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Comparative Analysis}{30}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Factors Affecting Cold Start Times}{30}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Discussion and Interpretation}{30}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Conclusion}{30}{section.4.9}%
+\contentsline {chapter}{\numberline {5}Ease of Development}{31}{chapter.5}%
 \etoc@startlocaltoc {5}
-\contentsline {section}{\numberline {5.1}Language Simplicity and Syntax}{29}{section.5.1}%
-\contentsline {subsubsection}{Simplicity in Swift}{29}{section*.14}%
-\contentsline {subsubsection}{Safety Features}{30}{section*.15}%
-\contentsline {subsubsection}{Readability}{31}{section*.16}%
-\contentsline {subsubsection}{Copy-on-Write (CoW)}{31}{section*.17}%
-\contentsline {subsubsection}{Extensions}{32}{section*.18}%
-\contentsline {subsubsection}{Custom Operators}{33}{section*.19}%
-\contentsline {subsubsection}{Property Wrappers}{33}{section*.20}%
-\contentsline {section}{\numberline {5.2}Available Libraries and Frameworks}{37}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Web Development}{37}{subsection.5.2.1}%
-\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{37}{section*.21}%
-\contentsline {paragraph}{Python}{37}{section*.22}%
-\contentsline {paragraph}{Node.js}{37}{section*.23}%
-\contentsline {paragraph}{Java}{38}{section*.24}%
-\contentsline {subsubsection}{Example Use Cases}{38}{section*.25}%
-\contentsline {subsubsection}{Vapor and Swift Package Manager}{39}{section*.26}%
-\contentsline {subsubsection}{Documentation and Community Support}{39}{section*.27}%
-\contentsline {subsubsection}{Example: Swift Package Manager Bug}{39}{section*.28}%
-\contentsline {subsection}{\numberline {5.2.2}Developer community and support}{40}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Tooling and IDE support}{40}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Integration with serverless platforms}{40}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Learning curve}{40}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Linux Support}{40}{subsection.5.2.6}%
-\contentsline {subsubsection}{An Example}{41}{section*.29}%
-\contentsline {chapter}{\numberline {6}Synchronization System Case Study}{43}{chapter.6}%
+\contentsline {section}{\numberline {5.1}Language Simplicity and Syntax}{31}{section.5.1}%
+\contentsline {subsubsection}{Simplicity in Swift}{31}{section*.14}%
+\contentsline {subsubsection}{Safety Features}{32}{section*.15}%
+\contentsline {subsubsection}{Readability}{33}{section*.16}%
+\contentsline {subsubsection}{Copy-on-Write (CoW)}{33}{section*.17}%
+\contentsline {subsubsection}{Extensions}{34}{section*.18}%
+\contentsline {subsubsection}{Custom Operators}{35}{section*.19}%
+\contentsline {subsubsection}{Property Wrappers}{35}{section*.20}%
+\contentsline {section}{\numberline {5.2}Available Libraries and Frameworks}{39}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Web Development}{39}{subsection.5.2.1}%
+\contentsline {subsubsection}{Popular Frameworks for Python, Node.js, and Java}{39}{section*.21}%
+\contentsline {paragraph}{Python}{39}{section*.22}%
+\contentsline {paragraph}{Node.js}{39}{section*.23}%
+\contentsline {paragraph}{Java}{40}{section*.24}%
+\contentsline {subsubsection}{Example Use Cases}{40}{section*.25}%
+\contentsline {subsubsection}{Vapor and Swift Package Manager}{41}{section*.26}%
+\contentsline {subsubsection}{Documentation and Community Support}{41}{section*.27}%
+\contentsline {subsubsection}{Example: Swift Package Manager Bug}{41}{section*.28}%
+\contentsline {subsection}{\numberline {5.2.2}Developer community and support}{42}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Tooling and IDE support}{42}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Integration with serverless platforms}{42}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Learning curve}{42}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Linux Support}{42}{subsection.5.2.6}%
+\contentsline {subsubsection}{An Example}{43}{section*.29}%
+\contentsline {chapter}{\numberline {6}Synchronization System Case Study}{45}{chapter.6}%
 \etoc@startlocaltoc {6}
-\contentsline {section}{\numberline {6.1}System Overview}{43}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Experimental Setup}{44}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Benchmarking Process}{44}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Main Components}{44}{subsection.6.3.1}%
-\contentsline {subsubsection}{PS Server}{44}{section*.30}%
-\contentsline {subsubsection}{SH Server}{45}{section*.31}%
-\contentsline {subsubsection}{ModelSyncer}{45}{section*.32}%
-\contentsline {subsection}{\numberline {6.3.2}Workload}{45}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Benchmarker}{46}{subsection.6.3.3}%
-\contentsline {subsubsection}{Setting up the servers}{46}{section*.33}%
-\contentsline {paragraph}{Generating models on PS Server}{46}{section*.34}%
-\contentsline {paragraph}{Generating equivalent resource on SH Server}{46}{section*.35}%
-\contentsline {subsubsection}{Running a workload}{47}{section*.36}%
-\contentsline {section}{\numberline {6.4}Results and Discussion}{49}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Improvements and Future Work}{49}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Conclusion}{50}{section.6.6}%
+\contentsline {section}{\numberline {6.1}System Overview}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Experimental Setup}{46}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Benchmarking Process}{46}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Main Components}{46}{subsection.6.3.1}%
+\contentsline {subsubsection}{PS Server}{46}{section*.30}%
+\contentsline {subsubsection}{SH Server}{47}{section*.31}%
+\contentsline {subsubsection}{ModelSyncer}{47}{section*.32}%
+\contentsline {subsection}{\numberline {6.3.2}Workload}{47}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Benchmarker}{48}{subsection.6.3.3}%
+\contentsline {subsubsection}{Setting up the servers}{48}{section*.33}%
+\contentsline {paragraph}{Generating models on PS Server}{48}{section*.34}%
+\contentsline {paragraph}{Generating equivalent resource on SH Server}{48}{section*.35}%
+\contentsline {subsubsection}{Running a workload}{49}{section*.36}%
+\contentsline {section}{\numberline {6.4}Results and Discussion}{51}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Improvements and Future Work}{51}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Conclusion}{52}{section.6.6}%

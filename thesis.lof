@@ -1,12 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Abstract representation of the Action Interface in OpenWhisk.}}{13}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Contents of the core folder of the Swift runtime}}{16}{figure.2.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Abstract representation of the Action Interface in OpenWhisk.}}{15}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Contents of the core folder of the Swift runtime}}{18}{figure.2.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{41}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{41}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{42}{figure.5.3}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{43}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{43}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{44}{figure.5.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Rate-limited comparison between serverless and monolithic implementations}}{50}{figure.6.1}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Rate-limited comparison between serverless and monolithic implementations}}{52}{figure.6.1}%
