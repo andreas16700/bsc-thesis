@@ -1,17 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Abstract representation of the Action Interface in OpenWhisk.}}{13}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Contents of the core folder of the Swift runtime}}{16}{figure.2.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Abstract representation of the Action Interface in OpenWhisk.}}{12}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Contents of the core folder of the Swift runtime}}{15}{figure.2.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{39}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{39}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{40}{figure.4.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Invoking the action using Apache's invoke.py tool}}{38}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{38}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{39}{figure.4.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Execution time comparison between serverless and monolithic implementations}}{48}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{48}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Median latency for a single model request}}{48}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces QPS comparison between serverless and monolithic implementations}}{49}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{50}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{50}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Median latency for a single model request}}{50}{figure.5.7}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Execution time comparison between serverless and monolithic implementations}}{47}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{47}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Median latency for a single model request}}{47}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces QPS comparison between serverless and monolithic implementations}}{48}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{49}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{49}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Median latency for a single model request}}{49}{figure.5.7}%
+\addvspace {10\p@ }

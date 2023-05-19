@@ -63,4 +63,14 @@ A.~Loizides.
 \newblock {Rate Limitter for Swift}.
 \newblock \url{https://github.com/andreas16700/RateLimitingCommunicator}, 2022.
 
+\bibitem{virtualizationreview2023}
+V.~Review.
+\newblock Serverless vs monolith, 2023.
+\newblock [Online; accessed May-2023].
+
+\bibitem{primevideo2023}
+P.~V. Tech.
+\newblock Scaling up the prime video audio/video monitoring service and reducing costs by 90%, 2023.
+\newblock [Online; accessed May-2023].
+
 \end{thebibliography}
