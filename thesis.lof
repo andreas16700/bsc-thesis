@@ -15,3 +15,4 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{50}{figure.5.5}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{50}{figure.5.6}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Median latency for a single model request}}{50}{figure.5.7}%
+\addvspace {10\p@ }

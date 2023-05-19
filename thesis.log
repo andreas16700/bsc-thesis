@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  19 MAY 2023 05:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  19 MAY 2023 06:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -892,7 +892,7 @@ Package hyperref Info: Link coloring ON on input line 91.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \Etoc@tf=\read6
-<media/ucy-logo.png, id=244, 2007.5pt x 2007.5pt>
+<media/ucy-logo.png, id=248, 2007.5pt x 2007.5pt>
 File: media/ucy-logo.png Graphic file (type png)
 <use media/ucy-logo.png>
 Package pdftex.def Info: media/ucy-logo.png  used on input line 111.
@@ -911,11 +911,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.160 \newpage
                [1
 
-]
+] (./chapters/summary.tex)
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
- [2]
+ [2
+
+]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 165.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -979,7 +981,7 @@ Overfull \hbox (1.35321pt too wide) in paragraph at lines 48--49
 \T1/ptm/m/n/12 Overall, the en-hance-ments in Swift 5.5 sig-nif-i-cantly im-proved the de-vel-op-ment and bench-
  []
 
-<media/action_interface.pdf, id=406, 980.1748pt x 355.9969pt>
+<media/action_interface.pdf, id=411, 980.1748pt x 355.9969pt>
 File: media/action_interface.pdf Graphic file (type pdf)
 <use media/action_interface.pdf>
 Package pdftex.def Info: media/action_interface.pdf  used on input line 60.
@@ -1007,7 +1009,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 10
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [15]
-<media/core_contents.png, id=446, 243.91125pt x 136.51pt>
+<media/core_contents.png, id=452, 243.91125pt x 136.51pt>
 File: media/core_contents.png Graphic file (type png)
 <use media/core_contents.png>
 Package pdftex.def Info: media/core_contents.png  used on input line 123.
@@ -1243,12 +1245,12 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/C7FD3539B12EF898936D46E156DFDB1ADD95E99AA7B4976517879FA5762B39A7.pygtex) [38]
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=616, 1240.635pt x 168.63pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=621, 1240.635pt x 168.63pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png  used on input line 384.
 (pdftex.def)             Requested size: 341.43437pt x 46.40813pt.
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=618, 813.0375pt x 220.825pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=623, 813.0375pt x 220.825pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png  used on input line 395.
@@ -1259,7 +1261,7 @@ Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~Cl
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=619, 2589.675pt x 1126.2075pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=624, 2589.675pt x 1126.2075pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png  used on input line 405.
@@ -1334,17 +1336,17 @@ File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 \openout4 = `thesis.pyg'.
 
  (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex [46{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
-<media/no_rl_ex.pdf, id=680, 435.48695pt x 318.7709pt>
+<media/no_rl_ex.pdf, id=685, 435.48695pt x 318.7709pt>
 File: media/no_rl_ex.pdf Graphic file (type pdf)
 <use media/no_rl_ex.pdf>
 Package pdftex.def Info: media/no_rl_ex.pdf  used on input line 198.
 (pdftex.def)             Requested size: 426.79135pt x 312.41768pt.
-<media/no_rl_mono_lat_med.pdf, id=681, 403.2089pt x 318.7709pt>
+<media/no_rl_mono_lat_med.pdf, id=686, 403.2089pt x 318.7709pt>
 File: media/no_rl_mono_lat_med.pdf Graphic file (type pdf)
 <use media/no_rl_mono_lat_med.pdf>
 Package pdftex.def Info: media/no_rl_mono_lat_med.pdf  used on input line 208.
 (pdftex.def)             Requested size: 204.85802pt x 161.95813pt.
-<media/no_rl_lat_med.pdf, id=682, 380.69476pt x 318.7709pt>
+<media/no_rl_lat_med.pdf, id=687, 380.69476pt x 318.7709pt>
 File: media/no_rl_lat_med.pdf Graphic file (type pdf)
 <use media/no_rl_lat_med.pdf>
 Package pdftex.def Info: media/no_rl_lat_med.pdf  used on input line 214.
@@ -1356,7 +1358,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<media/no_rl_qps.pdf, id=683, 442.51321pt x 318.7709pt>
+<media/no_rl_qps.pdf, id=688, 442.51321pt x 318.7709pt>
 File: media/no_rl_qps.pdf Graphic file (type pdf)
 <use media/no_rl_qps.pdf>
 Package pdftex.def Info: media/no_rl_qps.pdf  used on input line 223.
@@ -1380,17 +1382,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) h
                                                   \__shipout_drop_firstpage_...
 l.231 
        <./media/no_rl_ex.pdf> <./media/no_rl_mono_lat_med.pdf> <./media/no_rl_lat_med.pdf>]
-<media/rl100_lat_med.pdf, id=742, 426.93503pt x 318.7709pt>
+<media/rl100_lat_med.pdf, id=747, 426.93503pt x 318.7709pt>
 File: media/rl100_lat_med.pdf Graphic file (type pdf)
 <use media/rl100_lat_med.pdf>
 Package pdftex.def Info: media/rl100_lat_med.pdf  used on input line 236.
 (pdftex.def)             Requested size: 426.79135pt x 318.68257pt.
-<media/rl100_tl_mono.pdf, id=743, 390.65198pt x 301.125pt>
+<media/rl100_tl_mono.pdf, id=748, 390.65198pt x 301.125pt>
 File: media/rl100_tl_mono.pdf Graphic file (type pdf)
 <use media/rl100_tl_mono.pdf>
 Package pdftex.def Info: media/rl100_tl_mono.pdf  used on input line 245.
 (pdftex.def)             Requested size: 204.85802pt x 157.91379pt.
-<media/rl100_tl.pdf, id=744, 370.9283pt x 301.125pt>
+<media/rl100_tl.pdf, id=749, 370.9283pt x 301.125pt>
 File: media/rl100_tl.pdf Graphic file (type pdf)
 <use media/rl100_tl.pdf>
 Package pdftex.def Info: media/rl100_tl.pdf  used on input line 251.
@@ -1427,7 +1429,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.262 
-       <./media/rl100_lat_med.pdf> <./media/rl100_tl_mono.pdf> <./media/rl100_tl.pdf>]) (./chapters/conclusions.tex) (./thesis.bbl [51]
+       <./media/rl100_lat_med.pdf> <./media/rl100_tl_mono.pdf> <./media/rl100_tl.pdf>]) (./chapters/conclusions.tex [51]
+Chapter 6.
+
+Overfull \hbox (0.88281pt too wide) in paragraph at lines 13--14
+[]\T1/ptm/m/n/12 In the con-text of Open-Whisk's Ac-tion-Loop proxy, the im-por-tance of intra-concurrency
+ []
+
+[52
+
+]) (./thesis.bbl [53]
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\T1/ptm/m/n/12 JavaServer Faces.  [][]$\T1/cmtt/m/n/12 https : / / www . oracle . com / java / technologies /
  []
@@ -1462,30 +1473,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--60
 \T1/cmtt/m/n/12 dependency-[]on-[]very-[]active-[]branch-[]doesnt-[]pull-[]new-[]commits / 33204$[][]\T1/ptm/m/n/12 ,
  []
 
-[52
+[54
 
-]) [53] (./thesis.aux)
+]) [55] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AA1AD39DCFA84BBEF48ED5CAD3326C7D;10686.
+(rerunfilecheck)             Checksum: 8D4078EBC7D94CE0E1AAA6EEA88083F8;10780.
 runsystem(rm thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27517 strings out of 476025
- 554227 string characters out of 5790018
+ 27531 strings out of 476025
+ 554469 string characters out of 5790018
  1864388 words of memory out of 5000000
- 47000 multiletter control sequences out of 15000+600000
+ 47006 multiletter control sequences out of 15000+600000
  562508 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,1286b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (55 pages, 510077 bytes).
+Output written on thesis.pdf (57 pages, 515494 bytes).
 PDF statistics:
- 933 PDF objects out of 1000 (max. 8388607)
- 783 compressed objects within 8 object streams
- 184 named destinations out of 1000 (max. 500000)
- 550 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 951 PDF objects out of 1000 (max. 8388607)
+ 799 compressed objects within 8 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 558 words of extra memory for PDF output out of 10000 (max. 10000000)
 
