@@ -11,7 +11,24 @@ These features provide significant benefits when it comes to the development and
 Runtimes in OpenWhisk are the backbone that enables the execution of actions in the serverless environment. Key to this is understanding the Action Interface and the ActionLoop Proxy. The ActionLoop proxy simplifies the development of new runtimes by implementing most of the Action Interface specification, making it possible to create a compliant and efficient runtime with fewer resources.
 
 Updating the Swift runtime in itself was not complicated, but understanding how it all works together was a challenge. In this chapter we dive into the details of how this is achieved, to provide a reference point for future researches in understanding how OpenWhisk runtimes work, and particularly the Swift runtime.
+\section{Overview of the officially supported Swift runtime in OpenWhisk}
+Apache OpenWhisk supports a variety of programming languages for writing actions, through the use of specific runtimes. As per the official documentation, the following runtimes are currently supported 
+~\cite{openwhisk2023}:
 
+\begin{itemize}
+\item .Net: OpenWhisk runtime for .Net Core 2.2.
+\item Go: OpenWhisk runtime for Go.
+\item Java: OpenWhisk runtime for Java 8 (OpenJDK 8, JVM OpenJ9).
+\item JavaScript: OpenWhisk runtime for Node.js v10, v12, and v14.
+\item PHP: OpenWhisk runtime for PHP 8.0, 7.4, and 7.3.
+\item Python: OpenWhisk runtime for Python 2.7, 3, and a 3 runtime variant for AI/ML (including packages for Tensorflow and PyTorch).
+\item Ruby: OpenWhisk runtime for Ruby 2.5.
+\item Swift: OpenWhisk runtime for Swift 5.1, 5.3 and 5.4.
+\end{itemize}
+
+These runtimes are officially supperted by OpenWhisk, meaning one can deploy an action in those languages by specifying with it the -kind option.
+Any docker image can be used as a runtime to deploy actions, as long as it adheres to the Action Interface and is a Docker image publicly available on DockerHub. Our updated version of Swift (v5.8) is publicly available on dockerhub with the image tag andreas16700/swift58-1.
+Swift 5.4 lacks behind, notably Swift 5.5 which brings numerous crucial improvement which we'll explain below.
 \section{Swift 5.5 Enhancements and their Impact}
 \label{sec:SwiftEnhancements}
 
@@ -54,7 +71,7 @@ We delve into the function and significance of runtimes in OpenWhisk, paying spe
 \section{Actions in OpenWhisk}
 
 \subsection{Action Interface in OpenWhisk}
-The core concept in the OpenWhisk environment is an Action. Actions are the smallest deployable units of code and primarily constitute two components: the user function and its corresponding proxy. The user function represents the code logic to be executed, and the proxy serves as an intermediary, implementing a canonical protocol to enable the user function to interact with the OpenWhisk platform \cite{action-interface}. The proxy is the runtime. Anything can be a runtime, as far as OpenWhisk is concerned, as long as it implments the Action Interface, which specifies a behavior that OpenWhisk expects. In other words, a runtime can be thought of a black box (docker container) that listens on two HTTP routes: /init and /run on port 8080, which are used for deploying and executing actions, respectively. OpenWhisk calls on the /init route with the action code to initialize an action. Whenever the action is invoked, OpenWhisk will send a POST request  to the /run route with the action's parameters as payload. The runtime should return the result of the action. The behavior is shown abstractly in figure 2.1.
+The core concept in the OpenWhisk environment is an Action. Actions are the smallest deployable units of code and primarily constitute two components: the user function and its corresponding proxy. The user function represents the code logic to be executed, and the proxy serves as an intermediary, implementing a canonical protocol to enable the user function to interact with the OpenWhisk platform \cite{action-interface}. The proxy is the runtime. Anything can be a runtime, as far as OpenWhisk is concerned, as long as it implements the Action Interface, which specifies a behavior that OpenWhisk expects. In other words, a runtime can be thought of a black box (docker container) that listens on two HTTP routes: /init and /run on port 8080, which are used for deploying and executing actions, respectively. OpenWhisk calls on the /init route with the action code to initialize an action. Whenever the action is invoked, OpenWhisk will send a POST request  to the /run route with the action's parameters as payload. The runtime should return the result of the action. The behavior is shown abstractly in figure 2.1.
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{media/action_interface.pdf}
@@ -90,30 +107,14 @@ The standard input of this command is the source file of our function. There are
 	\item [Single File] the function is contained in a single Swift file
 	\item [Package] the function is part of a Swift package
 \end{description}
-In the case of the Swift package, it should be zipped and be given as standard input to the command. The Swift runtime expects to be able to unzip it, and in the resulting directory run \mintinline{bash}{swift build -c release}. This is extracted into a src directory inside the docker container. In the parent folder there exists a sample swift package skeleton. In the case that the contents of the zip file are nested inside another folder, when the runtime tries to run the swift build command, unexpected behavior will occur. That is because the swift compiler when it can't find the Package.swift file in the current directory, it up the hierarchy to find it, resulting in it trying to build the blank swift package (which will most likely not contained the desired function). In our experience, this has caused countless hours of debugging and trying to figure out what the problem is, because of unhelpful feedback such as "function X not found". Fully understanding the inner workings of the ActionLoop proxy and the Swift runtime was required. One could argue the simplicity the ActionLoop proxy aims to provide is lost in this.
+In the case of the Swift package, it should be zipped and be given as standard input to the command. The Swift runtime expects to be able to unzip it, and in the resulting directory run \mintinline{bash}{swift build -c release}. This is extracted into a src directory inside the docker container. In the parent folder there exists a sample swift package skeleton. In the case that the contents of the zip file are nested inside another folder, when the runtime tries to run the swift build command, unexpected behavior will occur. That is because the swift compiler when it can't find the Package.swift file in the current directory, it searches up the hierarchy to find it, resulting in it trying to build the blank swift package (which will most likely not contained the desired function). In our experience, this has caused countless hours of debugging and trying to figure out what the problem is, because of unhelpful feedback such as "function X not found". Fully understanding the inner workings of the ActionLoop proxy and the Swift runtime was required. One could argue the simplicity the ActionLoop proxy aims to provide is lost in this.
 The following command produces the binary executable fun for the function fun() which is contained in the Swift package which is zipped inside myPackage.zip:
 \mint{bash}{docker run swift-one -compile fun <myPackage.zip >fun.zip}
-fun.zip contains the a folder which contains the actual binary.
+fun.zip contains a folder which contains the actual binary.
 
 The behavior of the binary is as follows: It listens on standard output for the JSON payload OpenWhisk will send it (which contains the parameters of the function). It writes to standard output the result of the function. In case that the output is a Codable type, it returns the JSON encoded text.
 
-\section{Overview of the officially supported Swift runtime in OpenWhisk}
-Apache OpenWhisk supports a variety of programming languages for writing actions, through the use of specific runtimes. As per the official documentation, the following runtimes are currently supported 
-~\cite{openwhisk2023}:
 
-\begin{itemize}
-\item .Net: OpenWhisk runtime for .Net Core 2.2.
-\item Go: OpenWhisk runtime for Go.
-\item Java: OpenWhisk runtime for Java 8 (OpenJDK 8, JVM OpenJ9).
-\item JavaScript: OpenWhisk runtime for Node.js v10, v12, and v14.
-\item PHP: OpenWhisk runtime for PHP 8.0, 7.4, and 7.3.
-\item Python: OpenWhisk runtime for Python 2.7, 3, and a 3 runtime variant for AI/ML (including packages for Tensorflow and PyTorch).
-\item Ruby: OpenWhisk runtime for Ruby 2.5.
-\item Swift: OpenWhisk runtime for Swift 5.1, 5.3 and 5.4.
-\end{itemize}
-
-These runtimes are officially supperted by OpenWhisk, meaning one can deploy an action in those languages by specifying with it the -kind option.
-Any docker image can be used as a runtime to deploy actions, as long as it adheres to the Action Interface and is a Docker image publicly available on DockerHub. Our updated version of Swift (v5.8) is publicly available on dockerhub with the image tag andreas16700/swift58-1.
 \section{Process of Updating the Swift Runtime}
 \label{sec:UpdatingProcess}
 

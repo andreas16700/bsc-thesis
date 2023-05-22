@@ -45,8 +45,9 @@
 \newblock \url{https://github.com/apache/openwhisk/blob/master/docs/actions-actionloop.md}, 2023.
 
 \bibitem{openwhisk2023}
-{Apache OpenWhisk - Programming Model}.
-\newblock \url{https://openwhisk.apache.org/documentation.html#programming-model}, 2023.
+{Apache OpenWhisk}.
+\newblock Apache openwhisk documentation.
+\newblock \url{https://openwhisk.apache.org/documentation.html}, 2023.
 
 \bibitem{wsbox_chromiumos}
 {Chromium OS}.
