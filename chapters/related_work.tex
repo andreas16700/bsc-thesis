@@ -1,1 +1,23 @@
 \chapter{Related Work}
+\label{chap:relatedwork}
+
+The concept of serverless computing has gained significant attention in recent years due to advancements in virtualization and software architecture. This paradigm allows developers to deploy applications as stateless functions without worrying about the underlying infrastructure, leading to low operational concerns and efficient resource management and utilization \cite{mohanty2018evaluation}.
+
+Several public cloud service providers currently offer serverless computing. However, these platforms have certain limitations, such as vendor lock-in and restrictions on the computation of the functions. Open source serverless frameworks are a promising solution to avoid these limitations and bring the power of serverless computing to on-premise deployments \cite{mohanty2018evaluation}.
+
+Mohanty et al. \cite{mohanty2018evaluation} carried out a comprehensive feature comparison of popular open source serverless computing frameworks. They evaluated the performance of selected frameworks: Fission, Kubeless and OpenFaaS. Specifically, they characterized the response time and ratio of successfully received responses under different loads and provided insights into the design choices of each framework.
+
+In their study, they described four popular open source serverless frameworks, namely, Fission, Kubeless, OpenFaaS and OpenWhisk. They chose frameworks with at least 3,000 GitHub stars, a mark of appreciation from users. All the considered frameworks run each serverless function in a separate Docker container to provide isolation. OpenFaaS, Kubeless and Fission utilize a container orchestrator to manage the networking and lifecycle of the containers, whereas OpenWhisk may be deployed with or without an orchestrator \cite{mohanty2018evaluation}.
+
+They also evaluated the performance of Fission, Kubeless and OpenFaaS when deployed on a Kubernetes cluster. They chose Kubernetes as it is the only orchestrator supported by all the considered frameworks. They did not include OpenWhisk due to issues faced in setup and its minimal dependence on Kubernetes for orchestration tasks \cite{mohanty2018evaluation}.
+
+This related work provides a solid foundation for understanding the landscape of open source serverless computing frameworks and their performance characteristics. It is particularly relevant for our exploration of Swift as a serverless language on OpenWhisk.
+
+bla bla bla ~\cite{implications-prog}
+
+implications-prog:
+summary:
+The paper investigates the implications of programming language selection for serverless data processing pipelines. The authors implemented identical multi-function data processing pipelines in Java, Python, Go, and Node.js and ran experiments to investigate FaaS data processing performance. They found that no single language provided the best performance for every stage of a data processing pipeline and the fastest pipeline could be derived by combining a hybrid mix of languages to optimize performance. The paper concludes that developers should consider resource requirements and profile performance to optimize their designs before deployment on serverless platforms to mitigate any potential pitfalls.
+relevant questions:
+How important is a programming language choice for serverless data processing pipelines?
+The programming language choice is important for serverless data processing pipelines as it can impact the efficiency and performance of the pipeline. The authors of the paper implemented identical multi-function data processing pipelines in Java, Python, Go, and Node.js and ran experiments to investigate FaaS data processing performance. They found that no single language provided the best performance for every stage of a data processing pipeline and the fastest pipeline could be derived by combining a hybrid mix of languages to optimize performance. The paper concludes that developers should consider resource requirements and profile performance to optimize their designs before deployment on serverless platforms to mitigate any potential pitfalls.

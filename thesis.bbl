@@ -54,6 +54,11 @@
 \newblock {Sandbox}.
 \newblock \url{https://www.chromium.org/developers/design-documents/sandbox}.
 
+\bibitem{implications-prog}
+R.~Cordingly, H.~Yu, V.~Hoang, D.~Perez, D.~Foster, Z.~Sadeghi, R.~Hatchett, and W.~J. Lloyd.
+\newblock Implications of programming language selection for serverless data processing pipelines.
+\newblock In {\em 2020 IEEE Intl Conf on Dependable, Autonomic and Secure Computing, Intl Conf on Pervasive Intelligence and Computing, Intl Conf on Cloud and Big Data Computing, Intl Conf on Cyber Science and Technology Congress (DASC/PiCom/CBDCom/CyberSciTech)}, pages 704--711, 2020.
+
 \bibitem{swift-forum-bug}
 S.~Forums.
 \newblock {Dependency on (very) active branch doesn’t pull new commits}.
@@ -63,6 +68,11 @@ S.~Forums.
 A.~Loizides.
 \newblock {Rate Limitter for Swift}.
 \newblock \url{https://github.com/andreas16700/RateLimitingCommunicator}, 2022.
+
+\bibitem{mohanty2018evaluation}
+S.~K. Mohanty, G.~Premsankar, and M.~Di~Francesco.
+\newblock An evaluation of open source serverless computing frameworks.
+\newblock In {\em 2018 IEEE 10th International Conference on Cloud Computing Technology and Science (CloudCom)}, pages 115--120. IEEE, 2018.
 
 \bibitem{virtualizationreview2023}
 V.~Review.
