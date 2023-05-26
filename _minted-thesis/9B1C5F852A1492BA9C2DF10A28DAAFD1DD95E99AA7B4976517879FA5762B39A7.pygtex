@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{n}{performTask1} \PYG{p}{\PYGZob{}} \PYG{n}{result1} \PYG{k}{in}
+		\PYG{n}{performTask2}\PYG{p}{(}\PYG{n}{result1}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{n}{result2} \PYG{k}{in}
+			\PYG{n}{performTask3}\PYG{p}{(}\PYG{n}{result2}\PYG{p}{)} \PYG{p}{\PYGZob{}} \PYG{n}{result3} \PYG{k}{in}
+				\PYG{c+c1}{// handle final result}
+			\PYG{p}{\PYGZcb{}}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

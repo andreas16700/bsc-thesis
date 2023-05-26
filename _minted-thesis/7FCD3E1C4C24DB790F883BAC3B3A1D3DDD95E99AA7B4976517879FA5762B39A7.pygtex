@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{async} \PYG{k+kd}{let} \PYG{n+nv}{group} \PYG{p}{=} \PYG{n}{Task}\PYG{p}{.}\PYG{n}{Group} \PYG{p}{\PYGZob{}} \PYG{p}{()} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb}{Int} \PYG{k}{in}
+	\PYG{k}{for} \PYG{n}{i} \PYG{k}{in} \PYG{l+m+mf}{1.}\PYG{p}{..}\PYG{l+m+mi}{5} \PYG{p}{\PYGZob{}}
+		\PYG{k+kd}{let} \PYG{n+nv}{result} \PYG{p}{=} \PYG{k}{await} \PYG{n}{performTask}\PYG{p}{(}\PYG{n}{i}\PYG{p}{)}
+		\PYG{n+nb+bp}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Task (i) completed with result (result)\PYGZdq{}}\PYG{p}{)}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

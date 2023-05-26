@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nv}{result1} \PYG{p}{=} \PYG{k}{await} \PYG{n}{performTask1}\PYG{p}{()}
+\PYG{k+kd}{let} \PYG{n+nv}{result2} \PYG{p}{=} \PYG{k}{await} \PYG{n}{performTask2}\PYG{p}{(}\PYG{n}{result1}\PYG{p}{)}
+\PYG{k+kd}{let} \PYG{n+nv}{result3} \PYG{p}{=} \PYG{k}{await} \PYG{n}{performTask3}\PYG{p}{(}\PYG{n}{result2}\PYG{p}{)}
+\PYG{c+c1}{// handle final result}
+\end{Verbatim}

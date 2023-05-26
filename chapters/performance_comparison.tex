@@ -1,13 +1,15 @@
-\chapter{Performance Comparison}
+\chapter{Performance Overview}
 \etocsettocstyle{\rule{\textwidth}{1pt}}{\rule{\textwidth}{1pt}} % style for toc
 \localtableofcontents
+In this chapter, we examine some qualities of Swift that could give it a performance edge over other languages. What are those qualities? Do other serverless languages match them with anything similar? We aim to answer those questions.
 \section{Value Types vs Reference Types and Copy-On-Write}
-
+First, we have to understand the differentiation of value and reference types.
 In programming languages, value types and reference types represent two ways to handle data. Understanding the difference between them and their performance implications is crucial to making informed decisions when choosing a language for serverless applications. Swift not only distinguishes between value and reference types, but also employs Copy-On-Write optimization for most of its value types, including collections such as Arrays, Dictionaries, and Sets.
+This differentiation allows Swift to provide "free" CoW for Value types. That means a more efficient use of memory, which is more than crucial in memory-constrained contexts such as serverless.
 
 \subsection{Value Types}
 
-Value types are types for which the value is stored directly in the memory. When a value type is assigned or passed to a function, a separate copy of the value is created. The main benefit of value types is that they are generally more efficient in terms of memory usage and can result in more predictable performance. In Swift, the distinction between value and reference types is handled through structs (value types) and classes (reference types).
+Value types are types for which the value is stored directly in the memory. When a value type is assigned or passed to a function, a separate copy of the value is created. The main benefit of value types is that they are generally more efficient in terms of memory usage and can result in more predictable performance. This is because allocation happens in the stack, which tends to be much faster than heap allocation, which is what happens for reference types. In Swift, the distinction between value and reference types is handled through structs (value types) and classes (reference types).
 
 \subsection{Reference Types}
 
@@ -34,6 +36,7 @@ The distinction between value and reference types, as well as Swift's usage of C
   \item Copying value types can be faster, as the memory layout is more predictable and can often be associated with better cache utilization.
   \item Avoiding the overhead of managing memory references for reference types can result in performance improvements, as fewer indirections are needed for memory access.
 \end{itemize}
+For example, suppose in a backtracking algorithm, we execute a function on some data. The function may or may not modify it. Suppose we pass a copy of this data to the function, in order to later decide which one of the two to keep. If the one produced by the function is not desired, we "backtrack" to the previous version. In other languages, this copy of the data is guaranteed, even though the function may not modify it at all. In Swift, no copying takes place unless the function actually modifies it.
 
 In summary, the distinction between value and reference types in a language like Swift, combined with the use of Copy-On-Write optimizations, provides developers with fine-grained control over memory handling and potentially leads to better performance when compared to languages that do not offer such a distinction. These aspects make Swift an attractive choice for serverless applications where performance is critical.
 

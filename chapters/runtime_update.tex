@@ -38,6 +38,22 @@ We elucidate how these enhancements facilitated the development and benchmarking
 
 In Swift 5.5, the introduction of concurrency support, in particular, the async/await constructs, revolutionized the way asynchronous code is written and understood. The async/await model allows for the execution of asynchronous tasks in a manner that closely resembles synchronous code, eliminating the complexity of nested callbacks and error-prone manual threading.
 
+Consider the following simple example of an asynchronous function:
+
+\begin{minted}{swift}
+func fetchUserData() async throws -> UserData {
+// Asynchronous fetching here
+}
+\end{minted}
+
+You can then use the await keyword to call this function:
+
+\begin{minted}{swift}
+let userData = try? await fetchUserData()
+\end{minted}
+
+This way, asynchronous code looks and behaves much like synchronous code, making it much easier to understand and manage.
+
 In the context of our synchronization system case study, this feature had a profound impact. The pre-existing monolithic implementation was built with heavy use of asynchronous constructs. With the transition to Swift 5.5, we could leverage the async/await model to handle these tasks in a more readable and maintainable way, making the code easier to comprehend and modify.
 
 \subsection{Structured Concurrency}
@@ -45,12 +61,60 @@ In the context of our synchronization system case study, this feature had a prof
 
 Structured concurrency, another significant feature introduced in Swift 5.5, provides a way to manage and control asynchronous tasks. It introduces new concepts like task groups and task cancellation, which can be used to group related tasks and cancel them if they are no longer needed.
 
+Here is an example of how task groups can be used:
+
+\begin{minted}{swift}
+async let group = Task.Group { () -> Int in
+	for i in 1...5 {
+		let result = await performTask(i)
+		print("Task (i) completed with result (result)")
+	}
+}
+\end{minted}
+
+With structured concurrency, nested callbacks or "callback hell" can be avoided. Consider a situation where you have three dependent tasks that need to be performed in sequence. In the old callback-based approach, this might look like:
+
+\begin{minted}{swift}
+	performTask1 { result1 in
+		performTask2(result1) { result2 in
+			performTask3(result2) { result3 in
+				// handle final result
+			}
+		}
+	}
+\end{minted}
+
+With the new structured concurrency and async/await model in Swift 5.5, this can be simplified to:
+
+\begin{minted}{swift}
+let result1 = await performTask1()
+let result2 = await performTask2(result1)
+let result3 = await performTask3(result2)
+// handle final result
+\end{minted}
+
+This greatly improves code readability and maintainability.
+
 For the synchronization system case study, structured concurrency helped ensure that asynchronous tasks were well-managed and tidied up after completion. This reduced the risk of memory leaks and made the system more efficient.
 
 \subsection{Actor Model}
 \label{subsec:ActorModel}
 
 The actor model in Swift 5.5 provides a way to handle shared mutable state in concurrent settings. It isolates state to individual actors and ensures that only one piece of code can access that state at a time.
+
+An example of an Actor could look like the following:
+
+\begin{minted}{swift}
+actor Counter {
+	private var value = 0
+	func increment() {
+		value += 1
+	}
+	func getValue() -> Int {
+		return value
+	}
+}
+\end{minted}
 
 In the context of the synchronization system, the actor model was invaluable in managing shared resources, avoiding race conditions and thus increasing the robustness of the system.
 

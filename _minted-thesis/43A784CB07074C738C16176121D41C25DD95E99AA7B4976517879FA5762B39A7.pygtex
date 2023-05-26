@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{func} \PYG{n+nf}{fetchUserData}\PYG{p}{()} \PYG{k}{async} \PYG{k+kr}{throws} \PYG{p}{\PYGZhy{}\PYGZgt{}} \PYG{n}{UserData} \PYG{p}{\PYGZob{}}
+\PYG{c+c1}{// Asynchronous fetching here}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
