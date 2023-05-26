@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {1.4}Case Study: Synchronization System in eCommerce}{8}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Objective}{8}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Research Questions}{9}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Performance Comparison}{9}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.1}Performance Overview}{9}{subsection.1.6.1}%
 \contentsline {subsection}{\numberline {1.6.2}Ease of Development}{9}{subsection.1.6.2}%
 \contentsline {chapter}{\numberline {2}Related Work}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}%
