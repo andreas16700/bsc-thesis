@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  26 MAY 2023 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.8)  2 JUN 2023 12:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -809,6 +809,18 @@ LaTeX Font Info:    Trying to load font information for T1+ptm on input line 92.
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./thesis.aux
 
+LaTeX Warning: Label `fig:sync3_5' multiply defined.
+
+
+LaTeX Warning: Label `fig:sync3_5' multiply defined.
+
+
+LaTeX Warning: Label `fig:sync3_5' multiply defined.
+
+
+LaTeX Warning: Label `fig:rate_unlimited_comparison' multiply defined.
+
+
 LaTeX Warning: Label `fig:rate_unlimited_comparison_lat_mono' multiply defined.
 
 
@@ -892,7 +904,7 @@ Package hyperref Info: Link coloring ON on input line 92.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \Etoc@tf=\read6
-<media/ucy-logo.png, id=276, 2007.5pt x 2007.5pt>
+<media/ucy-logo.png, id=272, 2007.5pt x 2007.5pt>
 File: media/ucy-logo.png Graphic file (type png)
 <use media/ucy-logo.png>
 Package pdftex.def Info: media/ucy-logo.png  used on input line 113.
@@ -1013,7 +1025,7 @@ Overfull \hbox (1.35321pt too wide) in paragraph at lines 129--130
 \T1/ptm/m/n/12 Overall, the en-hance-ments in Swift 5.5 sig-nif-i-cantly im-proved the de-vel-op-ment and bench-
  []
 
-<media/action_interface.pdf, id=473, 980.1748pt x 355.9969pt>
+<media/action_interface.pdf, id=482, 980.1748pt x 355.9969pt>
 File: media/action_interface.pdf Graphic file (type pdf)
 <use media/action_interface.pdf>
 Package pdftex.def Info: media/action_interface.pdf  used on input line 141.
@@ -1033,7 +1045,7 @@ l.155
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/75789AF8B0A7AC25DD8D07F5A77EF141C59BB6D333CA649D6B3DAAFABA601ACA.pygtex [18])
-<media/core_contents.png, id=507, 243.91125pt x 136.51pt>
+<media/core_contents.png, id=516, 243.91125pt x 136.51pt>
 File: media/core_contents.png Graphic file (type png)
 <use media/core_contents.png>
 Package pdftex.def Info: media/core_contents.png  used on input line 188.
@@ -1271,12 +1283,12 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 4--4
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/C7FD3539B12EF898936D46E156DFDB1ADD95E99AA7B4976517879FA5762B39A7.pygtex) [43]
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=683, 1240.635pt x 168.63pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png, id=693, 1240.635pt x 168.63pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/invoke error.png  used on input line 384.
 (pdftex.def)             Requested size: 341.43437pt x 46.40813pt.
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=685, 813.0375pt x 220.825pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png, id=695, 813.0375pt x 220.825pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/Screenshot 2023-05-02 at 14.26.52.png  used on input line 395.
@@ -1287,7 +1299,7 @@ Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~Cl
 \openout5 = `thesis.pyg'.
 
  (./_minted-thesis/5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex)
-</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=686, 2589.675pt x 1126.2075pt>
+</Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png, id=696, 2589.675pt x 1126.2075pt>
 File: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png Graphic file (type png)
 <use /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png>
 Package pdftex.def Info: /Users/andrew_yos/Library/Mobile Documents/com~apple~CloudDocs/MWeb/docs/media/16829072537125/lldb_crash.png  used on input line 405.
@@ -1335,122 +1347,189 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--5
 [][] 
  []
 
+<media/Product_variants.pdf, id=715, 1090.3716pt x 1050.846pt>
+File: media/Product_variants.pdf Graphic file (type pdf)
+<use media/Product_variants.pdf>
+Package pdftex.def Info: media/Product_variants.pdf  used on input line 12.
+(pdftex.def)             Requested size: 426.79135pt x 411.3195pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<media/communications.pdf, id=716, 2351.70906pt x 988.19188pt>
+File: media/communications.pdf Graphic file (type pdf)
+<use media/communications.pdf>
+Package pdftex.def Info: media/communications.pdf  used on input line 22.
+(pdftex.def)             Requested size: 426.79135pt x 179.32948pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [46
 
-]) (./chapters/results.tex [47]
+]
+<media/syncer_fetch_data_black.pdf, id=722, 1684.70702pt x 531.2984pt>
+File: media/syncer_fetch_data_black.pdf Graphic file (type pdf)
+<use media/syncer_fetch_data_black.pdf>
+Package pdftex.def Info: media/syncer_fetch_data_black.pdf  used on input line 35.
+(pdftex.def)             Requested size: 426.79135pt x 134.59158pt.
+<media/syncer_dosync_black.pdf, id=723, 1132.05638pt x 797.38177pt>
+File: media/syncer_dosync_black.pdf Graphic file (type pdf)
+<use media/syncer_dosync_black.pdf>
+Package pdftex.def Info: media/syncer_dosync_black.pdf  used on input line 42.
+(pdftex.def)             Requested size: 426.79135pt x 300.61131pt.
+ [47
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.46 \section
+             {Implementation and Deployment} <./media/Product_variants.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<media/syncModelAction.pdf, id=736, 2067.13171pt x 792.26016pt>
+File: media/syncModelAction.pdf Graphic file (type pdf)
+<use media/syncModelAction.pdf>
+Package pdftex.def Info: media/syncModelAction.pdf  used on input line 50.
+(pdftex.def)             Requested size: 426.79135pt x 163.56282pt.
+<media/syncModelMonolithic.pdf, id=737, 2067.13171pt x 792.26016pt>
+File: media/syncModelMonolithic.pdf Graphic file (type pdf)
+<use media/syncModelMonolithic.pdf>
+Package pdftex.def Info: media/syncModelMonolithic.pdf  used on input line 57.
+(pdftex.def)             Requested size: 426.79135pt x 163.56282pt.
+[48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.61 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.61 
+      <./media/communications.pdf> <./media/syncer_fetch_data_black.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./chapters/results.tex [49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Benchmarking Case Study Implementations} <./media/syncer_dosync_black.pdf>] [50
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Benchmarking Case Study Implementations}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {Benchmarking Case Study Implementations} <./media/syncModelAction.pdf> <./media/syncModelMonolithic.pdf>]
 Chapter 7.
-\openout4 = `thesis.pyg'.
+<media/bench_black.pdf, id=854, 1337.79498pt x 1249.18292pt>
+File: media/bench_black.pdf Graphic file (type pdf)
+<use media/bench_black.pdf>
+Package pdftex.def Info: media/bench_black.pdf  used on input line 11.
+(pdftex.def)             Requested size: 426.79135pt x 398.50774pt.
 
-(./_minted-thesis/D4FCB243019181234912674B7F0C04A4DD95E99AA7B4976517879FA5762B39A7.pygtex [48
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-])
-\openout4 = `thesis.pyg'.
+[51
 
- (./_minted-thesis/1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex) [49] [50]
-\openout4 = `thesis.pyg'.
-
- (./_minted-thesis/734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex) [51]
-\openout4 = `thesis.pyg'.
-
- (./_minted-thesis/3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 15.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-))
-\openout4 = `thesis.pyg'.
-
- (./_minted-thesis/54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex [52{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
-<media/no_rl_ex.pdf, id=742, 435.48695pt x 318.7709pt>
+] [52
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.27 \subsection
+                {Without a Rate Limit} <./media/bench_black.pdf>]
+<media/no_rl_ex.pdf, id=889, 435.48695pt x 318.7709pt>
 File: media/no_rl_ex.pdf Graphic file (type pdf)
 <use media/no_rl_ex.pdf>
-Package pdftex.def Info: media/no_rl_ex.pdf  used on input line 185.
+Package pdftex.def Info: media/no_rl_ex.pdf  used on input line 31.
 (pdftex.def)             Requested size: 426.79135pt x 312.41768pt.
-<media/no_rl_mono_lat_med.pdf, id=743, 403.2089pt x 318.7709pt>
+<media/no_rl_mono_lat_med.pdf, id=890, 403.2089pt x 318.7709pt>
 File: media/no_rl_mono_lat_med.pdf Graphic file (type pdf)
 <use media/no_rl_mono_lat_med.pdf>
-Package pdftex.def Info: media/no_rl_mono_lat_med.pdf  used on input line 195.
+Package pdftex.def Info: media/no_rl_mono_lat_med.pdf  used on input line 41.
 (pdftex.def)             Requested size: 204.85802pt x 161.95813pt.
-<media/no_rl_lat_med.pdf, id=744, 380.69476pt x 318.7709pt>
+<media/no_rl_lat_med.pdf, id=891, 380.69476pt x 318.7709pt>
 File: media/no_rl_lat_med.pdf Graphic file (type pdf)
 <use media/no_rl_lat_med.pdf>
-Package pdftex.def Info: media/no_rl_lat_med.pdf  used on input line 201.
+Package pdftex.def Info: media/no_rl_lat_med.pdf  used on input line 47.
 (pdftex.def)             Requested size: 204.85802pt x 171.53545pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<media/no_rl_qps.pdf, id=745, 442.51321pt x 318.7709pt>
+<media/no_rl_qps.pdf, id=892, 442.51321pt x 318.7709pt>
 File: media/no_rl_qps.pdf Graphic file (type pdf)
 <use media/no_rl_qps.pdf>
-Package pdftex.def Info: media/no_rl_qps.pdf  used on input line 210.
+Package pdftex.def Info: media/no_rl_qps.pdf  used on input line 56.
 (pdftex.def)             Requested size: 426.79135pt x 307.45148pt.
-[53] [54
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.214 
-      
+[53
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.214 
-      
+l.60 
+      <./media/no_rl_ex.pdf>] [54
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.214 
-       <./media/no_rl_ex.pdf> <./media/no_rl_mono_lat_med.pdf> <./media/no_rl_lat_med.pdf>]
-<media/rl100_lat_med.pdf, id=804, 426.93503pt x 318.7709pt>
+l.64 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.64 
+      <./media/no_rl_mono_lat_med.pdf> <./media/no_rl_lat_med.pdf> <./media/no_rl_qps.pdf>]
+<media/rl100_lat_med.pdf, id=967, 426.93503pt x 318.7709pt>
 File: media/rl100_lat_med.pdf Graphic file (type pdf)
 <use media/rl100_lat_med.pdf>
-Package pdftex.def Info: media/rl100_lat_med.pdf  used on input line 223.
+Package pdftex.def Info: media/rl100_lat_med.pdf  used on input line 69.
 (pdftex.def)             Requested size: 426.79135pt x 318.68257pt.
-<media/rl100_tl_mono.pdf, id=805, 390.65198pt x 301.125pt>
+<media/rl100_tl_mono.pdf, id=968, 390.65198pt x 301.125pt>
 File: media/rl100_tl_mono.pdf Graphic file (type pdf)
 <use media/rl100_tl_mono.pdf>
-Package pdftex.def Info: media/rl100_tl_mono.pdf  used on input line 232.
+Package pdftex.def Info: media/rl100_tl_mono.pdf  used on input line 78.
 (pdftex.def)             Requested size: 204.85802pt x 157.91379pt.
-<media/rl100_tl.pdf, id=806, 370.9283pt x 301.125pt>
+<media/rl100_tl.pdf, id=969, 370.9283pt x 301.125pt>
 File: media/rl100_tl.pdf Graphic file (type pdf)
 <use media/rl100_tl.pdf>
-Package pdftex.def Info: media/rl100_tl.pdf  used on input line 238.
+Package pdftex.def Info: media/rl100_tl.pdf  used on input line 84.
 (pdftex.def)             Requested size: 204.85802pt x 166.30847pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (10.12508pt too wide) in paragraph at lines 244--245
+Overfull \hbox (10.12508pt too wide) in paragraph at lines 90--91
 \T1/ptm/m/n/12 show any clear ben-e-fits. This may be at-tributed to the lack of sup-port for "intra-concurrency"
  []
 
 [55
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.245 
-       <./media/no_rl_qps.pdf>] [56
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.245 
-      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.245 
-      
+l.91 
+      <./media/rl100_lat_med.pdf>] [56
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.245 
-       <./media/rl100_lat_med.pdf> <./media/rl100_tl_mono.pdf> <./media/rl100_tl.pdf>]) (./chapters/conclusions.tex [57]
+l.99 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.99 
+      <./media/rl100_tl_mono.pdf> <./media/rl100_tl.pdf>]) (./chapters/conclusions.tex [57]
 Chapter 8.
 
 Overfull \hbox (0.88281pt too wide) in paragraph at lines 13--14
@@ -1501,23 +1580,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--71
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7EDD029E9E32B82EB5AD1378112CADB7;11658.
+(rerunfilecheck)             Checksum: 4C259D0934B6A522A9885A235FF7A77A;11785.
 runsystem(rm thesis.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27590 strings out of 476025
- 557955 string characters out of 5790018
+ 27588 strings out of 476025
+ 556476 string characters out of 5790018
  1864388 words of memory out of 5000000
- 47028 multiletter control sequences out of 15000+600000
- 562508 words of font info for 101 fonts, out of 8000000 for 9000
+ 47045 multiletter control sequences out of 15000+600000
+ 560731 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,89p,1295b,809s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (63 pages, 528924 bytes).
+Output written on thesis.pdf (63 pages, 791646 bytes).
 PDF statistics:
- 1011 PDF objects out of 1200 (max. 8388607)
- 852 compressed objects within 9 object streams
- 204 named destinations out of 1000 (max. 500000)
- 614 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1155 PDF objects out of 1200 (max. 8388607)
+ 940 compressed objects within 10 object streams
+ 203 named destinations out of 1000 (max. 500000)
+ 641 words of extra memory for PDF output out of 10000 (max. 10000000)
 

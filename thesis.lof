@@ -9,12 +9,19 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Crash witnessed by manually running the action executable in the runtime container}}{44}{figure.5.2}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Debugging with LLDB to find the cause of the crash}}{45}{figure.5.3}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A product is comprised of different variants}}{47}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces High level outline of the problem scenario}}{48}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Steps 1-2: Fetching current data about the product}}{48}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Steps 3-5: Apply any needed updates}}{49}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Serverless Deployment}}{50}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Monolithic Deployment}}{50}{figure.6.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Execution time comparison between serverless and monolithic implementations}}{54}{figure.7.1}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{54}{figure.7.2}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Median latency for a single model request}}{54}{figure.7.3}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces QPS comparison between serverless and monolithic implementations}}{55}{figure.7.4}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{56}{figure.7.5}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{56}{figure.7.6}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Median latency for a single model request}}{56}{figure.7.7}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Serverless Deployment}}{52}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Execution time comparison between serverless and monolithic implementations}}{53}{figure.7.2}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{54}{figure.7.3}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Median latency for a single model request}}{54}{figure.7.4}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces QPS comparison between serverless and monolithic implementations}}{54}{figure.7.5}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{55}{figure.7.6}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{56}{figure.7.7}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Median latency for a single model request}}{56}{figure.7.8}%
 \addvspace {10\p@ }

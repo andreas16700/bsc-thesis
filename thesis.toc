@@ -80,24 +80,16 @@
 \contentsline {subsubsection}{An Example}{44}{section*.28}%
 \contentsline {chapter}{\numberline {6}Synchronization System Case Study}{46}{chapter.6}%
 \etoc@startlocaltoc {5}
-\contentsline {section}{\numberline {6.1}System Overview}{46}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Main Components}{47}{subsection.6.1.1}%
-\contentsline {chapter}{\numberline {7}Results}{48}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Experimental Setup}{48}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Benchmarking Process}{48}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Main Components}{48}{subsection.7.2.1}%
-\contentsline {subsubsection}{PS Server}{48}{section*.29}%
-\contentsline {subsubsection}{SH Server}{49}{section*.30}%
-\contentsline {subsubsection}{ModelSyncer}{49}{section*.31}%
-\contentsline {subsection}{\numberline {7.2.2}Workload}{50}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Benchmarker}{50}{subsection.7.2.3}%
-\contentsline {subsubsection}{Setting up the servers}{50}{section*.32}%
-\contentsline {paragraph}{Generating models on PS Server}{50}{section*.33}%
-\contentsline {paragraph}{Generating equivalent resource on SH Server}{50}{section*.34}%
-\contentsline {subsubsection}{Running a workload}{51}{section*.35}%
+\contentsline {section}{\numberline {6.1}Introduction}{46}{section.6.1}%
+\contentsline {section}{\numberline {6.2}The Need for Synchronization}{46}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Sync Algorithm}{47}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Implementation and Deployment}{49}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Benchmarking Case Study Implementations}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Workload}{51}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Experimental Setup}{51}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Results and Discussion}{53}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Without a Rate Limit}{53}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Implementing a Rate Limit}{55}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Improvements and Future Work}{57}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Conclusion}{57}{section.7.5}%
+\contentsline {section}{\numberline {7.4}Improvements and Future Work}{56}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Conclusion}{56}{section.7.5}%
 \contentsline {chapter}{\numberline {8}Conclusion}{58}{chapter.8}%

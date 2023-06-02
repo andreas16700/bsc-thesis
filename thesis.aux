@@ -152,43 +152,49 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\etoc@startlocaltoc{5}}
 \newlabel{chap:synchronization}{{5}{46}{Synchronization System Case Study}{etoc@tocid.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}System Overview}{46}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Main Components}{47}{subsection.6.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Results}{48}{chapter.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{46}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}The Need for Synchronization}{46}{section.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces A product is comprised of different variants}}{47}{figure.6.1}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison}{{6.1}{47}{A product is comprised of different variants}{figure.6.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Sync Algorithm}{47}{section.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces High level outline of the problem scenario}}{48}{figure.6.2}\protected@file@percent }
+\newlabel{fig:case_comms}{{6.2}{48}{High level outline of the problem scenario}{figure.6.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Steps 1-2: Fetching current data about the product}}{48}{figure.6.3}\protected@file@percent }
+\newlabel{fig:sync1_2}{{6.3}{48}{Steps 1-2: Fetching current data about the product}{figure.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Steps 3-5: Apply any needed updates}}{49}{figure.6.4}\protected@file@percent }
+\newlabel{fig:sync3_5}{{6.4}{49}{Steps 3-5: Apply any needed updates}{figure.6.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Implementation and Deployment}{49}{section.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Serverless Deployment}}{50}{figure.6.5}\protected@file@percent }
+\newlabel{fig:sync3_5}{{6.5}{50}{Serverless Deployment}{figure.6.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Monolithic Deployment}}{50}{figure.6.6}\protected@file@percent }
+\newlabel{fig:sync3_5}{{6.6}{50}{Monolithic Deployment}{figure.6.6}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Benchmarking Case Study Implementations}{51}{chapter.7}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Experimental Setup}{48}{section.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Benchmarking Process}{48}{section.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Main Components}{48}{subsection.7.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{PS Server}{48}{section*.29}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{SH Server}{49}{section*.30}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ModelSyncer}{49}{section*.31}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Workload}{50}{subsection.7.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.3}Benchmarker}{50}{subsection.7.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Setting up the servers}{50}{section*.32}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Generating models on PS Server}{50}{section*.33}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Generating equivalent resource on SH Server}{50}{section*.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Running a workload}{51}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Workload}{51}{section.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Experimental Setup}{51}{section.7.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Serverless Deployment}}{52}{figure.7.1}\protected@file@percent }
+\newlabel{fig:sync3_5}{{7.1}{52}{Serverless Deployment}{figure.7.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7.3}Results and Discussion}{53}{section.7.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Without a Rate Limit}{53}{subsection.7.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Execution time comparison between serverless and monolithic implementations}}{54}{figure.7.1}\protected@file@percent }
-\newlabel{fig:rate_unlimited_comparison}{{7.1}{54}{Execution time comparison between serverless and monolithic implementations}{figure.7.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{54}{figure.7.2}\protected@file@percent }
-\newlabel{fig:rate_unlimited_comparison_lat_mono}{{7.2}{54}{Median latency for a single model request, scaled for the monolithic implementation}{figure.7.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Median latency for a single model request}}{54}{figure.7.3}\protected@file@percent }
-\newlabel{fig:rate_unlimited_comparison_lat}{{7.3}{54}{Median latency for a single model request}{figure.7.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Execution time comparison between serverless and monolithic implementations}}{53}{figure.7.2}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison}{{7.2}{53}{Execution time comparison between serverless and monolithic implementations}{figure.7.2}{}}
 \citation{swift-rl}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces QPS comparison between serverless and monolithic implementations}}{55}{figure.7.4}\protected@file@percent }
-\newlabel{fig:rate_unlimited_comparison_qps}{{7.4}{55}{QPS comparison between serverless and monolithic implementations}{figure.7.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{54}{figure.7.3}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison_lat_mono}{{7.3}{54}{Median latency for a single model request, scaled for the monolithic implementation}{figure.7.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Median latency for a single model request}}{54}{figure.7.4}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison_lat}{{7.4}{54}{Median latency for a single model request}{figure.7.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces QPS comparison between serverless and monolithic implementations}}{54}{figure.7.5}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison_qps}{{7.5}{54}{QPS comparison between serverless and monolithic implementations}{figure.7.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Implementing a Rate Limit}{55}{subsection.7.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{56}{figure.7.5}\protected@file@percent }
-\newlabel{fig:rate_limited_comparison}{{7.5}{56}{Rate-limited (100ms) comparison between serverless and monolithic implementations}{figure.7.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{56}{figure.7.6}\protected@file@percent }
-\newlabel{fig:rate_unlimited_comparison_lat_mono}{{7.6}{56}{Median latency for a single model request, scaled for the monolithic implementation}{figure.7.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Median latency for a single model request}}{56}{figure.7.7}\protected@file@percent }
-\newlabel{fig:rate_unlimited_comparison_lat}{{7.7}{56}{Median latency for a single model request}{figure.7.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Improvements and Future Work}{57}{section.7.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}Conclusion}{57}{section.7.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Rate-limited (100ms) comparison between serverless and monolithic implementations}}{55}{figure.7.6}\protected@file@percent }
+\newlabel{fig:rate_limited_comparison}{{7.6}{55}{Rate-limited (100ms) comparison between serverless and monolithic implementations}{figure.7.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Median latency for a single model request, scaled for the monolithic implementation}}{56}{figure.7.7}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison_lat_mono}{{7.7}{56}{Median latency for a single model request, scaled for the monolithic implementation}{figure.7.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Median latency for a single model request}}{56}{figure.7.8}\protected@file@percent }
+\newlabel{fig:rate_unlimited_comparison_lat}{{7.8}{56}{Median latency for a single model request}{figure.7.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Improvements and Future Work}{56}{section.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Conclusion}{56}{section.7.5}\protected@file@percent }
 \citation{primevideo2023}
 \citation{virtualizationreview2023}
 \@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{58}{chapter.8}\protected@file@percent }
@@ -300,10 +306,5 @@
   66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex,
   1F0A6156EEA50C3D6A9FD1F39B942B03DD95E99AA7B4976517879FA5762B39A7.pygtex,
   66949CB05867EC447163D56F3B9379A1DD95E99AA7B4976517879FA5762B39A7.pygtex,
-  5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex,
-  D4FCB243019181234912674B7F0C04A4DD95E99AA7B4976517879FA5762B39A7.pygtex,
-  1F982E9AAFBEDF388147B4B461C0C265DD95E99AA7B4976517879FA5762B39A7.pygtex,
-  734FD0B208798CC7BF4F0A3679D3EF4EDD95E99AA7B4976517879FA5762B39A7.pygtex,
-  3945EED27466AF059873386084AC47C6DD95E99AA7B4976517879FA5762B39A7.pygtex,
-  54C12AC40FF56800677D19110A85322CDD95E99AA7B4976517879FA5762B39A7.pygtex}
+  5FFBE03E1EE2516554B76F8C0D64A0C2C59BB6D333CA649D6B3DAAFABA601ACA.pygtex}
 \gdef \@abspage@last{63}
